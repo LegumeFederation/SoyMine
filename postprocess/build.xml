@@ -1,0 +1,7 @@
+<project name="soymine-postprocess" default="default" basedir=".">
+
+  <description>perform post processing for soymine</description>
+
+  <import file="../../imbuild/postprocess.xml"/>
+
+</project>

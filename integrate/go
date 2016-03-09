@@ -1,0 +1,7 @@
+#!/bin/sh
+rm intermine.log
+ant clean
+ant -Dsource=soy-genetics
+ant -Dsource=soy-genomics
+ant -Dsource=so
+ant -Dsource=entrez-organism
