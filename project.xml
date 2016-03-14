@@ -8,7 +8,7 @@
   <sources>
 
     <!-- Glycine maximus (soybean) + consensus genomics -->
-    <source name="soy-genomics" type="legfed" dump="true">
+    <source name="chado-genomics" type="legfed" dump="true">
       <property name="source.db.name" value="tripal"/>
       <!-- SPACE-delimited tax IDs! -->
       <property name="organisms" value="3847 3398"/>
