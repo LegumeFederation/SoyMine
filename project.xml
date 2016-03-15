@@ -19,7 +19,7 @@
     </source>
 
     <!-- Glycine maximum (soybean) genetics -->
-    <source name="soy-genetics" type="legfed" dump="true">
+    <source name="soybase-genetics" type="legfed" dump="true">
       <property name="source.db.name" value="tripal"/>
       <!-- SPACE-delimited tax IDs! -->
       <property name="organisms" value="3847"/>
