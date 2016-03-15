@@ -1,4 +1,4 @@
 #!/bin/sh
-
 rm intermine.*
+ant clean
 ant
