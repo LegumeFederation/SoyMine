@@ -1,2 +1,3 @@
 #!/bin/sh
-ant clean default remove-webapp release-webapp
+echo "********** soymine/webapp **********"
+ant clean default release-webapp
