@@ -4,10 +4,10 @@ echo "********** soymine/integrate **********"
 #ant -Dsource=so
 ant clean
 ant -Dsource=chado-genomics
+ant -Dsource=gff-geneticmarkers
 ant -Dsource=chado-genetics
 ant -Dsource=chado-featureprop
 ant -Dsource=chado-go
-ant -Dsource=gff-geneticmarkers
 ant -Dsource=file-cmap
 ant -Dsource=file-qtlmarkers
 ant -Dsource=entrez-organism
