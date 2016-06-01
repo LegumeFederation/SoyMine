@@ -8,6 +8,7 @@ ant -Dsource=gff-geneticmarkers
 ant -Dsource=chado-genetics
 ant -Dsource=chado-featureprop
 ant -Dsource=chado-go
+ant -Dsource=chado-reactome-file
 ant -Dsource=file-cmap
 ant -Dsource=file-qtlmarkers
 ant -Dsource=entrez-organism
