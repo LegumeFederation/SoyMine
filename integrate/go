@@ -1,14 +1,5 @@
 #!/bin/sh
 echo "********** soymine/integrate **********"
-#ant -Dsource=go
-#ant -Dsource=so
+#ant -Dsource=so,go
 ant clean
-ant -Dsource=chado-genomics
-ant -Dsource=gff-geneticmarkers
-ant -Dsource=chado-genetics
-ant -Dsource=chado-featureprop
-ant -Dsource=chado-go
-ant -Dsource=chado-reactome-file
-ant -Dsource=file-cmap
-ant -Dsource=file-qtlmarkers
-ant -Dsource=entrez-organism
+ant -Dsource=chado-genomics,gff-geneticmarkers,chado-genetics,chado-featureprop,chado-go,chado-homology,chado-reactome-file,file-cmap,file-qtlmarkers,entrez-organism
