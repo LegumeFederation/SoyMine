@@ -2,4 +2,5 @@
 echo "********** soymine/integrate **********"
 #ant -Dsource=so,go
 ant clean
-ant -Dsource=chado-genomics,gff-geneticmarkers,chado-genetics,chado-featureprop,chado-go,chado-homology,chado-reactome-file,file-cmap,file-qtlmarkers,entrez-organism
+#ant -Dsource=chado-genomics,chado-genetics,chado-featureprop,chado-go,chado-homology,chado-reactome-file,
+ant -v -Dsource=gff-geneticmarkers,file-cmap,file-qtlmarkers,soybase-expression,entrez-organism

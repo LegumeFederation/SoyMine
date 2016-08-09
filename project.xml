@@ -82,6 +82,11 @@
       <property name="src.data.dir" location="/home/intermine/data/soybean-qtl-markers"/>
     </source>
       
+    <!-- Soybase expression -->
+    <source name="soybase-expression" type="legfed-expression" dump="true">
+      <property name="src.data.dir" location="/home/intermine/data/soybean-expression"/>
+    </source>
+
     <!-- gene ontology -->
     <source name="go" type="go">
       <property name="src.data.file" location="/home/intermine/data/go-annotation/go.obo"/>
@@ -102,9 +107,11 @@
   <post-processing>
 
     <!-- legfed -->
-    <post-process name="create-polypeptide-gene-references" dump="true"/>
     <post-process name="populate-gene-spanning-qtls" dump="true"/>
-    
+    <post-process name="create-protein-gene-references" dump="true"/>
+    <post-process name="create-protein-domain-references" dump="true"/>
+    <post-process name="populate-interpro-data" dump="true"/>
+
     <!-- order matters -->
     <post-process name="populate-located-features"/>
     <post-process name="create-references" />
