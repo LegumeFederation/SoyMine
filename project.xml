@@ -83,7 +83,7 @@
     </source>
       
     <!-- Soybase expression -->
-    <source name="soybase-expression" type="legfed-expression" dump="true">
+    <source name="soybean-expression" type="legfed-expression" dump="true">
       <property name="src.data.dir" location="/home/intermine/data/soybean-expression"/>
     </source>
 
@@ -106,21 +106,28 @@
 
   <post-processing>
 
+    <!-- source-specific post-processing -->
+    <post-process name="do-sources" dump="true"/>
+
     <!-- legfed -->
     <post-process name="populate-gene-spanning-qtls" dump="true"/>
     <post-process name="create-protein-gene-references" dump="true"/>
     <post-process name="create-protein-domain-references" dump="true"/>
     <post-process name="populate-interpro-data" dump="true"/>
-
-    <!-- order matters -->
+    
+    <!-- add features -->
+    <post-process name="create-intron-features"/>
+    <post-process name="create-intergenic-region-features"/>
+    <post-process name="create-gene-flanking-features"/> 
+   
+    <!-- create various references and collections -->
     <post-process name="populate-located-features"/>
+    <post-process name="populate-child-features"/>
     <post-process name="create-references" />
     <post-process name="create-chromosome-locations-and-lengths"/>
-    <post-process name="create-intergenic-region-features"/>
     <post-process name="transfer-sequences"/>
-    <post-process name="populate-child-features"/>
-    <post-process name="do-sources" dump="true"/>
-    <post-process name="create-location-range-index"/>
+
+    <!-- views and indexes, after all data is set -->
     <post-process name="create-location-overlap-index"/>
     <post-process name="create-overlap-view" />
     <post-process name="create-attribute-indexes"/>
