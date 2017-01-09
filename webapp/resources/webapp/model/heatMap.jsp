@@ -9,9 +9,6 @@
 <c:set var="MAX_MAP" value="600" />
 <c:set var="MAX_DEFAULT_OPEN" value="100" />
 
-<link rel="stylesheet" href="css/canvasXpress.css" type="text/css"/>
-<script type="text/javascript" src="js/canvasXpress.min.js"></script>
-
 <div id="expression_div">
 
     <h2>${WEB_PROPERTIES['heatmap.heading']}</h2>

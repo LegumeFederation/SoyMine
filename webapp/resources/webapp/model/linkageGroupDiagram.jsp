@@ -8,9 +8,6 @@
 
 <tiles:importAttribute />
 
-<link rel="stylesheet" href="css/canvasXpress.css" type="text/css"/>
-<script type="text/javascript" src="js/canvasXpress.min.js"></script>
-
 <div id="linkage-group-displayer" style="display:block">
     <canvas id="canvasID" width="${WEB_PROPERTIES['linkageGroupDiagram.width']}"></canvas>
 </div>
