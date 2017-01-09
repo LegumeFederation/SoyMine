@@ -1,19 +1,12 @@
+<!-- linkageGroupDisplayer.jsp -->
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%@ page import="java.net.URLEncoder" language="java" %>
-
-<!-- linkageGroupDisplayer.jsp -->
 <html:xhtml />
-
 <tiles:importAttribute />
 
-<link rel="stylesheet" href="css/canvasXpress.css" type="text/css"/>
-<script type="text/javascript" src="js/canvasXpress.min.js"></script>
-
-<div id="linkage-group-displayer" style="display:block">
-    <canvas id="canvasID" width="${WEB_PROPERTIES['linkageGroupDiagram.width']}"></canvas>
-</div>
+<canvas id="canvasID" width="${WEB_PROPERTIES['linkageGroupDiagram.width']}"></canvas>
 
 <script type="text/javascript">
  var cx = new CanvasXpress("canvasID",
@@ -32,25 +25,13 @@
                                "xAxisTickColor": ${WEB_PROPERTIES['linkageGroupDiagram.xAxisTickColor']},
                                "wireColor": ${WEB_PROPERTIES['linkageGroupDiagram.wireColor']},
                                "setMinX": 0,
-                               "setMaxX": ${lgLength}+5,
+                               "setMaxX": ${maxLGLength}+5,
                                "xAxisExact": false
                            },
                            {
                                'click': function(o) {
-                                   var featureId = o[0].data[0].id;
-                                   var featureType = o[0].type;
-                                   var featureColor = o[0].data[0].fill;
-                                   if (featureType=="triangle") {
-                                       var query = '<query name="" model="genomic" view="GeneticMarker.primaryIdentifier"><constraint path="GeneticMarker.primaryIdentifier" op="=" value="'+featureId+'"/></query>';
-                                       var encodedQuery = encodeURIComponent(query);
-                                       encodedQuery = encodedQuery.replace("%20", "+");
-                                       window.open("loadQuery.do?skipBuilder=true&query="+encodedQuery+"%0A++++++++++++&trail=|query&method=xml");
-                                   } else if (featureType=="box" && featureColor=="yellow") {
-                                       var query = '<query name="" model="genomic" view="QTL.primaryIdentifier"><constraint path="QTL.primaryIdentifier" op="=" value="'+featureId+'"/></query>';
-                                       var encodedQuery = encodeURIComponent(query);
-                                       encodedQuery = encodedQuery.replace("%20", "+");
-                                       window.open("loadQuery.do?skipBuilder=true&query="+encodedQuery+"%0A++++++++++++&trail=|query&method=xml");
-                                   }
+                                   var id = o[0].data[0].key;
+                                   if (id!=null) window.open("report.do?id="+id, '_self', false);
                                }
                            }
      
