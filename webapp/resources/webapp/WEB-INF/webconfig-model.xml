@@ -131,7 +131,7 @@
 
   <class className="org.intermine.model.bio.OntologyAnnotation">
     <fields>
-      <fieldconfig fieldExpr="subject.primaryIdentifier" label="Gene"/>
+      <fieldconfig fieldExpr="subject.primaryIdentifier" label="Subject"/>
       <fieldconfig fieldExpr="ontologyTerm.identifier" label="Identifier"/>
       <fieldconfig fieldExpr="ontologyTerm.name" label="Name"/>
       <fieldconfig fieldExpr="ontologyTerm.description" label="Description"/>
@@ -260,6 +260,18 @@
     </fields>
   </class>
 
+  <class className="org.intermine.model.bio.MappingPopulation">
+    <headerconfig>
+      <titles>
+        <title mainTitles="primaryIdentifier" numberOfMainTitlesToShow="1" />
+      </titles>
+    </headerconfig>
+    <fields>
+      <fieldconfig fieldExpr="primaryIdentifier" label="Name"/>
+    </fields>
+  </class>
+
+
   <class className="org.intermine.model.bio.GeneFamily">
     <headerconfig>
       <titles>
@@ -362,8 +374,6 @@
     </fields>
   </class>
 
-
-
   <!-- exporters -->
   <tableExportConfig id="sequence" className="org.intermine.bio.web.export.SequenceHttpExporter"/>
   <tableExportConfig id="gff3" className="org.intermine.bio.web.export.GFF3HttpExporter"/>
@@ -397,17 +407,35 @@
                      placement="Genomics"
                      types="SequenceFeature"/>
 
-    <reportdisplayer javaClass="org.intermine.bio.web.displayer.LinkageGroupDisplayer"
-                     jspName="model/linkageGroupDiagram.jsp"
+    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.LinkageGroupDisplayer"
+                     jspName="model/linkageGroupDisplayer.jsp"
                      replacesFields="QTLs,geneticMarkers"
                      placement="summary"
                      types="LinkageGroup"/>
 
-    <reportdisplayer javaClass="org.intermine.bio.web.displayer.GeneticMapDisplayer"
-                     jspName="model/linkageGroupDiagram.jsp"
+    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.LinkageGroupDisplayer"
+                     jspName="model/linkageGroupDisplayer.jsp"
                      replacesFields="linkageGroups,geneticMarkers"
                      placement="summary"
-                     types="GeneticMap"/>
+                     types="QTL"/>
+
+    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.MarkerDisplayer"
+                     jspName="model/markerDisplayer.jsp"
+                     replacesFields="lines"
+                     placement="summary"
+                     types="GeneticMarker"/>
+
+    <!-- <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneticMapDisplayer" -->
+    <!--                  jspName="model/linkageGroupDiagram.jsp" -->
+    <!--                  replacesFields="linkageGroups,geneticMarkers" -->
+    <!--                  placement="summary" -->
+    <!--                  types="GeneticMap"/> -->
+
+    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneBarchartDisplayer"
+                     jspName="model/geneBarchartDisplayer.jsp"
+                     replacesFields="expressionValues"
+                     placement="Expression"
+                     types="Gene"/>
 
   </reportdisplayers>
 

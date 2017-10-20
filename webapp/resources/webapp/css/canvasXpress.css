@@ -34,20 +34,33 @@ th.cxx,th.cxz,th.cxb,th.cxs,th.cxv,td.cxx,td.cxz,td.cxb,td.cxs,td.cxv {
 }
 
 td.cxx,td.cxz,td.cxb,td.cxs,td.cxv {
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	background: #fefefe;
 	padding: 1px;
 }
 
 td.cxy {
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	border: 1px solid #cccccc;
 	vertical-align: middle;
 	text-align: right;
 	background: #fefefe;
 	padding: 1px;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
 }
 
 div.cxc {
@@ -66,7 +79,7 @@ div.CanvasXpressCode {
 	background-color: rgb(245, 245, 245);
 	cursor: move;
 	color: rgb(34, 34, 34);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	margin: 2px 3px;
 	padding: 2px 3px;
 	position: absolute;
@@ -76,14 +89,14 @@ div.CanvasXpressCode {
 img.CanvasXpressCode {
 	cursor: default;
 	float: right;
-	height: 13px;
 	margin: 2px 3px 0px 0px;
 	padding-bottom: 5px;
-	width: 13px;
-	-moz-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
+  -ms-user-select: none;
 }
 
 pre.CanvasXpressCode {
@@ -137,7 +150,7 @@ div.CanvasXpressBin {
   box-sizing: content-box;
   cursor: move;
 	color: rgb(34, 34, 34);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	margin: 2px 3px;
 	padding: 2px 3px 5px 3px;
 	position: absolute;
@@ -151,14 +164,14 @@ div.CanvasXpressBin {
 img.CanvasXpressBin {
 	cursor: default;
 	float: right;
-	height: 13px;
 	margin: 2px 3px 0px 0px;
 	padding-bottom: 5px;
-	width: 13px;
-	-moz-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
+  -ms-user-select: none;
 }
 
 div.CanvasXpressBinContainer {
@@ -188,7 +201,7 @@ input.CanvasXpressBin {
   border: 1px solid rgb(51, 122, 183);
 	color: rgb(34, 34, 34);
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	padding-left: 3px;
 }
@@ -198,7 +211,7 @@ table.CanvasXpressBinTable {
 	line-height: 20px;
 	color: rgb(34, 34, 34);
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	padding-left: 3px;
 	-moz-user-select: none;
@@ -208,7 +221,7 @@ table.CanvasXpressBinTable {
 }
 
 span.CanvasXpressBin {
-	font: bold 11px arial, tahoma, sans-serif;
+	font: bold 12px arial, tahoma, sans-serif;
 	margin: 5px;
 	-moz-user-select: none;
 	-khtml-user-select: none;
@@ -243,7 +256,7 @@ div.CanvasXpressDataExplorerActive {
 	border: 1px dashed rgb(255, 0, 0);
 	border-radius: 5px;
   box-sizing: content-box;
-  font: normal 11px arial, tahoma, sans-serif;
+  font: normal 12px arial, tahoma, sans-serif;
 	margin: 3px;
 	padding: 3px;
 	white-space: normal;
@@ -253,7 +266,7 @@ div.CanvasXpressDataExplorer {
 	border: 1px solid rgb(51, 122, 183);
 	border-radius: 5px;
   box-sizing: content-box;
-  font: normal 11px arial, tahoma, sans-serif;
+  font: normal 12px arial, tahoma, sans-serif;
 	margin: 3px;
 	padding: 3px;
 	white-space: normal;
@@ -262,7 +275,7 @@ div.CanvasXpressDataExplorer {
 span.CanvasXpressDataExplorerNumeric {
 	border: 1px solid rgb(51, 122, 183);
 	border-radius: 5px;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	margin: 3px;
 	padding: 3px;
 	word-wrap: normal;
@@ -274,7 +287,7 @@ span.CanvasXpressDataExplorerString {
 	border: 1px solid rgb(51, 122, 183);
 	border-radius: 5px;
 	color: rgb(255, 0, 0);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	margin: 3px;
 	padding: 3px;
 	word-wrap: normal;
@@ -282,20 +295,32 @@ span.CanvasXpressDataExplorerString {
   text-align: start;
 }
 
+span.CanvasXpressDataExplorerUnique {
+  border: 1px solid rgb(51, 122, 183);
+  border-radius: 5px;
+  color: rgb(0, 0, 255);
+  font: normal 12px arial, tahoma, sans-serif;
+  margin: 3px;
+  padding: 3px;
+  word-wrap: normal;
+  display: inline-block;
+  text-align: start;
+}
+
 span.CanvasXpressDataExplorer {
   border: 1px solid rgb(51, 122, 183);
   border-radius: 5px;
   cursor : pointer;
-  font: bold 11px arial, tahoma, sans-serif;
+  font: bold 12px arial, tahoma, sans-serif;
   line-height: 380%;
   padding: 6px 23px;
   margin-left: -4px;
 }
 
 div.CanvasXpressDrag {
-	opacity: 0.5;
+	opacity: 0.75;
   box-sizing: content-box;
-  filter: alpha(opacity = 50);
+  filter: alpha(opacity = 75);
 	background-color: rgb(245, 245, 245);
 	position: absolute;
 }
@@ -307,10 +332,10 @@ div.CanvasXpressTooltip {
   box-sizing: content-box;
   cursor: move;
 	color: rgb(34, 34, 34);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	margin: 2px 3px;
 	overflow: hidden;
-	padding: 2px 3px;
+	padding: 5px 6px;
 	position: absolute;
 	white-space: nowrap;
 	text-align: left;
@@ -319,14 +344,15 @@ div.CanvasXpressTooltip {
 img.CanvasXpressTooltip {
 	cursor: default;
 	float: right;
-	height: 13px;
 	margin: 2px 3px 0px 0px;
-	width: 13px;
-	cursor: default;
+	padding-bottom: 2px;
+  user-select: none;
+  cursor: default;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
+  -ms-user-select: none;
 }
 
 span.CanvasXpressTooltip {
@@ -335,13 +361,15 @@ span.CanvasXpressTooltip {
 	background-color: rgb(245, 245, 245);
 	cursor: move;
 	color: rgb(34, 34, 34);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	margin: 2px 3px;
+	max-height: 800px;
 	overflow: hidden;
-	padding: 2px 3px;
+	padding: 5px 6px;
 	position: absolute;
 	white-space: nowrap;
 	text-align: left;
+	z-index: 1;
 }
 
 div.CanvasXpressCanvasResizer { /*
@@ -591,23 +619,52 @@ div.CanvasXpressCanvasResizerNextTop {
 
 div.CanvasXpressMotion {
   color: rgb(34, 34, 34);
-  font: normal 11px arial, tahoma, sans-serif;
+  font: normal 12px arial, tahoma, sans-serif;
 }
+
+
+/**********/
+/* Marker */
+/**********/
+
+div.CanvasXpressMarker {
+  box-sizing: content-box;
+  border: 1px solid rgb(51, 122, 183);
+  border-radius: 5px;
+  background-color: rgb(245, 245, 245);
+  color: rgb(34, 34, 34);
+  cursor: move;
+  font: normal 12px arial, tahoma, sans-serif;
+  height: 340px;
+  width: 286px;
+  left: 0px;
+  line-height: 100%;
+  position: absolute;
+  top: 0px;
+  padding : 2px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+/**************/
+/* Data Table */
+/**************/
 
 div.CanvasXpressDataTable {
   box-sizing: content-box;
-	border: 1px solid rgb(51, 122, 183);
-	border-radius: 5px;
-	background-color: rgb(245, 245, 245);
-	clear: both;
-	color: rgb(34, 34, 34);
-	font: normal 11px arial, tahoma, sans-serif;
-	overflow: hidden;
-	position: absolute;
-	-moz-user-select: none;
-	-khtml-user-select: none;
-	-webkit-user-select: none;
-	-o-user-select: none;
+  border: 1px solid rgb(51, 122, 183);
+  border-radius: 5px;
+  background-color: rgb(245, 245, 245);
+  clear: both;
+  color: rgb(34, 34, 34);
+  font: normal 12px arial, tahoma, sans-serif;
+  overflow: hidden;
+  position: absolute;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 div.CanvasXpressDataTableToolbar {
@@ -617,13 +674,16 @@ div.CanvasXpressDataTableToolbar {
 	background-color: rgb(245, 245, 245);
 	color: rgb(34, 34, 34);
 	cursor: move;
-	font: normal 11px arial, tahoma, sans-serif;
-	height: 18px;
+	font: normal 12px arial, tahoma, sans-serif;
+	height: 24px;
 	left: 0px;
 	line-height: 100%;
 	position: absolute;
 	top: 0px;
-	-moz-user-select: none;
+	padding : 2px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -632,13 +692,13 @@ div.CanvasXpressDataTableToolbar {
 img.CanvasXpressDataTableToolbarImage {
 	cursor: default;
 	float: right;
-	height: 13px;
-	margin: 2px 3px 0px 0px;
-	width: 13px;
-	-moz-user-select: none;
+	margin: 2px 5px 0px 0px;
+  user-select: none;
+  -moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
+  -ms-user-select: none;
 }
 
 div.CanvasXpressDataTableContainer {
@@ -647,12 +707,14 @@ div.CanvasXpressDataTableContainer {
 	border-radius: 0px 0px 5px 5px;
 	color: rgb(34, 34, 34);
 	display: block;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	left: 0px;
 	line-height: 100%;
 	position: absolute;
-	top: 20px;
-	-moz-user-select: none;
+	top: 24px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -663,10 +725,12 @@ div.CanvasXpressDataTableVertical {
 	background-color: rgb(245, 245, 245);
 	overflow: auto;
 	position: absolute;
-	right: 2px;
-	top: 2px;
-	width: 18px;
-	-moz-user-select: none;
+	right: 4px;
+	top : 0px;
+	width: 24px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -675,12 +739,14 @@ div.CanvasXpressDataTableVertical {
 div.CanvasXpressDataTableHorizontal {
   box-sizing: content-box;
 	background-color: rgb(245, 245, 245);
-	bottom: 2px;
-	height: 18px;
-	left: 2px;
+	bottom: 8px;
+	height: 24px;
+	left: 24px;
 	overflow: auto;
 	position: absolute;
-	-moz-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -693,12 +759,14 @@ div.CanvasXpressDataTableResizer {
 		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAR0lEQVR42pXPQQoAIAhEUb25nrwyKIpMndkJz8VnAtbGGMGqSqWHhW3pw4lFhBnBYYOHvw0/7DZE+GnI8NVQwbuhimcDgu3uM5KV++8QfCcAAAAASUVORK5CYII=);
 	background-repeat: no-repeat;
 	cursor: se-resize;
-	bottom: 1px;
+	bottom: 4px;
 	height: 15px;
 	position: absolute;
-	right: 1px;
+	right: 0px;
 	width: 15px;
-	-moz-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -708,13 +776,15 @@ table.CanvasXpressDataTable {
 	border: 0px;
 	border-spacing: 1px;
 	color: rgb(34, 34, 34);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	left: 1px;
 	line-height: 20px;
 	position: absolute;
 	table-layout: fixed;
 	top: 1px;
-	-moz-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -723,11 +793,13 @@ table.CanvasXpressDataTable {
 div.CanvasXpressDataTableMask {
   box-sizing: content-box;
 	border: 0px;
-	left: 1px;
+	left: 24px;
 	position: absolute;
-	top: 1px;
+	top: 0px;
 	overflow: hidden;
-	-moz-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+ 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -737,15 +809,16 @@ th.CanvasXpressTableCellHead {
 	background-image:
 		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAYAAADtlXTHAAAAFklEQVR42mP88OHDf0aSiGfPntGaAAAL8XAJa+SuYgAAAABJRU5ErkJggg==);
 	background-repeat: repeat-x;
-	border-left: 1px solid #ffffff;
-	border-top: 1px solid #ffffff;
+  border: 1px solid #ccc;
 	color: rgb(34, 34, 34);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 20px;
-	padding: 0px;
+	padding: 2px;
 	text-align: left;
 	vertical-align: middle;
-	-moz-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -755,15 +828,16 @@ th.CanvasXpressTableCellHeadActive {
 	background-image:
 		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAYAAADtlXTHAAAAFklEQVR42mN89fnvf0aSiBvPf9GaAABVL3D5nF6uqAAAAABJRU5ErkJggg==);
 	background-repeat: repeat-x;
-	border-left: 1px solid #ffffff;
-	border-top: 1px solid #ffffff;
+  border: 1px solid #ccc;
 	color: rgb(34, 34, 34);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 20px;
-	padding: 0px;
+	padding: 2px;
 	text-align: left;
 	vertical-align: middle;
-	-moz-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+ 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -782,7 +856,9 @@ a.CanvasXpressTableCellHead {
 	top: 0px;
 	white-space: normal;
 	width: 14px;
-	-moz-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+ 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -801,7 +877,9 @@ a.CanvasXpressTableCellHeadActive {
 	top: 0px;
 	white-space: normal;
 	width: 14px;
-	-moz-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+ 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -809,13 +887,16 @@ a.CanvasXpressTableCellHeadActive {
 
 td.CanvasXpressTableCell {
 	background-color: #ffffff;
-	border: 0px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 	color: rgb(34, 34, 34);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 20px;
-	padding: 0px;
+	padding: 2px;
 	vertical-align: middle;
-	-moz-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+ 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -823,13 +904,16 @@ td.CanvasXpressTableCell {
 
 td.CanvasXpressTableCellActive {
 	background-color: #dfe8f9;
-	border: 0px;
-	color: rgb(34, 34, 34);
-	font: normal 11px arial, tahoma, sans-serif;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  color: rgb(34, 34, 34);
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 20px;
-	padding: 0px;
+	padding: 2px;
 	vertical-align: middle;
-	-moz-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+ 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -837,7 +921,7 @@ td.CanvasXpressTableCellActive {
 
 div.CanvasXpressTableCell {
   box-sizing: content-box;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 20px;
 	margin: 2px 2px 1px 5px;
 	overflow: hidden;
@@ -851,7 +935,7 @@ div.CanvasXpressTableCellSortAsc {
 	background:
 		url(data:image/gif;base64,R0lGODlhDQAFAIcAAGGQzUD/QOPu+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAMAAAEALAAAAAANAAUAAAgbAAMIDABgoEGDABIeRJhQ4cKGEA8KmEiRosGAADs=)
 		no-repeat right 7px;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 20px;
 	margin: 2px 2px 1px 5px;
 	overflow: hidden;
@@ -863,12 +947,16 @@ div.CanvasXpressTableCellSortDesc {
 	background:
 		url(data:image/gif;base64,R0lGODlhDQAFAIcAAGGQzUD/QOPu+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAMAAAEALAAAAAANAAUAAAgeAAUAGEgQgIAACBEKLHgwYcKFBh1KFNhQosOKEgMCADs=)
 		no-repeat right 7px;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 20px;
 	margin: 2px 2px 1px 5px;
 	overflow: hidden;
 	white-space: nowrap;
 }
+
+/****************/
+/* Configurator */
+/****************/
 
 div.CanvasXpressConfigurator {
   box-sizing: content-box;
@@ -878,9 +966,11 @@ div.CanvasXpressConfigurator {
 	box-shadow: rgba(154, 154, 154, 0.2) 3px 3px;
 	color: rgb(34, 34, 34);
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
-	-moz-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+ 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
@@ -888,7 +978,7 @@ div.CanvasXpressConfigurator {
 
 span.CanvasXpressConfigurator {
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	-moz-user-select: none;
 	-khtml-user-select: none;
@@ -903,16 +993,14 @@ textarea.CanvasXpressConfigurator {
 	box-shadow: rgba(154, 154, 154, 0.2) 3px 3px;
 	color: rgb(34, 34, 34);
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 }
 
 img.CanvasXpressConfigurator {
 	cursor: default;
 	float: right;
-	height: 13px;
 	margin-left: 2px;
-	width: 13px;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
@@ -924,7 +1012,7 @@ select.CanvasXpressConfigurator {
 	border: 1px solid rgb(51, 122, 183);
 	color: rgb(34, 34, 34);
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	padding-left: 3px;
 }
@@ -934,7 +1022,7 @@ input.CanvasXpressConfigurator {
 	border: 1px solid rgb(51, 122, 183);
 	color: rgb(34, 34, 34);
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	padding-left: 3px;
 }
@@ -942,7 +1030,7 @@ input.CanvasXpressConfigurator {
 div.CanvasXpressConfiguratorOptions {
   box-sizing: content-box;
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	height: 100px;
 	line-height: 16px;
 	margin-top: 8px;
@@ -957,19 +1045,19 @@ div.CanvasXpressConfiguratorFilter {
 	border: 1px solid rgb(51, 122, 183);
 	box-shadow: rgba(154, 154, 154, 0.2) 3px 3px;
 	color: rgb(34, 34, 34);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 }
 
 select.CanvasXpressConfiguratorFilter {
 	border: 1px solid rgb(51, 122, 183);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 }
 
 input.CanvasXpressConfiguratorFilter {
 	border: 1px solid rgb(51, 122, 183);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 }
 
@@ -980,13 +1068,13 @@ div.CanvasXpressConfiguratorExample {
 	border: 1px solid rgb(51, 122, 183);
 	box-shadow: rgba(154, 154, 154, 0.2) 3px 3px;
 	color: rgb(34, 34, 34);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 }
 
 span.CanvasXpressConfiguratorExample {
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	-moz-user-select: none;
 	-khtml-user-select: none;
@@ -997,7 +1085,7 @@ span.CanvasXpressConfiguratorExample {
 div.CanvasXpressConfiguratorColor {
   box-sizing: content-box;
 	border: 1px solid rgb(51, 122, 183);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 }
 
@@ -1008,7 +1096,7 @@ div.CanvasXpressConfiguratorColorMain {
 	background-repeat: no-repeat;  box-sizing: content-box;
 
 	border: none;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	float: left;
 	cursor: crosshair;
@@ -1020,7 +1108,7 @@ div.CanvasXpressConfiguratorColorExtra {
 		url(data:image/gif;base64,R0lGODlhDwAPAKEBAAAAAP///////////yH5BAEKAAIALAAAAAAPAA8AAAIklB8Qx53b4otSUWcvyiz4/4AeQJbmKY4p1HHapBlwPL/uVRsFADs=);
 	background-repeat: no-repeat;
 	border: none;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	cursor: crosshair;
 	overflow: hidden;
@@ -1105,10 +1193,14 @@ div.CanvasXpressWrapper {
 	line-height: 100%;
 }
 
+/***************/
+/* Data Filter */
+/***************/
+
 div.CanvasXpressDataFilter {
   box-sizing: content-box;
 	color: rgb(34, 34, 34);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 100%;
 	margin: 0px;
 	padding: 0px;
@@ -1128,8 +1220,8 @@ div.CanvasXpressDataFilterToolbar {
 	border-radius: 5px;
 	color: rgb(34, 34, 34);
 	cursor: move;
-	font: normal 11px arial, tahoma, sans-serif;
-	height: 18px;
+	font: normal 12px arial, tahoma, sans-serif;
+	height: 24px;
 	left: 0px;
 	line-height: 100%;
 	margin: 0px;
@@ -1139,7 +1231,7 @@ div.CanvasXpressDataFilterToolbar {
 }
 
 span.CanvasXpressDataFilterToolbarText {
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	left: 8px;
 	line-height: 100%;
 	position: relative;
@@ -1148,8 +1240,6 @@ span.CanvasXpressDataFilterToolbarText {
 
 img.CanvasXpressDataFilterToolbarImage {
 	cursor: default;
-	width: 13px;
-	height: 13px;
 	margin-top: 2px;
 	margin-right: 2px;
 	float: right;
@@ -1160,7 +1250,7 @@ span.CanvasXpressDataFilterText {
 		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAASElEQVR42mNkoBAwUt2A/0AAlgACsg0A6QWZQ4whOA2AsgkagtcAYgwhaAAhQ4gyAJ8htHcBRWFAUSxQlA7AEuSmRFLBwBsAAMDpRxF7e4BAAAAAAElFTkSuQmCC);
 	background-repeat: no-repeat;
 	background-position: -3px;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	left: 8px;
 	line-height: 100%;
 	position: relative;
@@ -1172,7 +1262,7 @@ span.CanvasXpressDataFilterTextActive {
 		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAASUlEQVR42mNkoBAwjhqAMOA/EBCtCQiwGoAkjhOA7MFqADGGoGvGGga4DMGmGWcgohuCSzNOA5ANwacZrwFIhuBVM4gS0oAZAAD1oisRsByngAAAAABJRU5ErkJggg==);
 	background-repeat: no-repeat;
 	background-position: -3px;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	left: 8px;
 	line-height: 100%;
 	position: relative;
@@ -1186,7 +1276,7 @@ div.CanvasXpressDataFilterContainer {
 	margin: 0px;
 	padding: 0px;
 	position: absolute;
-	top: 24px;
+	top: 30px;
 }
 
 input[type=checkbox].CanvasXpressCheckbox {
@@ -1229,7 +1319,7 @@ input[type=checkbox].CanvasXpressCheckbox+label.CanvasXpressCheckboxLabel {
 	line-height: 16px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	vertical-align: middle;
 	margin: 2px;
 	cursor: pointer;
@@ -1242,7 +1332,7 @@ input[type=checkbox].CanvasXpressDataFilterContainerItem+label.CanvasXpressCheck
 	line-height: 16px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	vertical-align: middle;
 	margin: 2px;
 	cursor: pointer;
@@ -1255,7 +1345,7 @@ input[type=checkbox].CanvasXpressDataFilterContainerItemSelected+label.CanvasXpr
 	line-height: 16px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	vertical-align: middle;
 	margin: 2px;
 	cursor: pointer;
@@ -1299,6 +1389,8 @@ div.CanvasXpressDataFilterContainerItem {
 	color: #4181ba;
 	height: 15px;
 	padding: 1px 0px 0px 1px;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 div.CanvasXpressDataFilterContainerItemSelected {
@@ -1307,6 +1399,8 @@ div.CanvasXpressDataFilterContainerItemSelected {
 	color: rgb(255, 255, 255);
 	height: 15px;
 	padding: 1px 0px 0px 1px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 div.CanvasXpressDataFilterContainerHoverable {
@@ -1371,7 +1465,7 @@ input.CanvasXpressDataFilterContainerMinValue {
 	border: 1px solid rgb(245, 245, 245);
 	color: rgb(51, 122, 183);
 	float: left;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	margin-bottom: 2px;
 	margin-left: 1px;
 	line-height: 100%;
@@ -1382,7 +1476,7 @@ input.CanvasXpressDataFilterContainerMaxValue {
 	border: 1px solid rgb(245, 245, 245);
 	color: rgb(51, 122, 183);
 	float: right;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	margin-bottom: 2px;
 	margin-right: 1px;
 	line-height: 100%;
@@ -1416,7 +1510,7 @@ div.CanvasXpressDataFilterContainerScaleLogLinear {
 
 select.CanvasXpressDataFilterContainerString {
 	background-color: rgb(255, 255, 255);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	margin-left: 3px;
 	margin-bottom: 3px;
 }
@@ -1431,7 +1525,7 @@ div.CanvasXpressDataFilterHead {
 	color: rgb(34, 34, 34);
 	cursor: pointer;
 	float: left;
-	height: 18px;
+	height: 22px;
 	margin-top: 2px;
 	overflow: hidden;
 	padding: 2px;
@@ -1454,7 +1548,7 @@ div.CanvasXpressDataFilterHeadActive {
 	color: rgb(34, 34, 34);
 	cursor: pointer;
 	float: left;
-	height: 18px;
+	height: 22px;
 	margin-top: 2px;
 	overflow: hidden;
 	padding: 2px;
@@ -1473,9 +1567,14 @@ div.CanvasXpressDataFilterContent {
 	border-radius: 0px 0px 5px 5px;
 	border-top: 0px;
 	color: rgb(51, 122, 183);
-	overflow: auto;
+  font: normal 12px arial, tahoma, sans-serif;
+  overflow: auto;
 	padding: 2px;
 }
+
+/********/
+/* Menu */
+/********/
 
 div.CanvasXpressLink {
   box-sizing: content-box;
@@ -1488,7 +1587,7 @@ div.CanvasXpressLink {
 	box-shadow: rgba(154, 154, 154, 0.2) 3px 3px;
 	color: rgb(34, 34, 34);
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 100%;
 	margin: 0px;
 	padding: 0px;
@@ -1540,7 +1639,7 @@ section.CanvasXpressTabMenuConfigurator > h1.CanvasXpressTabMenuConfigurator {
 	margin: 0;
 	padding: 0.5px;
 	overflow: hidden;
-  font: normal 11px arial, tahoma, sans-serif;
+  font: normal 12px arial, tahoma, sans-serif;
   line-height: 100%;
 }
 
@@ -1579,7 +1678,7 @@ div.CanvasXpressMenu {
 	box-shadow: rgba(154, 154, 154, 0.2) 3px 3px;
 	color: rgb(34, 34, 34);
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 100%;
 	margin: 0px;
 	padding: 0px;
@@ -1600,7 +1699,7 @@ ul.CanvasXpressList {
 li.CanvasXpressListItemSep {
 	cursor: default;
 	display: block;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	font-size: 1px;
 	height: 100%;
 	line-height: 1px;
@@ -1614,7 +1713,7 @@ li.CanvasXpressListItemSep {
 li.CanvasXpressListItem {
 	cursor: default;
 	display: block;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	height: 100%;
 	line-height: 100%;
 	list-style: none;
@@ -1627,7 +1726,7 @@ li.CanvasXpressListItem {
 input.CanvasXpressListItem {
 	cursor: default;
 	display: block;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 100%;
 	list-style: none;
 	margin: 0px;
@@ -1638,7 +1737,7 @@ input.CanvasXpressListItem {
 div.CanvasXpressListItem {
   box-sizing: content-box;
 	border: 1px solid rgb(51, 122, 183);
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 }
 
@@ -1653,7 +1752,7 @@ li.CanvasXpressListItemActive {
 	border-width: 1px 0px;
 	cursor: default;
 	display: block;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	height: 100%;
 	line-height: 100%;
 	list-style: none;
@@ -1689,8 +1788,8 @@ li.CanvasXpressListItemScrollTopActive {
 	border-color: rgb(170, 204, 246);
 	border-style: solid;
 	cursor: pointer;
-	height: 7px;
-	line-height: 7px;
+	height: 9px;
+	line-height: 9px;
 	width: 100%;
 	-moz-user-select: none;
 	-khtml-user-select: none;
@@ -1724,8 +1823,8 @@ li.CanvasXpressListItemScrollBottomActive {
 	border-color: rgb(170, 204, 246);
 	border-style: solid;
 	cursor: pointer;
-	height: 7px;
-	line-height: 7px;
+	height: 9px;
+	line-height: 9px;
 	width: 100%;
 	-moz-user-select: none;
 	-khtml-user-select: none;
@@ -1733,11 +1832,31 @@ li.CanvasXpressListItemScrollBottomActive {
 	-o-user-select: none;
 }
 
+li.CanvasXpressListItemScrollSearch {
+  border-color: rgb(170, 204, 246);
+  border-style: solid;
+  border-width: 1px;
+	width: 100%;
+}
+
+input.CanvasXpressListItemScrollSearch {
+  color: rgb(34, 34, 34);
+	cursor : default;
+  font: normal 12px arial, tahoma, sans-serif;
+  line-height: 16px;
+  list-style: none;
+  margin : 3px;
+  outline-style: none;
+  outline-width: 0px;
+  padding-left: 5px;
+  width : 97%;
+}
+
 a.CanvasXpressListItemA {
 	color: rgb(34, 34, 34);
 	cursor: pointer;
 	display: block;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	list-style: none;
 	outline-style: none;
@@ -1755,7 +1874,7 @@ a.CanvasXpressListItemAArrow {
 	color: rgb(34, 34, 34);
 	cursor: pointer;
 	display: block;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	list-style: none;
 	outline-style: none;
@@ -1773,7 +1892,7 @@ a.CanvasXpressListItemAActive {
 	color: rgb(34, 34, 34);
 	cursor: pointer;
 	display: block;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	list-style: none;
 	outline-style: none;
@@ -1795,7 +1914,7 @@ a.CanvasXpressListItemAArrowActive {
 	color: rgb(34, 34, 34);
 	cursor: pointer;
 	display: block;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	list-style: none;
 	margin: 0px -1px;
@@ -1812,7 +1931,7 @@ img.CanvasXpressListIcon {
 	border: 0px none;
 	color: rgb(34, 34, 34);
 	cursor: pointer;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	height: 16px;
 	line-height: 16px;
 	list-style: none;
@@ -1829,7 +1948,7 @@ img.CanvasXpressListIcon {
 span.CanvasXpressListItemText {
 	color: rgb(34, 34, 34);
 	cursor: pointer;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	list-style: none;
 	margin-right: 50px;
@@ -1839,7 +1958,7 @@ span.CanvasXpressListItemText {
 input.CanvasXpressListItemText {
 	color: rgb(34, 34, 34);
 	cursor: pointer;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	list-style: none;
 	white-space: nowrap;
@@ -1862,7 +1981,7 @@ span.CanvasXpressListItemTextSep {
 	border-bottom-color: rgb(255, 255, 255);
 	cursor: default;
 	display: block;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	font-size: 1px;
 	line-height: 1px;
 	list-style: none;
@@ -1876,7 +1995,7 @@ table.CanvasXpressListItemTable {
 	line-height: 20px;
 	color: rgb(34, 34, 34);
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	padding-left: 3px;
 	-moz-user-select: none;
@@ -1888,13 +2007,13 @@ table.CanvasXpressListItemTable {
 img.CanvasXpressToolbarHelp {
 	cursor: default;
 	float: right;
-	height: 13px;
 	margin-left: 2px;
-	width: 13px;
-	-moz-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
+  -ms-user-select: none;
 }
 
 div.CanvasXpressToolbarHelp {
@@ -1905,17 +2024,19 @@ div.CanvasXpressToolbarHelp {
 	box-shadow: rgba(154, 154, 154, 0.2) 3px 3px;
 	color: rgb(34, 34, 34);
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
 }
 
 p.CanvasXpressToolbarHelp {
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	margin: 0px;
 	padding: 5px 5px 5px 20px;
@@ -1925,6 +2046,12 @@ img.CanvasXpressToolbarImage {
 	margin-top: 2px;
 	margin-right: 4px;
 	float: right;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
 }
 
 div.CanvasXpressForm {
@@ -1934,7 +2061,7 @@ div.CanvasXpressForm {
 	background-color: rgb(245, 245, 245);
 	color: rgb(34, 34, 34);
 	cursor: move;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	margin: 8px;
 	padding: 8px;
 	position: absolute;
@@ -1959,6 +2086,8 @@ input.CanvasXpressFormButton {
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
 }
 
 input.CanvasXpressFormButtonActive {
@@ -1980,6 +2109,8 @@ input.CanvasXpressFormButtonActive {
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
 }
 
 input.CanvasXpressFormText {
@@ -1987,7 +2118,7 @@ input.CanvasXpressFormText {
 	border: 1px solid rgb(51, 122, 183);
 	color: rgb(34, 34, 34);
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	padding-left: 3px;
 }
@@ -1997,7 +2128,7 @@ form.CanvasXpressFormForm {
 	border: 1px solid rgb(51, 122, 183);
 	color: rgb(34, 34, 34);
 	cursor: default;
-	font: normal 11px arial, tahoma, sans-serif;
+	font: normal 12px arial, tahoma, sans-serif;
 	line-height: 16px;
 	margin: 8px;
 	overflow: auto;
@@ -2009,10 +2140,13 @@ canvas.CanvasXpress {
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
 }
 
 canvas.CanvasXpress:hover {
-  border: 1px solid #23527c;
+  /*border: 1px solid #23527c;*/
+  border: 1px solid rgba(35, 82, 124, 0.2);
   border-radius: 6px;
   margin: -1px;
 }

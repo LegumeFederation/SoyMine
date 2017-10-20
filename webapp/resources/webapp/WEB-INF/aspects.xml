@@ -5,8 +5,7 @@
     <icon-image>model/images/genomics.gif</icon-image>
     <large-image>model/images/genomics.gif</large-image>
     <intro-text>
-      The gene structure and other genome annotation in LegFed mines are loaded from
-	the chado database which powers the LIS site.
+      The gene structure and other genome annotation in LegFed mines are loaded from the chado database which powers the LIS site.
     </intro-text>
     <tile-name>model/genomics.jsp</tile-name>
     <aspect-source name="LIS" url="http://legumeinfo.org/"/>
@@ -32,5 +31,16 @@
 	</intro-text>
 	<aspect-source name="Plant Reactome" url="http://plantreactome.gramene.org/"/>
   </aspect>
+
+  <aspect name="Expression">
+    <subtitle>Gene expression</subtitle>
+    <icon-image>model/images/genomics.gif</icon-image>
+    <large-image>model/images/genomics.gif</large-image>
+    <intro-text>
+      Gene expression is loaded from the RNA-seq Atlas of Glycine max via SoyBase.
+    </intro-text>
+    <aspect-source name="SoyBase" url="http://soybase.org/"/>
+  </aspect>
+
 
 </aspects>

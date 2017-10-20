@@ -1,4 +1,19 @@
 #!/bin/sh
 echo "********** soymine/postprocess **********"
 ant clean
-ant
+
+# the whole kaboodle kit
+#ant -v
+
+# or the LG/QTL stuff
+#ant -v -Daction=populate-linkagegroup-lengths
+#ant -v -Daction=populate-qtl-linkagegroups
+#ant -v -Daction=populate-gene-spanning-qtls
+
+# or summary post-processing after any individual processing
+#ant -v -Daction=create-location-overlap-index
+#ant -v -Daction=create-overlap-view
+#ant -v -Daction=create-attribute-indexes
+ant -v -Daction=summarise-objectstore
+#ant -v -Daction=create-autocomplete-index
+#ant -v -Daction=create-search-index
