@@ -7,16 +7,16 @@ ant clean
 #ant -v -Dsource=so,to,po,go
 
 # chado loaders
-pg_restore -d soymine /home/analysis/shokin/dumps/soymine.chado.dat
+#pg_restore -d soymine /home/analysis/shokin/dumps/soymine.chado.dat
 #ant -v -Dsource=chado-genomics,chado-genetics,chado-featureprop,chado-go,chado-genefamilies,chado-homology,chado-reactome-file
 
 # update identifiers and organisms
 #pg_restore -d soymine /home/analysis/shokin/dumps/soymine.updates.dat
-psql soymine -f ../dbmodel/build/model/add-update-triggers.sql
-psql soymine -f ../sql/update-organisms.sql
-psql soymine -f ../sql/update-identifiers.sql
-psql soymine -f ../dbmodel/build/model/remove-update-triggers.sql
-pg_dump -Fc soymine > /home/analysis/shokin/dumps/soymine.updates.dat
+#psql soymine -f ../dbmodel/build/model/add-update-triggers.sql
+#psql soymine -f ../sql/update-organisms.sql
+#psql soymine -f ../sql/update-identifiers.sql
+#psql soymine -f ../dbmodel/build/model/remove-update-triggers.sql
+#pg_dump -Fc soymine > /home/analysis/shokin/dumps/soymine.updates.dat
 
 # non-chado: genomics
 #pg_restore -d soymine /home/analysis/shokin/dumps/soymine.genomics.dat
@@ -25,15 +25,16 @@ pg_dump -Fc soymine > /home/analysis/shokin/dumps/soymine.updates.dat
 
 # non-chado: genetics
 #pg_restore -d soymine /home/analysis/shokin/dumps/soymine.genetics.dat
-ant -v -Dsource=qtl-file,qtl-ontology-file,linkagegroup-file,marker-linkagegroup-file,marker-qtl-file
-pg_dump -Fc soymine > /home/analysis/shokin/dumps/soymine.genetics.dat
+#ant -v -Dsource=qtl-file,qtl-ontology-file,linkagegroup-file,marker-linkagegroup-file,marker-qtl-file
+ant -v -Dsource=marker-qtl-file
+#pg_dump -Fc soymine > /home/analysis/shokin/dumps/soymine.genetics.dat
 
 # non-chado: expression
 #pg_restore -d soymine /home/analysis/shokin/dumps/soymine.expression.dat
-ant -v -Dsource=soybean-expression
-pg_dump -Fc soymine > /home/analysis/shokin/dumps/soymine.expression.dat
+#ant -v -Dsource=soybean-expression
+#pg_dump -Fc soymine > /home/analysis/shokin/dumps/soymine.expression.dat
 
 # update organisms again just in case
-psql soymine -f ../dbmodel/build/model/add-update-triggers.sql
-psql soymine -f ../sql/update-organisms.sql
-psql soymine -f ../dbmodel/build/model/remove-update-triggers.sql
+#psql soymine -f ../dbmodel/build/model/add-update-triggers.sql
+#psql soymine -f ../sql/update-organisms.sql
+#psql soymine -f ../dbmodel/build/model/remove-update-triggers.sql

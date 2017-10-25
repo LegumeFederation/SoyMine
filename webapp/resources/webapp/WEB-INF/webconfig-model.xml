@@ -176,6 +176,7 @@
     </headerconfig>
     <fields>
       <fieldconfig fieldExpr="name"/>
+      <fieldconfig fieldExpr="variety"/>
       <fieldconfig fieldExpr="taxonId" />
     </fields>
   </class>
@@ -419,11 +420,11 @@
                      placement="summary"
                      types="QTL"/>
 
-    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.MarkerDisplayer"
-                     jspName="model/markerDisplayer.jsp"
-                     replacesFields="lines"
-                     placement="summary"
-                     types="GeneticMarker"/>
+    <!-- <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.MarkerDisplayer" -->
+    <!--                  jspName="model/markerDisplayer.jsp" -->
+    <!--                  replacesFields="lines" -->
+    <!--                  placement="summary" -->
+    <!--                  types="GeneticMarker"/> -->
 
     <!-- <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneticMapDisplayer" -->
     <!--                  jspName="model/linkageGroupDiagram.jsp" -->
