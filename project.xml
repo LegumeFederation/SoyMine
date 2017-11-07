@@ -150,7 +150,8 @@
     <post-process name="create-protein-gene-references" dump="true"/>
     <post-process name="create-protein-domain-references" dump="true"/>
     <post-process name="populate-interpro-data" dump="true"/>
-    
+    <post-process name="create-ontology-parent-annotations" dump="true"/>
+ 
     <!-- add features -->
     <post-process name="create-intron-features"/>
     <post-process name="create-intergenic-region-features"/>
