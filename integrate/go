@@ -8,7 +8,7 @@ ant clean
 
 # chado loaders
 #pg_restore -d soymine /home/analysis/shokin/dumps/soymine.chado.dat
-#ant -v -Dsource=chado-genomics,chado-genetics,chado-featureprop,chado-go,chado-genefamilies,chado-homology,chado-reactome-file
+#ant -v -Dsource=chado-genomics,chado-genetics,chado-featureprop,chado-go-annotation,chado-genefamilies,chado-homology,chado-reactome-file
 
 # update identifiers and organisms
 #pg_restore -d soymine /home/analysis/shokin/dumps/soymine.updates.dat

@@ -28,7 +28,7 @@
     </source>
 
     <!-- chado GO annotation -->
-    <source name="chado-go" type="legfed-chado-db" dump="true">
+    <source name="chado-go-annotation" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="chado"/>
       <property name="organisms" value="3847_Williams82"/>
       <property name="dataSetTitle" value="LIS Glycine Max (3847_Williams82) data"/>
