@@ -1,3 +1,0 @@
-#!/bin/sh
-echo "********** soymine/webapp **********"
-ant clean default remove-webapp release-webapp
