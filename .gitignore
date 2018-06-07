@@ -1,9 +1,3 @@
 *~
-dist
 build
-*.log
-logfile
-.nfs*
-sql
-webapp/resources/webapp/model
 webapp/src
