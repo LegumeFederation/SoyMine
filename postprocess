@@ -22,15 +22,16 @@
 #./gradlew postprocess -Pprocess=legfed-populate-publications
     
 ## core references and collections
-./gradlew postprocess -Pprocess=populate-child-features
-./gradlew postprocess -Pprocess=create-references 
-./gradlew postprocess -Pprocess=create-chromosome-locations-and-lengths
-./gradlew postprocess -Pprocess=transfer-sequences
+#./gradlew postprocess -Pprocess=populate-child-features
+#./gradlew postprocess -Pprocess=create-references 
+#./gradlew postprocess -Pprocess=create-chromosome-locations-and-lengths
+#./gradlew postprocess -Pprocess=transfer-sequences
 
 ## views and indexes, after all data is set
-./gradlew postprocess -Pprocess=create-location-overlap-index
-./gradlew postprocess -Pprocess=create-overlap-view 
-./gradlew postprocess -Pprocess=create-attribute-indexes
+#./gradlew postprocess -Pprocess=create-location-overlap-index
+#./gradlew postprocess -Pprocess=create-overlap-view 
+#./gradlew postprocess -Pprocess=create-attribute-indexes
+
 ./gradlew postprocess -Pprocess=summarise-objectstore
 ./gradlew postprocess -Pprocess=create-autocomplete-index
 ./gradlew postprocess -Pprocess=create-search-index

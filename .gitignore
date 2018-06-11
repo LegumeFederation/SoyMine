@@ -1,3 +1,4 @@
 *~
 build
-webapp/src
+webapp/src/main/java
+webapp/src/main/webapp/model
