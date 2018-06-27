@@ -65,7 +65,6 @@
     </fields>
   </class>
 
-  <!-- have to have a Gene entry so the gene enrichment widget works; yanked supercontig so the list analysis page shows chromosomal genes at least -->
   <class className="org.intermine.model.bio.Gene">
     <fields>
       <fieldconfig fieldExpr="organism.name" label="Organism" />
@@ -410,13 +409,13 @@
 
     <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.LinkageGroupDisplayer"
                      jspName="model/linkageGroupDisplayer.jsp"
-                     replacesFields="QTLs,geneticMarkers"
+                     replacesFields="QTLs,markers"
                      placement="summary"
                      types="LinkageGroup"/>
 
     <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.LinkageGroupDisplayer"
                      jspName="model/linkageGroupDisplayer.jsp"
-                     replacesFields="linkageGroups,geneticMarkers"
+                     replacesFields="linkageGroups,markers"
                      placement="summary"
                      types="QTL"/>
 
@@ -428,7 +427,7 @@
 
     <!-- <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneticMapDisplayer" -->
     <!--                  jspName="model/linkageGroupDiagram.jsp" -->
-    <!--                  replacesFields="linkageGroups,geneticMarkers" -->
+    <!--                  replacesFields="linkageGroups,markers" -->
     <!--                  placement="summary" -->
     <!--                  types="GeneticMap"/> -->
 
@@ -461,6 +460,7 @@
                            chromosomeLocation.start, chromosomeLocation.end, chromosomeLocation.strand"/>
 
     <!-- constraints skip biological_process, molecular_function and cellular_component GO terms -->
+    <!--
     <enrichmentwidgetdisplayer id="go_enrichment_for_gene"
                                title="Gene Ontology Enrichment"
                                description="GO terms enriched for items in this list."
@@ -472,16 +472,17 @@
                                startClassDisplay="primaryIdentifier"
                                enrich="goAnnotation.ontologyTerm.parents.name"
                                enrichIdentifier="goAnnotation.ontologyTerm.parents.identifier"
-                               constraints="goAnnotation.ontologyTerm.parents.namespace=[Ontology],organism.name=[list],
-                                            primaryIdentifier != null, goAnnotation.qualifier = null,
-                                            goAnnotation.ontologyTerm.parents.identifier != go:0008150,
-                                            goAnnotation.ontologyTerm.parents.identifier != go:0003674,
-                                            goAnnotation.ontologyTerm.parents.identifier != go:0005575"
+                               constraints="organism.name=[list],
+                                            primaryIdentifier!=null,
+					    goAnnotation.qualifier=null,
+                                            goAnnotation.ontologyTerm.parents.identifier!=go:0008150,
+                                            goAnnotation.ontologyTerm.parents.identifier!=go:0003674,
+                                            goAnnotation.ontologyTerm.parents.identifier!=go:0005575"
                                views="secondaryIdentifier,symbol,primaryIdentifier,organism.name,
                                       goAnnotation.ontologyTerm.identifier, goAnnotation.ontologyTerm.name,
                                       goAnnotation.ontologyTerm.parents.identifier,goAnnotation.ontologyTerm.parents.name"
                                externalLink="http://amigo.geneontology.org/cgi-bin/amigo/term_details?term=" />
-
+    -->
     
   </widgets>
   

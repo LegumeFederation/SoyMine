@@ -69,7 +69,7 @@
     <!-- chado + reactome file -->
     <source name="lis-reactome-file" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="lis-chado"/>
-      <property name="reactome.filename" value="/home/shokin/legfed-intermine-data/plant-reactome/reactome.txt"/>
+      <property name="reactome.filename" value="/home/shokin/legfed-intermine-data/plant-reactome/gene_ids_by_pathway_and_species.tab"/>
       <property name="organisms" value="3847_Williams82"/>
       <property name="dataSetTitle" value="Plant Reactome data"/>
       <property name="dataSourceName" value="LIS chado database"/>

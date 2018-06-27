@@ -39,9 +39,14 @@ dependencies {
   // https://mvnrepository.com/artifact/org.apache.commons/commons-math3
   compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
 
+  // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+  compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.5'
+
   // https://mvnrepository.com/artifact/org.biojava/biojava-alignment
   compile group: 'org.biojava', name: 'biojava-alignment', version: '5.0.2'
 
+  // https://mvnrepository.com/artifact/org.jglobus/gram
+  compile group: 'org.jglobus', name: 'gram', version: '2.1.0'
 }
 
 def explodedWebAppDir = "$buildDir/explodedWebApp"
