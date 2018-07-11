@@ -89,7 +89,7 @@
 
     <!-- QTL-ontology relations from tab-delimited file -->
     <source name="soybase-qtl-ontology" type="legfed-qtl-ontology-file" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybase-qtl-trait-ontology"/>
+      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybase-qtl-ontology"/>
     </source>
 
     <!-- genetic marker genomic locations and types from tab-delimited file -->

@@ -69,6 +69,7 @@
     <fields>
       <fieldconfig fieldExpr="organism.name" label="Organism" />
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier" />
+      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier" />
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
     </fields>
     <bagdisplayers>
@@ -197,6 +198,7 @@
       <fieldconfig fieldExpr="journal"/>
       <fieldconfig fieldExpr="volume"/>
       <fieldconfig fieldExpr="pages"/>
+      <fieldconfig fieldExpr="doi"/>
       <fieldconfig fieldExpr="pubMedId"/>
     </fields>
   </class>
@@ -326,7 +328,9 @@
       </titles>
     </headerconfig>
     <fields>
-      <fieldconfig fieldExpr="name" label="Name"/>
+      <fieldconfig fieldExpr="identifier"/>
+      <fieldconfig fieldExpr="name"/>
+      <fieldconfig fieldExpr="species"/>
     </fields>
   </class>
 
@@ -374,6 +378,14 @@
     </fields>
   </class>
 
+  <class className="org.intermine.model.bio.GWASExperiment">
+    <headerconfig>
+      <titles>
+        <title mainTitles="soybaseId" numberofMainTitlesToShow="1" />
+      </titles>
+    </headerconfig>
+  </class>
+
   <!-- exporters -->
   <tableExportConfig id="sequence" className="org.intermine.bio.web.export.SequenceHttpExporter"/>
   <tableExportConfig id="gff3" className="org.intermine.bio.web.export.GFF3HttpExporter"/>
@@ -415,7 +427,7 @@
 
     <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.LinkageGroupDisplayer"
                      jspName="model/linkageGroupDisplayer.jsp"
-                     replacesFields="linkageGroups,markers"
+                     replacesFields="linkageGroups"
                      placement="summary"
                      types="QTL"/>
 

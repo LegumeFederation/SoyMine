@@ -31,7 +31,7 @@
 #./gradlew postprocess -Pprocess=create-overlap-view 
 
 ## rerun these after every data change
-#./gradlew postprocess -Pprocess=create-attribute-indexes
+./gradlew postprocess -Pprocess=create-attribute-indexes
 #./gradlew postprocess -Pprocess=summarise-objectstore
 #./gradlew postprocess -Pprocess=create-autocomplete-index
-./gradlew postprocess -Pprocess=create-search-index
+#./gradlew postprocess -Pprocess=create-search-index

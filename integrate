@@ -15,11 +15,11 @@
 
 ## munge identifiers and add organism details
 ./gradlew generateUpdateTriggers
-psql soymine -f dbmodel/build/resources/main/add-update-triggers.sql
-psql soymine -f ../legfed-intermine-sql/update-organism-genus-species.sql
-psql soymine -f ../legfed-intermine-sql/update-organism-descriptions.sql
-psql soymine -f ../legfed-intermine-sql/update-identifiers.sql
-psql soymine -f dbmodel/build/resources/main/remove-update-triggers.sql
+psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
+psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
+psql soymine-dev -f ../legfed-intermine-sql/update-organism-descriptions.sql
+psql soymine-dev -f ../legfed-intermine-sql/update-identifiers.sql
+psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
 
 ## files
 ./gradlew integrate -Psource=soybean-expression
@@ -33,6 +33,6 @@ psql soymine -f dbmodel/build/resources/main/remove-update-triggers.sql
 
 ## update the genus and species for the germplasms we added, don't touch the descriptions!
 ./gradlew generateUpdateTriggers
-psql soymine -f dbmodel/build/resources/main/add-update-triggers.sql
-psql soymine -f ../legfed-intermine-sql/update-organism-genus-species.sql
-psql soymine -f dbmodel/build/resources/main/remove-update-triggers.sql
+psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
+psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
+psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql

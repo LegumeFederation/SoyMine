@@ -229,16 +229,12 @@ html, body {
 
 #boxes div.inner {
     background: #FFF;
-    min-height: 210px;
     border-bottom: 1px solid #dfdfdf;
-    padding-bottom: 60px;
+    min-height: 280px;
 }
 
 #boxes div.inner div.bottom {
-    position: absolute;
-    bottom: 14px;
-    left: 5px;
-    width: 100%;
+    padding: 10px;
 }
 
 #boxes div.inner h3 {

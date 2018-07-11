@@ -104,18 +104,10 @@
                     <div class="bottom">
                         <c:choose>
                             <c:when test="${!isNewUser && !empty (WEB_PROPERTIES['begin.thirdBox.visitedLink'])}">
-                                <div style="margin-left:14px;height:80px;width:250px;text-align:center;background-color:lightgray;border:2px solid gray">
-                                    <a href="<c:out value="${WEB_PROPERTIES['begin.thirdBox.visitedLink']}" />" >
-                                    <c:out value="${WEB_PROPERTIES['begin.thirdBox.visitedLinkTitle']}" />
-                        </a>
-                                </div>
+                                <a href="<c:out value="${WEB_PROPERTIES['begin.thirdBox.visitedLink']}"/>"><c:out value="${WEB_PROPERTIES['begin.thirdBox.visitedLinkTitle']}"/></a>
                             </c:when>
                             <c:otherwise>
-                                <div style="margin-left:14px;height:80px;width:250px;text-align:center;background-color:lightgray;border:2px solid gray">
-                                    <a href="<c:out value="${WEB_PROPERTIES['begin.thirdBox.link']}" />" >
-                                    <c:out value="${WEB_PROPERTIES['begin.thirdBox.linkTitle']}" />
-                        </a>
-                                </div>
+                                <a href="<c:out value="${WEB_PROPERTIES['begin.thirdBox.link']}"/>"><c:out value="${WEB_PROPERTIES['begin.thirdBox.linkTitle']}"/></a>
                             </c:otherwise>
                         </c:choose>
                     </div>
