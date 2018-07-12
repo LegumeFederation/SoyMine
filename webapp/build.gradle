@@ -25,6 +25,7 @@ dependencies {
   compile group: "org.intermine", name: "intermine-api", version: System.getProperty("imVersion")
   compile group: "org.intermine", name: "intermine-webapp", version: System.getProperty("imVersion"), classifier: "classes"
   compile group: "org.intermine", name: "intermine-webtasks", version: System.getProperty("imVersion")
+  compile group: "org.intermine", name: "intermine-jbrowse-endpoint", version: System.getProperty("imVersion")
 
   onlyRunTime group: 'org.intermine', name: 'bluegenes', version: System.getProperty("blueGenesVersion")
 
@@ -125,6 +126,7 @@ cargo {
   remote {
     hostname = remoteHostName
     protocol = remoteProtocol
+    port = remotePort
     username = props.getProperty("webapp.manager")
     password = props.getProperty("webapp.password")
   }
