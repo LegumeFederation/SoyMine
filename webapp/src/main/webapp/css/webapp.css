@@ -387,16 +387,22 @@ ul#submenulist li span {
     color: #333;
 }
 
-div.templateLine {
+.templateLine {
     margin-bottom: 5px;
     margin-top: 5px;
 }
 
-div.templateDetails {
+.templateDetails {
     margin-left: 15px;
     /* needed to prevent the peekaboo bug on IE:
      http://www.positioniseverything.net/explorer/peekaboo.html */
     height: 0.01%;
+}
+
+.templateDescription {
+    background-color: lightgray;
+    padding: 5px;
+    margin: 2px 0;
 }
 
 .boxTopRight {
