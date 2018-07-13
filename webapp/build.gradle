@@ -94,14 +94,14 @@ gretty {
 // ---------------------------------------------------------------------------------------------------------------------
 cargo {
 
-  def remotePort = 80
-  if (props.hasProperty("webapp.port")) {
-    remotePort = props.getProperty("webapp.port")
-  }
-
   // change this to match your Tomcat major version (keep the x)
   containerId = 'tomcat8x'
-  port = remotePort
+ 
+ // default port
+ int remotePort = 8080
+ if (props.getProperty("webapp.port") != null) {
+    remotePort = props.getProperty("webapp.port").toInteger()
+ }
 
   // change this to the Tomcat root of your choice
   deployable {
@@ -111,14 +111,14 @@ cargo {
   // if "hostname" is defined in properties file, use that
   // otherwise derive from deployUrl, e.g. http://localhost:8080
   def remoteHostName = "shokin-webapps"
-  if (props.hasProperty("webapp.hostname")) {
+  if (props.getProperty("webapp.hostname") != null)) {
     remoteHostName = props.getProperty("webapp.hostname")
   } else {
     remoteHostName = getServerName(props.getProperty("webapp.deploy.url"))
   }
 
   def remoteProtocol = "http"
-  if (props.hasProperty("webapp.protocol")) {
+  if (props.getProperty("webapp.protocol") != null)) {
     remoteProtocol = props.getProperty("webapp.protocol")
   }
 
