@@ -1421,7 +1421,7 @@ td.resBar span.tablePageLinks img { margin:0; padding:0; margin-right:5px; verti
 
 /* template entry */
 ol#constraintList.templateForm label, ol#constraintList.templateForm input[type="checkbox"] { vertical-align:middle !important; }
-ol#constraintList.templateForm select { height:25px; }
+ol#constraintList.templateForm select {  }
 
 /* constraint logic (query.do) */
 #constraintLogicContainer span#constraintLogic { cursor:pointer; padding-right:14px; background-image:url('../images/icons/edit-8.png');
