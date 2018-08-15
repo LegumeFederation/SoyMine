@@ -1,39 +1,42 @@
 ## ontologies
-./gradlew integrate -Psource=go
-./gradlew integrate -Psource=so
-./gradlew integrate -Psource=to
-./gradlew integrate -Psource=po
+#./gradlew integrate -Psource=go
+#./gradlew integrate -Psource=so
+#./gradlew integrate -Psource=to
+#./gradlew integrate -Psource=po
 
 ## LIS chado
-./gradlew integrate -Psource=lis-genomics
-./gradlew integrate -Psource=lis-genetics
-./gradlew integrate -Psource=lis-featureprop
-./gradlew integrate -Psource=lis-genefamilies
-./gradlew integrate -Psource=lis-reactome-file
+#./gradlew integrate -Psource=lis-genomics
+#./gradlew integrate -Psource=lis-genetics
+#./gradlew integrate -Psource=lis-featureprop
+#./gradlew integrate -Psource=lis-genefamilies
+#./gradlew integrate -Psource=lis-reactome-file
 
-## ALL of the chado loaders must be DONE before continuing, because identifiers are changed by SQL below
+###########################################################################################################
+## ALL of the chado loaders must be DONE before continuing, because identifiers are changed by SQL below ##
+###########################################################################################################
 
-## munge identifiers and add organism details
+## update identifiers from chado values to desired values
 #./gradlew generateUpdateTriggers
 #psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
+#psql soymine-dev -f ../legfed-intermine-sql/cleanup-chado-bugs.sql
 #psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
 #psql soymine-dev -f ../legfed-intermine-sql/update-organism-descriptions.sql
 #psql soymine-dev -f ../legfed-intermine-sql/update-identifiers.sql
 #psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
 
-## files
+## file sources
 #./gradlew integrate -Psource=soybean-synteny
-#./gradlew integrate -Psource=soybean-expression
-#./gradlew integrate -Psource=soybase-qtls
-#./gradlew integrate -Psource=soybase-markers-chromosomes
-#./gradlew integrate -Psource=soybase-linkagegroups
-#./gradlew integrate -Psource=soybase-markers-linkagegroups
-#./gradlew integrate -Psource=soybase-markers-qtls
-#./gradlew integrate -Psource=soybase-gwas
-#./gradlew integrate -Psource=soybase-qtl-ontology
+./gradlew integrate -Psource=soybean-expression
+./gradlew integrate -Psource=soybase-qtls
+./gradlew integrate -Psource=soybase-markers-chromosomes
+./gradlew integrate -Psource=soybase-linkagegroups
+./gradlew integrate -Psource=soybase-markers-linkagegroups
+./gradlew integrate -Psource=soybase-markers-qtls
+./gradlew integrate -Psource=soybase-gwas
+./gradlew integrate -Psource=soybase-qtl-ontology
 
 ## update the genus and species for the germplasms we added, don't touch the descriptions!
-#./gradlew generateUpdateTriggers
-#psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
-#psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
-#psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
+./gradlew generateUpdateTriggers
+psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
+psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
+psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
