@@ -508,7 +508,21 @@
                                       ontologyAnnotations.ontologyTerm.identifier, ontologyAnnotations.ontologyTerm.name,
                                       ontologyAnnotations.ontologyTerm.parents.identifier, ontologyAnnotations.ontologyTerm.parents.name"
                                externalLink="http://amigo.geneontology.org/amigo/term/" />
-    
+
+    <enrichmentwidgetdisplayer id="to_enrichment_for_qtl"
+                               title="Plant Trait Ontology Enrichment"
+                               description="TO terms enriched for items in this list."
+                               label="TO Term"
+                               startClass="QTL"
+                               typeClass="QTL"
+                               startClassDisplay="primaryIdentifier"
+                               enrich="ontologyAnnotations.ontologyTerm.name"
+                               enrichIdentifier="ontologyAnnotations.ontologyTerm.identifier"
+                               views="secondaryIdentifier,symbol,primaryIdentifier,organism.name,
+                                      ontologyAnnotations.ontologyTerm.identifier,
+                                      ontologyAnnotations.ontologyTerm.name"
+                               externalLink="http://archive.gramene.org/db/ontology/search?id=" />
+
   </widgets>
   
 </webconfig>
