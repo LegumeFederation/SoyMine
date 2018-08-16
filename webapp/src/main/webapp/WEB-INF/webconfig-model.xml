@@ -483,11 +483,11 @@
                     seriesPath="ActualExpectedCriteria"
                     constraints="organism.name=[Organism]"
                     views="primaryIdentifier, symbol, secondaryIdentifier, organism.name, chromosome.primaryIdentifier,
-                           chromosomeLocation.start, chromosomeLocation.end, chromosomeLocation.strand"/>
+                           chromosomeLocation.start, chromosomeLocation.end, chromosomeLocation.strand" />
 
-			   <!-- constraints skip biological_process, molecular_function and cellular_component GO terms -->
-			   <!--
-			       <enrichmentwidgetdisplayer id="go_enrichment_for_gene"
+
+    <!-- constraints skip biological_process, molecular_function and cellular_component GO terms -->
+    <enrichmentwidgetdisplayer id="go_enrichment_for_gene"
                                title="Gene Ontology Enrichment"
                                description="GO terms enriched for items in this list."
                                label="GO Term"
@@ -496,20 +496,19 @@
                                startClass="Gene"
                                typeClass="Gene"
                                startClassDisplay="primaryIdentifier"
-                               enrich="goAnnotation.ontologyTerm.parents.name"
-                               enrichIdentifier="goAnnotation.ontologyTerm.parents.identifier"
+                               enrich="ontologyAnnotations.ontologyTerm.parents.name"
+                               enrichIdentifier="ontologyAnnotations.ontologyTerm.parents.identifier"
                                constraints="organism.name=[list],
-                               primaryIdentifier!=null,
-			       goAnnotation.qualifier=null,
-                               goAnnotation.ontologyTerm.parents.identifier!=go:0008150,
-                               goAnnotation.ontologyTerm.parents.identifier!=go:0003674,
-                               goAnnotation.ontologyTerm.parents.identifier!=go:0005575"
+                                            primaryIdentifier!=null,
+                                            ontologyAnnotations.qualifier=null,
+                                            ontologyAnnotations.ontologyTerm.parents.identifier!=go:0008150,
+                                            ontologyAnnotations.ontologyTerm.parents.identifier!=go:0003674,
+                                            ontologyAnnotations.ontologyTerm.parents.identifier!=go:0005575"
                                views="secondaryIdentifier,symbol,primaryIdentifier,organism.name,
-                               goAnnotation.ontologyTerm.identifier, goAnnotation.ontologyTerm.name,
-                               goAnnotation.ontologyTerm.parents.identifier,goAnnotation.ontologyTerm.parents.name"
-                               externalLink="http://amigo.geneontology.org/cgi-bin/amigo/term_details?term=" />
-			   -->
-			   
+                                      ontologyAnnotations.ontologyTerm.identifier, ontologyAnnotations.ontologyTerm.name,
+                                      ontologyAnnotations.ontologyTerm.parents.identifier, ontologyAnnotations.ontologyTerm.parents.name"
+                               externalLink="http://amigo.geneontology.org/amigo/term/" />
+    
   </widgets>
   
 </webconfig>
