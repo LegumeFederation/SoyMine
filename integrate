@@ -26,11 +26,11 @@
 
 ## file sources
 #./gradlew integrate -Psource=soybean-synteny
-./gradlew integrate -Psource=soybean-expression
-./gradlew integrate -Psource=soybase-qtls
-./gradlew integrate -Psource=soybase-markers-chromosomes
-./gradlew integrate -Psource=soybase-linkagegroups
-./gradlew integrate -Psource=soybase-markers-linkagegroups
+#./gradlew integrate -Psource=soybean-expression
+#./gradlew integrate -Psource=soybase-qtls
+#./gradlew integrate -Psource=soybase-markers-chromosomes
+#./gradlew integrate -Psource=soybase-linkagegroups
+#./gradlew integrate -Psource=soybase-markers-linkagegroups
 ./gradlew integrate -Psource=soybase-markers-qtls
 ./gradlew integrate -Psource=soybase-gwas
 ./gradlew integrate -Psource=soybase-qtl-ontology
