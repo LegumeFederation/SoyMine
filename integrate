@@ -16,21 +16,21 @@
 ###########################################################################################################
 
 ## update identifiers from chado values to desired values
-#./gradlew generateUpdateTriggers
-#psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
-#psql soymine-dev -f ../legfed-intermine-sql/cleanup-chado-bugs.sql
-#psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
-#psql soymine-dev -f ../legfed-intermine-sql/update-organism-descriptions.sql
-#psql soymine-dev -f ../legfed-intermine-sql/update-identifiers.sql
-#psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
+./gradlew generateUpdateTriggers
+psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
+psql soymine-dev -f ../legfed-intermine-sql/cleanup-chado-bugs.sql
+psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
+psql soymine-dev -f ../legfed-intermine-sql/update-organism-descriptions.sql
+psql soymine-dev -f ../legfed-intermine-sql/update-identifiers.sql
+psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
 
 ## file sources
-#./gradlew integrate -Psource=soybean-synteny
-#./gradlew integrate -Psource=soybean-expression
-#./gradlew integrate -Psource=soybase-qtls
-#./gradlew integrate -Psource=soybase-markers-chromosomes
-#./gradlew integrate -Psource=soybase-linkagegroups
-#./gradlew integrate -Psource=soybase-markers-linkagegroups
+./gradlew integrate -Psource=soybean-synteny
+./gradlew integrate -Psource=soybean-expression
+./gradlew integrate -Psource=soybase-qtls
+./gradlew integrate -Psource=soybase-markers-chromosomes
+./gradlew integrate -Psource=soybase-linkagegroups
+./gradlew integrate -Psource=soybase-markers-linkagegroups
 ./gradlew integrate -Psource=soybase-markers-qtls
 ./gradlew integrate -Psource=soybase-gwas
 ./gradlew integrate -Psource=soybase-qtl-ontology
