@@ -1,15 +1,21 @@
+#!/bin/sh
+
+## front-loaded 'cause it's huge and is loaded with pg_restore -j 
+#./gradlew integrate -Psource=soybean-genotyping --stacktrace
+
 ## ontologies
-#./gradlew integrate -Psource=go
-#./gradlew integrate -Psource=so
-#./gradlew integrate -Psource=to
-#./gradlew integrate -Psource=po
+./gradlew integrate -Psource=go
+./gradlew integrate -Psource=so
+./gradlew integrate -Psource=to
+./gradlew integrate -Psource=po
 
 ## LIS chado
-#./gradlew integrate -Psource=lis-genomics
-#./gradlew integrate -Psource=lis-genetics
-#./gradlew integrate -Psource=lis-featureprop
-#./gradlew integrate -Psource=lis-genefamilies
-#./gradlew integrate -Psource=lis-reactome-file
+./gradlew integrate -Psource=lis-genomics --stacktrace
+./gradlew integrate -Psource=lis-proteins --stacktrace
+./gradlew integrate -Psource=lis-genetics --stacktrace
+./gradlew integrate -Psource=lis-featureprop --stacktrace
+./gradlew integrate -Psource=lis-genefamilies --stacktrace
+./gradlew integrate -Psource=lis-reactome-file --stacktrace
 
 ###########################################################################################################
 ## ALL of the chado loaders must be DONE before continuing, because identifiers are changed by SQL below ##
@@ -24,18 +30,27 @@ psql soymine-dev -f ../legfed-intermine-sql/update-organism-descriptions.sql
 psql soymine-dev -f ../legfed-intermine-sql/update-identifiers.sql
 psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
 
-## file sources
-./gradlew integrate -Psource=soybean-synteny
-./gradlew integrate -Psource=soybean-expression
-./gradlew integrate -Psource=soybase-qtls
-./gradlew integrate -Psource=soybase-markers-chromosomes
-./gradlew integrate -Psource=soybase-linkagegroups
-./gradlew integrate -Psource=soybase-markers-linkagegroups
-./gradlew integrate -Psource=soybase-markers-qtls
-./gradlew integrate -Psource=soybase-gwas
-./gradlew integrate -Psource=soybase-qtl-ontology
+## file sources - genomics
+./gradlew integrate -Psource=soybean-synteny --stacktrace
+./gradlew integrate -Psource=soybase-markers --stacktrace
+./gradlew integrate -Psource=soybase-markers-chromosomes --stacktrace
 
-## update the genus and species for the germplasms we added, don't touch the descriptions!
+## file sources - lines and phenotypes
+./gradlew integrate -Psource=soybean-lines --stacktrace
+./gradlew integrate -Psource=soybean-phenotypes --stacktrace
+
+## file sources - genetics
+./gradlew integrate -Psource=soybase-qtls --stacktrace
+./gradlew integrate -Psource=soybase-linkagegroups --stacktrace
+./gradlew integrate -Psource=soybase-markers-linkagegroups --stacktrace
+./gradlew integrate -Psource=soybase-markers-qtls --stacktrace
+./gradlew integrate -Psource=soybase-gwas --stacktrace
+./gradlew integrate -Psource=soybase-qtl-ontology --stacktrace
+
+## file sources - expression
+./gradlew integrate -Psource=soybean-expression --stacktrace
+
+## update the genus and species for the germplasms we added; don't touch the descriptions!
 ./gradlew generateUpdateTriggers
 psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
 psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql

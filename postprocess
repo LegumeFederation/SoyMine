@@ -1,7 +1,7 @@
 #!/bin/sh
 # post-processes
 
-# ./gradlew postprocess -Pprocess="do-sources"
+## ./gradlew postprocess -Pprocess="do-sources"
 
 ## add features
 #./gradlew postprocess -Pprocess=legfed-create-gene-flanking-regions
@@ -12,7 +12,7 @@
 ## legfed references and collections
 #./gradlew postprocess -Pprocess=legfed-create-go-annotations
 #./gradlew postprocess -Pprocess=legfed-create-ontology-parent-annotations
-#./gradlew postprocess -Pprocess=legfed-create-proteindomain-references
+#./gradlew postprocess -Pprocess=legfed-create-exon-gene-references
 #./gradlew postprocess -Pprocess=legfed-create-protein-gene-references
 #./gradlew postprocess -Pprocess=legfed-create-qtl-linkagegroup-references
 #./gradlew postprocess -Pprocess=legfed-populate-gene-spanning-qtls
@@ -29,9 +29,9 @@
 ## views and indexes
 #./gradlew postprocess -Pprocess=create-location-overlap-index
 #./gradlew postprocess -Pprocess=create-overlap-view 
+#./gradlew postprocess -Pprocess=create-attribute-indexes
 
-## rerun these after every data change
-./gradlew postprocess -Pprocess=create-attribute-indexes
+## rerun these after every data (but not model) update
 ./gradlew postprocess -Pprocess=summarise-objectstore
 ./gradlew postprocess -Pprocess=create-search-index
 ./gradlew postprocess -Pprocess=create-autocomplete-index

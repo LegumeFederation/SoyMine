@@ -26,10 +26,14 @@ subprojects {
 
   sourceCompatibility = 1.8
   targetCompatibility = 1.8
-  
+
   repositories {
     mavenLocal()
     jcenter()
+    maven {
+        url "https://oss.jfrog.org/artifactory/oss-snapshot-local"
+    }
+    maven { url 'https://clojars.org/repo' }
     maven {
         url 'http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/'
     }

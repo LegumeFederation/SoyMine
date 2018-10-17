@@ -811,3 +811,10 @@ html, body {
 #api-langs li {
     float: left;
 }
+
+ul.updates {
+    margin: 5px 0 5px 20px;
+}
+ul.updates li {
+    margin: 5px 0;
+}

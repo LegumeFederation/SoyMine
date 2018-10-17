@@ -14,6 +14,15 @@
       <property name="processors" value="org.intermine.bio.dataconversion.SequenceProcessor"/>
     </source>
 
+    <!-- chado proteins -->
+    <source name="lis-proteins" type="legfed-chado-db" dump="true">
+      <property name="source.db.name" value="lis-chado"/>
+      <property name="organisms" value="3847_Williams82"/>
+      <property name="dataSetTitle" value="LIS Glycine max (3847_Williams82) data"/>
+      <property name="dataSourceName" value="LIS chado database"/>
+      <property name="processors" value="org.intermine.bio.dataconversion.ProteinProcessor"/>
+    </source>
+
     <!-- chado genetics -->
     <source name="lis-genetics" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="lis-chado"/>
@@ -53,11 +62,6 @@
       <property name="processors" value="org.intermine.bio.dataconversion.GeneFamilyProcessor"/>
     </source>
 
-    <!-- synteny from GFF files -->
-    <source name="soybean-synteny" type="legfed-synteny-gff" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybean-synteny"/>
-    </source>
-
     <!-- chado + reactome file -->
     <source name="lis-reactome-file" type="legfed-chado-db" dump="true">
       <property name="source.db.name" value="lis-chado"/>
@@ -67,6 +71,16 @@
       <property name="dataSourceName" value="LIS chado database"/>
       <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
       <property name="processors" value="org.intermine.bio.dataconversion.ReactomeProcessor"/>
+    </source>
+
+    <!-- synteny from GFF files -->
+    <source name="soybean-synteny" type="legfed-synteny-gff" dump="true">
+      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybean-synteny"/>
+    </source>
+
+    <!-- soybean standalone markers -->
+    <source name="soybase-markers" type="legfed-geneticmarker-gff" dump="true">
+      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybase-markers"/>
     </source>
 
     <!-- soybean expression -->
@@ -109,6 +123,20 @@
       <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybase-gwas"/>
     </source>
 
+    <!-- US. germplasm genotyping map against Williams82 -->
+    <source name="soybean-genotyping" type="legfed-gt-file" dump="true">
+      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybean-genotyping"/>
+    </source>
+
+    <!-- GRIN soybean lines -->
+    <source name="soybean-lines" type="legfed-lines-file" dump="true">
+      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybean-lines"/>
+    </source>
+
+    <!-- GRIN soybean line phenotypes -->
+    <source name="soybean-phenotypes" type="legfed-phenotypes-file" dump="true">
+      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybean-phenotypes"/>
+    </source>
 
     <!-- ONTOLOGIES -->
     
@@ -151,7 +179,7 @@
     <!-- legfed references and collections -->
     <post-process name="legfed-create-go-annotations"/>
     <post-process name="legfed-create-ontology-parent-annotations"/>
-    <post-process name="legfed-create-proteindomain-references"/>
+    <post-process name="legfed-create-exon-gene-references"/>
     <post-process name="legfed-create-protein-gene-references"/>
     <post-process name="legfed-create-qtl-linkagegroup-references"/>
 
