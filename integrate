@@ -6,18 +6,18 @@ echo "###################################### integrate #########################
 echo "##################################################################################################"
 
 ## front-loaded 'cause it's huge and is loaded with pg_restore
-# ./gradlew integrate -Psource=soybean-genotyping --stacktrace
+./gradlew integrate -Psource=soybean-genotyping --stacktrace
 
 ## ontologies
-# ./gradlew integrate -Psource=go
-# ./gradlew integrate -Psource=so
-# ./gradlew integrate -Psource=to
-# ./gradlew integrate -Psource=po
+#./gradlew integrate -Psource=go
+#./gradlew integrate -Psource=so
+#./gradlew integrate -Psource=to
+#./gradlew integrate -Psource=po
 
 ## LIS chado
-# ./gradlew integrate -Psource=lis-genomics --stacktrace
-# ./gradlew integrate -Psource=lis-proteins --stacktrace
-# ./gradlew integrate -Psource=lis-genetics --stacktrace
+#./gradlew integrate -Psource=lis-genomics --stacktrace
+#./gradlew integrate -Psource=lis-proteins --stacktrace
+#./gradlew integrate -Psource=lis-genetics --stacktrace
 # ./gradlew integrate -Psource=lis-featureprop --stacktrace
 # ./gradlew integrate -Psource=lis-genefamilies --stacktrace
 # ./gradlew integrate -Psource=lis-reactome-file --stacktrace
@@ -53,10 +53,10 @@ echo "##########################################################################
 #./gradlew integrate -Psource=soybase-gwas --stacktrace
 
 ## file sources - expression
-./gradlew integrate -Psource=soybean-expression --stacktrace
+#./gradlew integrate -Psource=soybean-expression --stacktrace
 
 ## update the genus and species for the germplasms we added; don't touch the descriptions!
-./gradlew generateUpdateTriggers
-psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
-psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
-psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
+#./gradlew generateUpdateTriggers
+#psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
+#psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
+#psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql

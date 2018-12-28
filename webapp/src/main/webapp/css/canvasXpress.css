@@ -309,15 +309,32 @@ div.CanvasXpressCode {
 }
 
 img.CanvasXpressCode {
+  background: rgba(0,0,0,0) !important;
+  border: 0px none !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
 	cursor: default;
 	float: right;
-	margin: 2px 8px 0px 0px;
+	margin: 2px 8px 0px 0px !important;
 	padding-bottom: 5px;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
 	-ms-user-select: none;
+}
+
+img.CanvasXpressCode {
+  transition: all 0.3s;
+    -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+
+img.CanvasXpressCode:hover {
+    margin: 0 7px;  
+  transform: scale(1.2);
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255,255,255,0.7)));
 }
 
 pre.CanvasXpressCode {
@@ -383,7 +400,7 @@ div.CanvasXpressCarousel {
 
 span.CanvasXpressCarousel {
   padding : 1px;
-	position: absolute;
+  position: absolute;
   border: 1px solid rgb(51, 122, 183);
   border-radius: 2px;
   line-height: 10px;
@@ -437,6 +454,10 @@ img.CanvasXpressCarousel:hover {
   z-index: 2;
   position: relative;
   cursor: pointer; 
+  background: rgba(0,0,0,0) !important;
+  border: 0px none !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
+  margin : 0px !important;
 }
 
 /*
@@ -461,9 +482,12 @@ div.CanvasXpressBin {
 }
 
 img.CanvasXpressBin {
+  background: rgba(0,0,0,0) !important;
+  border: 0px none !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
 	cursor: default;
 	float: right;
-	margin: 2px 3px 0px 0px;
+	margin: 2px 3px 0px 0px !important;
 	padding-bottom: 5px;
 	-moz-user-select: none;
 	-khtml-user-select: none;
@@ -472,10 +496,26 @@ img.CanvasXpressBin {
 	-ms-user-select: none;
 }
 
+img.CanvasXpressBin {
+  transition: all 0.3s;
+    -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+
+img.CanvasXpressBin:hover {
+    margin: 0 7px;  
+  transform: scale(1.2);
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255,255,255,0.7)));
+}
+
+
 div.CanvasXpressBinContainer {
 	background-color: rgba(245, 245, 245, 0.95);
 	box-sizing: content-box;
 	clear: both;
+	text-align: left;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
@@ -534,8 +574,11 @@ span.CanvasXpressBin {
 }
 
 img.CanvasXpressBin::selection,span.CanvasXpressBin::selection {
-	background: rgba(0, 0, 0, 0);
-	color: rgb(0, 0, 0);
+	background: rgba(0,0,0,0) !important;
+  border: 0px none !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
+  color: rgb(0, 0, 0);
+  margin: 0px !important;
 }
 
 /*
@@ -570,40 +613,97 @@ hr.CanvasXpressDataExplorer {
 }
 
 img.CanvasXpressDataExplorerActive {
-	border: 1px dashed rgb(255, 0, 0);
+  background: rgba(0,0,0,0) !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
+	border: 1px dashed rgb(255, 0, 0) !important;
 	border-radius: 5px;
 	cursor: pointer;
-	margin: 3px;
+	margin: 3px !important;
 	padding: 3px;
 }
 
 img.CanvasXpressDataExplorer {
-	border: 1px solid rgb(51, 122, 183);
-	border-radius: 5px;
-	cursor: pointer;
-	margin: 3px;
+  background: rgba(0,0,0,0) !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
+  border: 1px solid rgb(51, 122, 183) !important;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 3px !important;
   padding: 3px;
-	-webkit-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
   transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s; /* Safari */
 }
 
-img.CanvasXpressDataExplorer:hover {
-  border: 1px solid rgb(51, 122, 183);
+img.CanvasXpressDataExplorer:hover,
+img.CanvasXpressDataExplorer3:hover
+img.CanvasXpressDataExplorer4:hover
+{
+  background: rgba(0,0,0,0) !important;
+	border: 1px solid rgb(51, 122, 183) !important;
   border-radius: 5px;
   cursor: pointer;
-  margin: 3px;
+  margin: 3px !important;
   padding: 3px;
   -webkit-transform: scale(1.8, 1.8);
   -ms-transform: scale(1.8, 1.8);
   transform: scale(1.8, 1.8);
   transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s; /* Safari */
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 10px 10px 5px #888888 !important;
   z-index: 2;
   position: relative; 
+}
+
+img.CanvasXpressDataExplorer2,
+img.CanvasXpressDataExplorer4
+{
+  background: rgba(0,0,0,0) !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
+  border: 0px none !important;
+  border-radius: 0px;
+  cursor: pointer;
+  margin: 3px !important;
+  padding: 0px;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s; /* Safari */
+}
+
+img.CanvasXpressDataExplorer2:hover {
+  background: rgba(0,0,0,0) !important;
+  border: 0px none !important;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 4px !important;
+  padding: 4px;
+  -webkit-transform: scale(1.8, 1.8);
+  -ms-transform: scale(1.8, 1.8);
+  transform: scale(1.8, 1.8);
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s; /* Safari */
+  box-shadow: 10px 10px 5px #888888 !important;
+  z-index: 2;
+  position: relative; 
+}
+
+img.CanvasXpressDataExplorer3 {
+  background: rgba(0,0,0,0) !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
+  border: 1px solid rgb(51, 122, 183) !important;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 12px 3px 3px 3px !important;
+  padding: 3px;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s; /* Safari */
 }
 
 div.CanvasXpressDataExplorerActive {
@@ -627,10 +727,13 @@ div.CanvasXpressDataExplorer {
 }
 
 img.CanvasXpressDataExplorerMask {
+  background: rgba(0,0,0,0) !important;
+  border: 0px none !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	margin: 0px;
+	margin: 0px !important;
 	width: 100%;
 	height: 20px;
 	-moz-user-select: none;
@@ -703,7 +806,7 @@ span.CanvasXpressDataExplorer::selection
 div.CanvasXpressDrag {
 	opacity: 0.75;
 	box-sizing: content-box;
-	filter: alpha(opacity =           75);
+	filter: alpha(opacity = 75);
 	background-color: rgba(245, 245, 245, 0.95);
 	position: absolute;
 }
@@ -756,9 +859,12 @@ div.CanvasXpressTooltipArrowLeft:before {
 }
 
 img.CanvasXpressTooltip {
+  background: rgba(0,0,0,0) !important;
+  border: 0px none !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
 	cursor: default;
 	float: right;
-	margin: 2px 3px 0px 0px;
+	margin: 2px 3px 0px 0px !important;
 	padding-bottom: 2px;
 	cursor: default;
 	-moz-user-select: none;
@@ -766,6 +872,20 @@ img.CanvasXpressTooltip {
 	-webkit-user-select: none;
 	-o-user-select: none;
 	-ms-user-select: none;
+}
+
+img.CanvasXpressTooltip {
+  transition: all 0.3s;
+    -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+
+img.CanvasXpressTooltip:hover {
+    margin: 0 7px;  
+  transform: scale(1.2);
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255,255,255,0.7)));
 }
 
 span.CanvasXpressTooltip {
@@ -822,6 +942,13 @@ div.CanvasXpressCanvasResizerloading2 {
 div.CanvasXpressMotion {
 	color: rgb(34, 34, 34);
 	font: normal 12px arial, tahoma, sans-serif;
+}
+
+img.CanvasXpressMotion {
+  margin: 0px !important;
+  background: rgba(0,0,0,0) !important;
+  border: 0px none !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
 }
 
 div.CanvasXpressMotionContainer {
@@ -890,7 +1017,7 @@ div.CanvasXpressToolbar {
 }
 
 div.CanvasXpressToolbar img.CanvasXpressToolbarImage:first-child {
-	margin-left: 13px;
+	margin-left: 13px !important;
 }
 
 div.CanvasXpressToolbar img.CanvasXpressToolbarImage {
@@ -913,11 +1040,13 @@ div.CanvasXpressToolbar img.CanvasXpressToolbarImage:hover + img.CanvasXpressToo
   -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255,255,255,0.7)));
 }
 
-img.CanvasXpressToolbarImage {
+div.CanvasXpressToolbar img.CanvasXpressToolbarImage {
+  background: rgba(0,0,0,0) !important;
+	border: 0px none !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
   cursor: pointer;
   float: right;
-  margin-right: 4px;
-  margin-top: 4px;
+  margin: 4px 4px 0px 0px;
   padding-top: 4px;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -968,15 +1097,32 @@ div.CanvasXpressDataTableToolbar {
 }
 
 img.CanvasXpressDataTableToolbarImage {
+  background: rgba(0,0,0,0) !important;
+  border: 0px none !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
 	cursor: pointer;
 	float: right;
-	margin: 2px 7px 0px 0px;
+	margin: 2px 7px 0px 0px !important;
 	user-select: none;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
 	-ms-user-select: none;
+}
+
+img.CanvasXpressDataTableToolbarImage {
+  transition: all 0.3s;
+    -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+
+img.CanvasXpressDataTableToolbarImage:hover {
+    margin: 0 7px;  
+  transform: scale(1.2);
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255,255,255,0.7)));
 }
 
 div.CanvasXpressDataTableContainer {
@@ -1200,6 +1346,7 @@ div.CanvasXpressTableCellSortAsc {
 	line-height: 20px;
 	margin: 2px 2px 1px 5px;
 	overflow: hidden;
+  position: relative;
   white-space: nowrap;
 }
 
@@ -1212,7 +1359,8 @@ div.CanvasXpressTableCellSortDesc {
 	line-height: 20px;
 	margin: 2px 2px 1px 5px;
 	overflow: hidden;
-	white-space: nowrap;
+  position: relative;
+  white-space: nowrap;
 }
 
 /****************/
@@ -1229,6 +1377,7 @@ div.CanvasXpressConfigurator {
 	font: normal 12px arial, tahoma, sans-serif;
 	opacity: 0.95;
 	line-height: 24px;
+	text-align : left;
 	-ms-user-select: none;
 	-moz-user-select: none;
 	-khtml-user-select: none;
@@ -1256,13 +1405,30 @@ textarea.CanvasXpressConfigurator {
 }
 
 img.CanvasXpressConfigurator {
+  background: rgba(0,0,0,0) !important;
+  border: 0px none !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
 	cursor: default;
 	float: right;
-	margin-left: 5px;
+	margin: 0px 0px 0px 5px !important;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
+}
+
+img.CanvasXpressConfigurator {
+  transition: all 0.3s;
+    -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+
+img.CanvasXpressConfigurator:hover {
+    margin: 0 7px;  
+  transform: scale(1.2);
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255,255,255,0.7)));
 }
 
 select.CanvasXpressConfigurator {
@@ -1490,10 +1656,26 @@ span.CanvasXpressDataFilterToolbarText {
 }
 
 img.CanvasXpressDataFilterToolbarImage {
+  background: rgba(0,0,0,0) !important;
+  border: 0px none !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
 	cursor: pointer;
-	margin-top: 4px;
-	margin-right: 4px;
-	float: right;
+	margin: 4px 4px 0px 0px !important;
+  float: right;
+}
+
+img.CanvasXpressDataFilterToolbarImage {
+  transition: all 0.3s;
+    -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+
+img.CanvasXpressDataFilterToolbarImage:hover {
+    margin: 0 7px;  
+  transform: scale(1.2);
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255,255,255,0.7)));
 }
 
 span.CanvasXpressDataFilterText {
@@ -2302,7 +2484,7 @@ a.CanvasXpressListItemAArrowActive {
 
 img.CanvasXpressListIcon {
 	background-position: center;
-	border: 0px none;
+	border: 0px none !important;
 	color: rgb(34, 34, 34);
 	cursor: pointer;
 	font: normal 12px arial, tahoma, sans-serif;
@@ -2310,13 +2492,15 @@ img.CanvasXpressListIcon {
 	line-height: 24px;
 	list-style: none;
 	left: 3px;
-	margin: 0px;
+	margin: 0px !important;
 	padding: 0px;
 	position: absolute;
 	top: 3px;
 	vertical-align: top;
 	width: 24px;
 	white-space: nowrap;
+	background: rgba(0,0,0,0) !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
 }
 
 span.CanvasXpressListItemText {
@@ -2379,14 +2563,31 @@ table.CanvasXpressListItemTable {
 }
 
 img.CanvasXpressToolbarHelp {
+  background: rgba(0,0,0,0) !important;
+  border: 0px none !important;
+  box-shadow: 0 0 0px rgba(0,0,0,0) !important;
 	cursor: default;
 	float: right;
-	margin-left: 2px;
+	margin: 0px 0px 0px 2px !important;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
 	-ms-user-select: none;
+}
+
+img.CanvasXpressToolbarHelp {
+  transition: all 0.3s;
+    -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+
+img.CanvasXpressToolbarHelp:hover {
+    margin: 0 7px;  
+  transform: scale(1.2);
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255,255,255,0.7)));
 }
 
 div.CanvasXpressToolbarHelp {
