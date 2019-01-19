@@ -90,8 +90,8 @@
     </source>
 
     <!-- soybean standalone markers -->
-    <source name="soybase-markers" type="legfed-geneticmarker-gff" dump="true">
-      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybase-markers"/>
+    <source name="soybean-markers" type="legfed-geneticmarker-gff" dump="true">
+      <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybean-markers"/>
     </source>
 
     <!-- soybean expression -->

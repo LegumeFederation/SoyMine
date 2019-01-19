@@ -8,16 +8,16 @@ echo "##########################################################################
 echo "###################################### integrate #################################################"
 echo "##################################################################################################"
 
-## front-loaded 'cause it's huge and is loaded with pg_restore
-#./gradlew integrate -Psource=soybean-genotyping --stacktrace
+# ## load this with pg_restore
+# ./gradlew integrate -Psource=soybean-genotyping --stacktrace
 
-## ontologies
+# ## ontologies
 # ./gradlew integrate -Psource=go
 # ./gradlew integrate -Psource=so
 # ./gradlew integrate -Psource=to
 # ./gradlew integrate -Psource=po
 
-## LIS chado
+# ## LIS chado
 # ./gradlew integrate -Psource=lis-genomics --stacktrace
 # ./gradlew integrate -Psource=lis-proteins --stacktrace
 # ./gradlew integrate -Psource=lis-genetics --stacktrace
@@ -29,6 +29,7 @@ echo "##########################################################################
 ## ALL of the chado loaders must be DONE before continuing, because identifiers are changed by SQL below ##
 ###########################################################################################################
 
+# ## SQL updates
 # ./gradlew generateUpdateTriggers
 # psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
 # psql soymine-dev -f ../legfed-intermine-sql/cleanup-chado-bugs.sql
@@ -37,31 +38,29 @@ echo "##########################################################################
 # psql soymine-dev -f ../legfed-intermine-sql/update-identifiers.sql
 # psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
 
-## file sources - genomics
-#./gradlew integrate -Psource=soybean-synteny --stacktrace
-#####./gradlew integrate -Psource=soybase-markers --stacktrace
-#./gradlew integrate -Psource=soybase-markers-chromosomes --stacktrace
+# ## file sources - genomics
+# ./gradlew integrate -Psource=soybean-synteny --stacktrace
+# ./gradlew integrate -Psource=soybean-markers --stacktrace
+# ./gradlew integrate -Psource=soybase-markers-chromosomes --stacktrace
 
-## file sources - lines and phenotypes
-#./gradlew integrate -Psource=soybean-lines --stacktrace
+# ## file sources - lines and phenotypes
+# ./gradlew integrate -Psource=soybean-lines --stacktrace
+# ./gradlew integrate -Psource=soybean-phenotypes --stacktrace
 
-## this is throwing a weird error on nonexistent key key_identifier -- which appears nowhere -- so PrimaryKey.java is HACKED!
-#./gradlew integrate -Psource=soybean-phenotypes --stacktrace
+# ## file sources - genetics
+# ./gradlew integrate -Psource=soybase-qtls --stacktrace
+# ./gradlew integrate -Psource=soybase-qtl-ontology --stacktrace
+# ./gradlew integrate -Psource=soybase-linkagegroups --stacktrace
+# ./gradlew integrate -Psource=soybase-markers-linkagegroups --stacktrace
+# ./gradlew integrate -Psource=soybase-markers-qtls --stacktrace
+# ./gradlew integrate -Psource=soybase-gwas --stacktrace
 
-## file sources - genetics
-#./gradlew integrate -Psource=soybase-qtls --stacktrace
-#./gradlew integrate -Psource=soybase-qtl-ontology --stacktrace
-#./gradlew integrate -Psource=soybase-linkagegroups --stacktrace
-#./gradlew integrate -Psource=soybase-markers-linkagegroups --stacktrace
-#./gradlew integrate -Psource=soybase-markers-qtls --stacktrace
-#./gradlew integrate -Psource=soybase-gwas --stacktrace
+# ## file sources - expression
+# ./gradlew integrate -Psource=soybean-expression --stacktrace
 
-## file sources - expression
-#./gradlew integrate -Psource=soybean-expression --stacktrace
-
-## update the strain descriptions and organism genus/species
-./gradlew generateUpdateTriggers
-psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
-psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
-psql soymine-dev -f ../legfed-intermine-sql/update-strain-descriptions.sql
-psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
+# ## re-update the strain descriptions and organism genus/species
+# ./gradlew generateUpdateTriggers
+# psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
+# psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
+# psql soymine-dev -f ../legfed-intermine-sql/update-strain-descriptions.sql
+# psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
