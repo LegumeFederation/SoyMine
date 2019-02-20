@@ -3,13 +3,13 @@
 ## clear the logs (quietly)
 rm -f intermine.log
 
+# ## load this with pg_restore!!!
+# ./gradlew integrate -Psource=soybean-genotyping --stacktrace
+
 ## echo a big marker so we can see when this run started in the scroll
 echo "##################################################################################################"
 echo "###################################### integrate #################################################"
 echo "##################################################################################################"
-
-# ## load this with pg_restore
-# ./gradlew integrate -Psource=soybean-genotyping --stacktrace
 
 # ## ontologies
 # ./gradlew integrate -Psource=go
@@ -25,9 +25,9 @@ echo "##########################################################################
 # ./gradlew integrate -Psource=lis-genefamilies --stacktrace
 # ./gradlew integrate -Psource=lis-reactome-file --stacktrace
 
-###########################################################################################################
-## ALL of the chado loaders must be DONE before continuing, because identifiers are changed by SQL below ##
-###########################################################################################################
+# ## ---------------------------------------------------------------------------------------------------------
+# ## - ALL of the chado loaders must be DONE before continuing, because identifiers are changed by SQL below -
+# ## ---------------------------------------------------------------------------------------------------------
 
 # ## SQL updates
 # ./gradlew generateUpdateTriggers
@@ -43,7 +43,7 @@ echo "##########################################################################
 # ./gradlew integrate -Psource=soybean-markers --stacktrace
 # ./gradlew integrate -Psource=soybase-markers-chromosomes --stacktrace
 
-# ## file sources - lines and phenotypes
+# ## file sources - genotyping lines and associated phenotypes
 # ./gradlew integrate -Psource=soybean-lines --stacktrace
 # ./gradlew integrate -Psource=soybean-phenotypes --stacktrace
 
@@ -55,7 +55,7 @@ echo "##########################################################################
 # ./gradlew integrate -Psource=soybase-markers-qtls --stacktrace
 # ./gradlew integrate -Psource=soybase-gwas --stacktrace
 
-# ## file sources - expression
+# # ## file sources - expression
 # ./gradlew integrate -Psource=soybean-expression --stacktrace
 
 # ## re-update the strain descriptions and organism genus/species

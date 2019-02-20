@@ -44,6 +44,7 @@ subprojects {
   }
 
   dependencies {
+
     compile group: "org.intermine", name: "intermine-resources", version: System.getProperty("imVersion")
 
     // https://mvnrepository.com/artifact/org.postgresql/postgresql

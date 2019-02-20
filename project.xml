@@ -140,7 +140,7 @@
     </source>
 
     <!-- GRIN soybean lines -->
-    <source name="soybean-lines" type="legfed-lines-file" dump="true">
+    <source name="soybean-lines" type="legfed-strains-file" dump="true">
       <property name="src.data.dir" location="/home/shokin/legfed-intermine-data/soybean-lines"/>
     </source>
 

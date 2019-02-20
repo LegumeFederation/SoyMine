@@ -69,8 +69,10 @@
     <fields>
       <fieldconfig fieldExpr="organism.name" label="Organism" />
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier" />
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier" />
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
+      <fieldconfig fieldExpr="chadoFeatureId" showInInlineCollection="false" showInSummary="false" />
+      <fieldconfig fieldExpr="chadoName" showInInlineCollection="false" showInSummary="false" />
+      <fieldconfig fieldExpr="chadoUniqueName" showInInlineCollection="false" showInSummary="false" />
     </fields>
     <bagdisplayers>
       <displayer src="heatMap.tile" showOnLeft="true" />
@@ -99,7 +101,6 @@
     <fields>
       <fieldconfig fieldExpr="organism.name" label="Organism"/>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier"/>
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
       <fieldconfig fieldExpr="chromosome.primaryIdentifier" showInInlineCollection="true" showInSummary="false" label="Chromosome" />
       <fieldconfig fieldExpr="chromosomeLocation.start" showInInlineCollection="true" showInSummary="false" label="Start" />
@@ -110,7 +111,6 @@
   <class className="org.intermine.model.bio.Protein">
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="LIS identifier"/>
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" />
     </fields>
   </class>
@@ -178,7 +178,6 @@
     </headerconfig>
     <fields>
       <fieldconfig fieldExpr="name"/>
-      <fieldconfig fieldExpr="variety"/>
       <fieldconfig fieldExpr="taxonId" />
     </fields>
   </class>
@@ -321,8 +320,7 @@
     </headerconfig>
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="traitName"/>
-      <fieldconfig fieldExpr="pValue" label="GWAS p-value"/>
+      <fieldconfig fieldExpr="phenotype.name" label="Phenotype"/>
     </fields>
   </class>
 
@@ -335,7 +333,6 @@
     <fields>
       <fieldconfig fieldExpr="identifier"/>
       <fieldconfig fieldExpr="name"/>
-      <fieldconfig fieldExpr="species"/>
     </fields>
   </class>
 
@@ -383,7 +380,7 @@
     </fields>
   </class>
 
-  <class className="org.intermine.model.bio.GWASExperiment">
+  <class className="org.intermine.model.bio.GWAS">
     <headerconfig>
       <titles>
         <title mainTitles="primaryIdentifier" numberofMainTitlesToShow="1" />
@@ -391,6 +388,21 @@
     </headerconfig>
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="SoyBase ID"/>
+      <fieldconfig fieldExpr="platformName"/>
+      <fieldconfig fieldExpr="platformDetails"/>
+    </fields>
+  </class>
+
+  <class className="org.intermine.model.bio.GWASResult">
+    <headerconfig>
+      <titles>
+        <title mainTitles="phenotype.primaryIdentifier|marker.primaryIdentifier" numberofMainTitlesToShow="2" />
+      </titles>
+    </headerconfig>
+    <fields>
+      <fieldconfig fieldExpr="study.primaryIdentifier" label="GWAS"/>
+      <fieldconfig fieldExpr="phenotype.primaryIdentifier" label="Phenotype"/>
+      <fieldconfig fieldExpr="marker.primaryIdentifier" label="Marker"/>
     </fields>
   </class>
 
@@ -430,19 +442,6 @@
     </fields>
   </class>
 
-  <class className="org.intermine.model.bio.GenotypingLine">
-    <headerconfig>
-      <titles>
-        <title mainTitles="primaryIdentifier" numberOfMainTitlesToShow="1" />
-      </titles>
-    </headerconfig>
-    <fields>
-      <fieldconfig fieldExpr="primaryIdentifier" label="DB Identifier"/>
-      <fieldconfig fieldExpr="origin"/>
-      <fieldconfig fieldExpr="comment"/>
-    </fields>
-  </class>
-
   <class className="org.intermine.model.bio.GenotypeValue">
     <headerconfig>
       <titles>
@@ -462,11 +461,11 @@
   <class className="org.intermine.model.bio.PhenotypeValue">
     <headerconfig>
       <titles>
-        <title mainTitles="phenotype.primaryIdentifier|line|value" numberOfMainTitlesToShow="3" />
+        <title mainTitles="phenotype.name|line|value" numberOfMainTitlesToShow="3" />
       </titles>
     </headerconfig>
     <fields>
-      <fieldconfig fieldExpr="phenotype.primaryIdentifier" label="Phenotype"/>
+      <fieldconfig fieldExpr="phenotype.name" label="Phenotype"/>
       <fieldconfig fieldExpr="line.primaryIdentifier" label="Line"/> 
       <fieldconfig fieldExpr="numericValue"/>
       <fieldconfig fieldExpr="textValue"/>
@@ -543,11 +542,11 @@
                      placement="Expression"
                      types="Gene"/>
 
-    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GWASExperimentDisplayer"
-                     jspName="model/gwasExperimentDisplayer.jsp"
+    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GWASDisplayer"
+                     jspName="model/gwasDisplayer.jsp"
                      replacesFields=""
                      placement="summary"
-                     types="GWASExperiment"/>
+                     types="GWAS"/>
 
   </reportdisplayers>
 
