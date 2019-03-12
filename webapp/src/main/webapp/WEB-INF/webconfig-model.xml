@@ -271,7 +271,7 @@
     </headerconfig>
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="Name"/>
-      <fieldconfig fieldExpr="description" label="Description"/>
+      <fieldconfig fieldExpr="description" label="Description" doNotTruncate="true"/>
     </fields>
   </class>
 
@@ -320,7 +320,7 @@
     </headerconfig>
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="DB identifier"/>
-      <fieldconfig fieldExpr="phenotype.name" label="Phenotype"/>
+      <fieldconfig fieldExpr="phenotype.primaryIdentifier" label="Phenotype"/>
     </fields>
   </class>
 
@@ -437,8 +437,9 @@
       </titles>
     </headerconfig>
     <fields>
-      <fieldconfig fieldExpr="primaryIdentifier" label="DB Identifier"/>
-      <fieldconfig fieldExpr="description" />
+      <fieldconfig fieldExpr="primaryIdentifier" label="DB Identifier" />
+      <fieldconfig fieldExpr="description" doNotTruncate="true" />
+      <fieldconfig fieldExpr="matrixNotes" doNotTruncate="true" />
     </fields>
   </class>
 
