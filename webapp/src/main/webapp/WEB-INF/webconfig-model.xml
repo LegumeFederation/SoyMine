@@ -543,8 +543,8 @@
                      placement="Expression"
                      types="Gene"/>
 
-    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GWASDisplayer"
-                     jspName="model/gwasDisplayer.jsp"
+    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GWASCircle"
+                     jspName="model/gwasCircle.jsp"
                      replacesFields=""
                      placement="summary"
                      types="GWAS"/>
