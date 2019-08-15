@@ -14,12 +14,6 @@ echo "##########################################################################
 # ## load this with pg_restore!!!
 # ./gradlew integrate -Psource=soybean-genotyping --stacktrace
 
-# ## ontologies
-# ./gradlew integrate -Psource=go
-# ./gradlew integrate -Psource=so
-# ./gradlew integrate -Psource=to
-# ./gradlew integrate -Psource=po
-
 # ## LIS chado
 # ./gradlew integrate -Psource=lis-genomics --stacktrace
 # ./gradlew integrate -Psource=lis-proteins --stacktrace
@@ -28,14 +22,13 @@ echo "##########################################################################
 # ./gradlew integrate -Psource=lis-genefamilies --stacktrace
 # ./gradlew integrate -Psource=lis-reactome-file --stacktrace
 
-# ## ---------------------------------------------------------------------------------------------------------
-# ## - ALL of the chado loaders must be DONE before continuing, because identifiers are changed by SQL below -
-# ## ---------------------------------------------------------------------------------------------------------
+## ---------------------------------------------------------------------------------------------------------
+## - ALL of the chado loaders must be DONE before continuing, because identifiers are changed by SQL below -
+## ---------------------------------------------------------------------------------------------------------
 
 # ## SQL updates
 # ./gradlew generateUpdateTriggers
 # psql soymine-dev -f dbmodel/build/resources/main/add-update-triggers.sql
-# psql soymine-dev -f ../legfed-intermine-sql/cleanup-chado-bugs.sql
 # psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
 # psql soymine-dev -f ../legfed-intermine-sql/update-organism-descriptions.sql
 # psql soymine-dev -f ../legfed-intermine-sql/update-identifiers.sql
@@ -67,3 +60,9 @@ echo "##########################################################################
 # psql soymine-dev -f ../legfed-intermine-sql/update-organism-genus-species.sql
 # psql soymine-dev -f ../legfed-intermine-sql/update-strain-descriptions.sql
 # psql soymine-dev -f dbmodel/build/resources/main/remove-update-triggers.sql
+
+# ## ontologies
+# ./gradlew integrate -Psource=go
+# ./gradlew integrate -Psource=so
+# ./gradlew integrate -Psource=to
+# ./gradlew integrate -Psource=po
