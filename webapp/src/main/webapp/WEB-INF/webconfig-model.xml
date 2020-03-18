@@ -403,6 +403,7 @@
       <fieldconfig fieldExpr="study.primaryIdentifier" label="GWAS"/>
       <fieldconfig fieldExpr="phenotype.primaryIdentifier" label="Phenotype"/>
       <fieldconfig fieldExpr="marker.primaryIdentifier" label="Marker"/>
+      <fieldconfig fieldExpr="pValue" label="p-value"/>
     </fields>
   </class>
 
@@ -543,8 +544,8 @@
                      placement="Expression"
                      types="Gene"/>
 
-    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GWASCircle"
-                     jspName="model/gwasCircle.jsp"
+    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GWASDisplayer"
+                     jspName="model/gwasDisplayer.jsp"
                      replacesFields=""
                      placement="summary"
                      types="GWAS"/>
