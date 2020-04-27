@@ -5,152 +5,511 @@
 
   <sources>
 
-    <!-- chado genomics -->
-    <source name="lis-genomics" type="legfed-chado-db" dump="true">
-      <property name="source.db.name" value="lis-chado"/>
-      <property name="organisms" value="3847"/>
-      <property name="strains" value="Williams82"/>
-      <property name="dataSetTitle" value="LIS Glycine max (3847_Williams82) data"/>
-      <property name="dataSourceName" value="LIS chado database"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.SequenceProcessor"/>
+    <!-- Gene_families/legume.genefam.fam1.M65K/ -->
+    <source name="lis.fam1-genefamily" type="lis-genefamily" dump="true">
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Gene_families/legume.genefam.fam1.M65K/"/>
+      <property name="dataSetDescription" value="LIS gene families"/>
+      <property name="src.data.dir" location="/data/LIS/Gene_families/legume.genefam.fam1.M65K"/>
     </source>
 
-    <!-- chado proteins -->
-    <source name="lis-proteins" type="legfed-chado-db" dump="true">
-      <property name="source.db.name" value="lis-chado"/>
-      <property name="organisms" value="3847"/>
-      <property name="strains" value="Williams82"/>
-      <property name="dataSetTitle" value="LIS Glycine max (3847_Williams82) data"/>
-      <property name="dataSourceName" value="LIS chado database"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.ProteinProcessor"/>
+    <!-- ########### -->
+    <!-- Glycine max -->
+    <!-- ########### -->
+
+    <!-- about_this_collection/ -->
+    <!-- ├── description_Glycine_max.yml -->
+    <!-- └── strains_Glycine_max.yml -->
+    <source name="glyma-about" type="lis-about" dump="true">
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/about_this_collection/"/>
+      <property name="dataSetDescription" value="Glycine max organism and strain information."/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/about_this_collection"/>
     </source>
 
-    <!-- chado genetics -->
-    <source name="lis-genetics" type="legfed-chado-db" dump="true">
-      <property name="source.db.name" value="lis-chado"/>
-      <property name="organisms" value="3847"/>
-      <property name="strains" value="Williams82"/>
-      <property name="phytozome.version" value="phytozome_10_2"/>
-      <property name="dataSetTitle" value="LIS Glycine max (3847_Williams82) data"/>
-      <property name="dataSourceName" value="LIS chado database"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.GeneticProcessor"/>
+    <!-- phenotypes/ -->
+    <!-- └── glyma.phenotypes.tsv -->
+    <source name="glyma-phenotypes" type="lis-phenotype" dump="true">
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/phenotypes/"/>
+      <property name="dataSetDescription" value="Glycine max phenotype-ontology relations"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/mixed.pheno1.0BYC"/>
     </source>
-
-    <!-- chado GO annotation -->
-    <source name="lis-go-annotation" type="legfed-chado-db" dump="true">
-      <property name="source.db.name" value="lis-chado"/>
-      <property name="organisms" value="3847"/>
-      <property name="strains" value="Williams82"/>
-      <property name="dataSetTitle" value="LIS Glycine Max (3847_Williams82) data"/>
-      <property name="dataSourceName" value="LIS chado database"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.GOAnnotationProcessor"/>
-    </source>
-
-    <!-- chado featureprop attributes -->
-    <source name="lis-featureprop" type="legfed-chado-db" dump="true">
-      <property name="source.db.name" value="lis-chado"/>
-      <property name="organisms" value="3847"/>
-      <property name="strains" value="Williams82"/>
-      <property name="dataSetTitle" value="LIS Glycine max (3847_Williams82) data"/>
-      <property name="dataSourceName" value="LIS chado database"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.FeaturePropProcessor"/>
-    </source>
-
-    <!-- chado gene families and resulting homology - based on featureprop -->
-    <source name="lis-genefamilies" type="legfed-chado-db" dump="true">
-      <property name="source.db.name" value="lis-chado"/>
-      <property name="organisms" value="3847"/>
-      <property name="strains" value="Williams82"/>
-      <property name="homologue.organisms" value="3920 3847 3880 3885 130453 130454 3827 3827 157791 57577 3914 3821 3871 34305"/>
-      <property name="homologue.strains" value="IT97K-499-35 Williams82 A17 G19833 V14167 K30076 CDCFrontier ICC4958 VC1973A MilvusB Gyeongwon ICPL87119 Tanjil MG20"/>
-      <property name="dataSetTitle" value="LIS chado data"/>
-      <property name="dataSourceName" value="LIS chado database"/>
-      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.GeneFamilyProcessor"/>
-    </source>
-
-    <!-- chado + reactome file -->
-    <source name="lis-reactome-file" type="legfed-chado-db" dump="true">
-      <property name="source.db.name" value="lis-chado"/>
-      <property name="reactome.filename" value="/data/legfed-intermine-data/plant-reactome/gene_ids_by_pathway_and_species.tab"/>
-      <property name="organisms" value="3847"/>
-      <property name="strains" value="Williams82"/>
-      <property name="dataSetTitle" value="Plant Reactome data"/>
-      <property name="dataSourceName" value="LIS chado database"/>
-      <property name="converter.class" value="org.intermine.bio.dataconversion.ChadoDBConverter"/>
-      <property name="processors" value="org.intermine.bio.dataconversion.ReactomeProcessor"/>
-    </source>
-
-
-
     
-    <!-- synteny from GFF files -->
-    <source name="soybean-synteny" type="legfed-synteny-gff" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybean-synteny"/>
+    <!-- ################ -->
+    <!-- Glycine max Wm82 -->
+    <!-- ################ -->
+
+    <!-- Wm82.gnm2.DTC4/ -->
+    <!-- └── glyma.Wm82.gnm2.DTC4.genome_main.fna -->
+    <source name="glyma.Wm82.gnm2-chromosome-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Glycine max Wm82"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm2"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Wm82.gnm2.DTC4/"/>
+      <property name="lis-fasta.taxonId" value="3847"/>
+      <property name="lis-fasta.strainIdentifier" value="Wm82"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.includes" value="glyma.Wm82.gnm2.DTC4.genome_main.fna"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.DTC4"/>
     </source>
 
-    <!-- soybean standalone markers -->
-    <source name="soybean-markers" type="legfed-geneticmarker-gff" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybean-markers"/>
+    <!-- Wm82.gnm2.ann1.RVB6/ -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.RVB6.cds.fna -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.RVB6.cds_primaryTranscript.fna -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.RVB6.gene_models_main.gff3 -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.RVB6.genetic_marker.gff3 -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.RVB6.info_annot.txt -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.RVB6.protein.faa -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.RVB6.protein_primaryTranscript.faa -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.RVB6.transcript.fna -->
+    <!-- └── glyma.Wm82.gnm2.ann1.RVB6.transcript_primaryTranscript.fna -->
+    <source name="glyma.Wm82.gnm2.ann1-info-annot" type="lis-info-annot" dump="true"> 
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Wm82.gnm2.ann1.RVB6/"/>
+      <property name="dataSetDescription" value="Glycine max gene, protein and mRNA ontology annotations."/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.ann1.RVB6"/>
+    </source>
+    <source name="glyma.Wm82.gnm2.ann1-gff" type="lis-gff" dump="true">
+      <property name="gff3.dataSourceName" value="LIS Datastore"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/public/"/>
+      <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
+      <property name="gff3.dataSetTitle" value="glyma.Wm82.gnm2.ann1.RVB6.gene_models_main.gff3"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Wm82.gnm2.ann1.RVB6/"/>
+      <property name="gff3.dataSetDescription" value="Gene model annotation for the glyma.Wm82.gnm2 genome"/>
+      <property name="gff3.dataSetVersion" value="gnm2.ann1"/>
+      <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="gff3.taxonId" value="3847"/>
+      <property name="gff3.strainIdentifier" value="Wm82"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.ann1.RVB6"/>
+    </source>
+    <source name="glyma.Wm82.gnm2.ann1-protein-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="Protein models for the glyma.Wm82.gnm2 genome"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm2.ann1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Wm82.gnm2.ann1.RVB6/"/>
+      <property name="lis-fasta.taxonId" value="3847"/>
+      <property name="lis-fasta.strainIdentifier" value="Wm82"/>
+      <property name="lis-fasta.sequenceType" value="protein"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Protein"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.geneAttribute" value="locus"/>
+      <property name="lis-fasta.includes" value="glyma.Wm82.gnm2.ann1.RVB6.protein_primaryTranscript.faa"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.ann1.RVB6"/>
+    </source>
+    <source name="glyma.Wm82.gnm2.ann1-cds-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="CDS models for the glyma.Wm82.gnm2 genome"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm2.ann1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Wm82.gnm2.ann1.RVB6/"/>
+      <property name="lis-fasta.taxonId" value="3847"/>
+      <property name="lis-fasta.strainIdentifier" value="Wm82"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.CDS"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.geneAttribute" value="locus"/>
+      <property name="lis-fasta.includes" value="glyma.Wm82.gnm2.ann1.RVB6.cds_primaryTranscript.fna"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.ann1.RVB6"/>
+    </source>
+    <source name="glyma.Wm82.gnm2.ann1-mrna-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="mRNA models for the glyma.Wm82.gnm2 genome"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm2.ann1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Wm82.gnm2.ann1.RVB6/"/>
+      <property name="lis-fasta.taxonId" value="3847"/>
+      <property name="lis-fasta.strainIdentifier" value="Wm82"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.MRNA"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.geneAttribute" value="locus"/>
+      <property name="lis-fasta.includes" value="glyma.Wm82.gnm2.ann1.RVB6.transcript_primaryTranscript.fna"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.ann1.RVB6"/>
     </source>
 
-    <!-- soybean expression -->
-    <source name="soybean-expression" type="legfed-expression" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybean-expression"/>
+    <!-- Wm82.gnm2.mrk1.XJP2/ -->
+    <!-- └── glyma.Wm82.gnm2.mrk1.XJP2.genetic_marker.gff3 -->
+    <source name="glyma.Wm82.gnm2.mrk1-gff" type="lis-gff" dump="true">
+      <property name="gff3.dataSourceName" value="LIS Datastore"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/public/"/>
+      <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
+      <property name="gff3.dataSetTitle" value="glyma.Wm82.gnm2.mrk1.XJP2.genetic_marker.gff3"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Wm82.gnm2.mrk1.XJP2/"/>
+      <property name="gff3.dataSetDescription" value="Genetic marker positions on the glyma.Wm82.gnm2 genome assembly"/>
+      <property name="gff3.dataSetVersion" value="gnm2.ann1"/>
+      <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="gff3.taxonId" value="3847"/>
+      <property name="gff3.strainIdentifier" value="Wm82"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.mrk1.XJP2"/>
     </source>
 
-    <!-- QTL data from tab-delimited file -->
-    <source name="soybase-qtls" type="legfed-qtl-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-qtl"/>
+
+    <!-- Wm82.gnm2.ann1.syn1.HXNY/ -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.x.aradu.V14167.gnm1.ann1.gff -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.x.araip.K30076.gnm1.ann1.gff -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.x.cajca.ICPL87119.gnm1.ann1.gff -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.x.glyma.Wm82.gnm2.ann1.old_duplication.gff.gz -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.x.glyma.Wm82.gnm2.ann1.recent_duplication.gff.gz -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.x.lotja.MG20.gnm3.ann1.gff -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.x.lupan.Tanjil.gnm1.ann1.gff -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.x.medtr.A17_HM341.gnm4.ann2.gff -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.x.phavu.G19833.gnm1.ann1.gff -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.x.phavu.G19833.gnm2.ann1.gff -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.x.vigan.Gyeongwon.gnm3.ann1.gff -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.x.vigra.VC1973A.gnm6.ann1.gff -->
+    <source name="glyma.Wm82.gnm2.ann1.syn1-synteny" type="lis-synteny" dump="true"> 
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Wm82.gnm2.ann1.syn1.HXNY/"/>
+      <property name="dataSetDescription" value="Synteny between soybean Wm82.gnm2 and other species."/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.ann1.syn1.HXNY"/>
     </source>
 
-    <!-- QTL-ontology relations from tab-delimited file -->
-    <source name="soybase-qtl-ontology" type="legfed-qtl-ontology-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-qtl-ontology"/>
+    <!-- mixed.gwas.1W14/ -->
+    <!-- ├── glyma.mixed.gwas.1W14.KGK20170707-1.gwas.tsv -->
+    <!-- ├── glyma.mixed.gwas.1W14.KGK20170711-1.gwas.tsv -->
+    <!-- ├── ... -->
+    <source name="mixed.gwas.1W14-gwas" type="lis-gwas" dump="true">
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/mixed.gwas.1W14/"/>
+      <property name="dataSetDescription" value="Glycine max GWAS imported from SoyBase."/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/mixed.gwas1.1W14"/>
     </source>
 
-    <!-- genetic marker genomic locations and types from tab-delimited file -->
-    <source name="soybase-markers-chromosomes" type="legfed-marker-chromosome-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-markers-chromosomes"/>
+    <!-- Wm82.gnm2.ann1.samplesetN.expr1.G7ZY/ -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.samplesetN.G7ZY.exprSamples.tsv -->
+    <!-- ├── glyma.Wm82.gnm2.ann1.samplesetN.G7ZY.exprSource.tsv -->
+    <!-- └── glyma.Wm82.gnm2.ann1.samplesetN.G7ZY.genesSamplesTpm.tsv -->
+    <source name="glyma.Wm82.gnm2.ann1-expression" type="lis-expression" dump="true">
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Wm82.gnm2.ann1.samplesetN.expr1.G7ZY/"/>
+      <property name="dataSetDescription" value="Soybean gene expression atlas from the Libault Lab."/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.ann1.samplesetN.expr1.G7ZY"/>
     </source>
 
-    <!-- linkage groups and genetic maps from tab-delimited file -->
-    <source name="soybase-linkagegroups" type="legfed-linkagegroup-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-linkagegroups"/>
+    <!--#################-->
+    <!-- Glycine max Lee -->
+    <!--#################-->
+
+    <!-- Lee.gnm1.BXNC/ -->
+    <!-- └── glyma.Lee.gnm1.BXNC.genome_main.fna -->
+    <source name="glyma.Lee.gnm1-chromosome-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Glycine max Lee"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Lee.gnm1.BXNC/"/>
+      <property name="lis-fasta.taxonId" value="3847"/>
+      <property name="lis-fasta.strainIdentifier" value="Lee"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.includes" value="glyma.Lee.gnm1.BXNC.genome_main.fna"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Lee.gnm1.BXNC"/>
     </source>
 
-    <!-- genetic marker genetic locations on linkage groups from tab-delimited file -->
-    <source name="soybase-markers-linkagegroups" type="legfed-marker-linkagegroup-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-markers-linkagegroups"/>
+    <!-- Lee.gnm1.ann1.6NZV/ -->
+    <!-- ├── glyma.Lee.gnm1.ann1.6NZV.info_annot.txt.gz -->
+    <!-- ├── glyma.Lee.gnm1.ann1.6NZV.gene_models_main.gff3.gz -->
+    <!-- ├── glyma.Lee.gnm1.ann1.6NZV.cds_primaryTranscript.fna.gz -->
+    <!-- ├── glyma.Lee.gnm1.ann1.6NZV.protein_primaryTranscript.faa.gz -->
+    <!-- ├── glyma.Lee.gnm1.ann1.6NZV.transcript_primaryTranscript.fna.gz -->
+    <source name="glyma.Lee.gnm1.ann1-info-annot" type="lis-info-annot" dump="true"> 
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Lee.gnm1.ann1.6NZV/"/>
+      <property name="dataSetDescription" value="Glycine max gene, protein and mRNA ontology annotations."/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Lee.gnm1.ann1.6NZV"/>
+    </source>
+    <source name="glyma.Lee.gnm1.ann1-gff" type="lis-gff" dump="true">
+      <property name="gff3.dataSourceName" value="LIS Datastore"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/public/"/>
+      <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
+      <property name="gff3.dataSetTitle" value="glyma.Lee.gnm1.ann1.6NZV.gene_models_main.gff3"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Lee.gnm1.ann1.6NZV/"/>
+      <property name="gff3.dataSetDescription" value="Gene model annotation for the glyma.Lee.gnm1 genome"/>
+      <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
+      <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="gff3.taxonId" value="3847"/>
+      <property name="gff3.strainIdentifier" value="Lee"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Lee.gnm1.ann1.6NZV"/>
+    </source>
+    <source name="glyma.Lee.gnm1.ann1-cds-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="CDS models for the glyma.Lee.gnm1 genome"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Lee.gnm1.ann1.6NZV/"/>
+      <property name="lis-fasta.taxonId" value="3847"/>
+      <property name="lis-fasta.strainIdentifier" value="Lee"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.CDS"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.geneAttribute" value="locus"/>
+      <property name="lis-fasta.includes" value="glyma.Lee.gnm1.ann1.6NZV.cds_primaryTranscript.fna"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Lee.gnm1.ann1.6NZV"/>
+    </source>
+    <source name="glyma.Lee.gnm1.ann1-protein-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="Protein models for the glyma.Lee.gnm1 genome"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Lee.gnm1.ann1.6NZV/"/>
+      <property name="lis-fasta.taxonId" value="3847"/>
+      <property name="lis-fasta.strainIdentifier" value="Lee"/>
+      <property name="lis-fasta.sequenceType" value="protein"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Protein"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.geneAttribute" value="locus"/>
+      <property name="lis-fasta.includes" value="glyma.Lee.gnm1.ann1.6NZV.protein_primaryTranscript.faa"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Lee.gnm1.ann1.6NZV"/>
+    </source>
+    <source name="glyma.Lee.gnm1.ann1-mrna-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="mRNA models for the glyma.Lee.gnm1 genome"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Lee.gnm1.ann1.6NZV/"/>
+      <property name="lis-fasta.taxonId" value="3847"/>
+      <property name="lis-fasta.strainIdentifier" value="Lee"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.MRNA"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.geneAttribute" value="locus"/>
+      <property name="lis-fasta.includes" value="glyma.Lee.gnm1.ann1.6NZV.transcript_primaryTranscript.fna"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Lee.gnm1.ann1.6NZV"/>
     </source>
 
-    <!-- genetic marker associations with QTLs from tab-delimited file -->
-    <source name="soybase-markers-qtls" type="legfed-marker-qtl-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-markers-qtls"/>
+    <!-- ################ -->
+    <!-- Glycine max Zh13 -->
+    <!-- ################ -->
+
+    <!-- Zh13.gnm1.N6C8/ -->
+    <!-- ├── glyma.Zh13.gnm1.N6C8.genome_main.fna -->
+    <source name="glyma.Zh13.gnm1-chromosome-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Glycine max Zh13"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Zh13.gnm1.N6C8/"/>
+      <property name="lis-fasta.taxonId" value="3847"/>
+      <property name="lis-fasta.strainIdentifier" value="Zh13"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.includes" value="glyma.Zh13.gnm1.N6C8.genome_main.fna"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Zh13.gnm1.N6C8"/>
     </source>
 
-    <!-- GWAS marker-QTL associations from tab-delimited file -->
-    <source name="soybase-gwas" type="legfed-gwas-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybase-gwas"/>
+    <!-- Zh13.gnm1.ann1.8VV3/ -->
+    <!-- ├── glyma.Zh13.gnm1.ann1.8VV3.gene_models_main.gff3 -->
+    <!-- ├── glyma.Zh13.gnm1.ann1.8VV3.cds_primaryTranscript.fna -->
+    <!-- ├── glyma.Zh13.gnm1.ann1.8VV3.protein_primaryTranscript.faa -->
+    <source name="glyma.Zh13.gnm1.ann1-gff" type="lis-gff" dump="true">
+      <property name="gff3.dataSourceName" value="LIS Datastore"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/public/"/>
+      <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
+      <property name="gff3.dataSetTitle" value="glyma.Zh13.gnm1.ann1.8VV3.gene_models_main.gff3"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Zh13.gnm1.ann1.8VV3/"/>
+      <property name="gff3.dataSetDescription" value="Gene model annotation for the glyma.Zh13.gnm1 genome"/>
+      <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
+      <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="gff3.taxonId" value="3847"/>
+      <property name="gff3.strainIdentifier" value="Zh13"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Zh13.gnm1.ann1.8VV3"/>
+    </source>
+    <source name="glyma.Zh13.gnm1.ann1-cds-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="CDS models for the glyma.Zh13.gnm1 genome"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Zh13.gnm1.ann1.8VV3/"/>
+      <property name="lis-fasta.taxonId" value="3847"/>
+      <property name="lis-fasta.strainIdentifier" value="Zh13"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.CDS"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.geneAttribute" value="locus"/>
+      <property name="lis-fasta.includes" value="glyma.Zh13.gnm1.ann1.8VV3.cds_primaryTranscript.fna"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Zh13.gnm1.ann1.8VV3"/>
+    </source>
+    <source name="glyma.Zh13.gnm1.ann1-protein-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="Protein models for the glyma.Zh13.gnm1 genome"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Zh13.gnm1.ann1.8VV3/"/>
+      <property name="lis-fasta.taxonId" value="3847"/>
+      <property name="lis-fasta.strainIdentifier" value="Zh13"/>
+      <property name="lis-fasta.sequenceType" value="protein"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Protein"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.geneAttribute" value="locus"/>
+      <property name="lis-fasta.includes" value="glyma.Zh13.gnm1.ann1.8VV3.protein_primaryTranscript.faa"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Zh13.gnm1.ann1.8VV3"/>
     </source>
 
-    <!-- US. germplasm genotyping map against Williams82 -->
-    <source name="soybean-genotyping" type="legfed-gt-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybean-genotyping"/>
+    <!-- ############# -->
+    <!-- Glycine soja  -->
+    <!-- ############# -->
+
+    <source name="glyso-about" type="lis-about" dump="true">
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_soja/about_this_collection/"/>
+      <property name="dataSetDescription" value="Glycine soja organism and strain information."/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_soja/about_this_collection"/>
     </source>
 
-    <!-- GRIN soybean lines -->
-    <source name="soybean-lines" type="legfed-strains-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybean-lines"/>
+    <!-- ##################### -->
+    <!-- Glycine soja PI483463 -->
+    <!-- ##################### -->
+
+    <!-- PI483463.gnm1.YJWS/ -->
+    <!-- └── glyso.PI483463.gnm1.YJWS.genome_main.fna -->
+    <source name="glyso.PI483463.gnm1-chromosome-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Glycine soja PI483463"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_soja/PI483463.gnm1.YJWS/"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="PI483463"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.includes" value="glyso.PI483463.gnm1.YJWS.genome_main.fna"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_soja/PI483463.gnm1.YJWS"/>
     </source>
 
-    <!-- GRIN soybean line phenotypes -->
-    <source name="soybean-phenotypes" type="legfed-phenotypes-file" dump="true">
-      <property name="src.data.dir" location="/data/legfed-intermine-data/soybean-phenotypes"/>
+    <!-- PI483463.gnm1.ann1.3Q3Q/ -->
+    <!-- ├── glyso.PI483463.gnm1.ann1.3Q3Q.info_annot.txt -->
+    <!-- ├── glyso.PI483463.gnm1.ann1.3Q3Q.gene_models_main.gff3 -->
+    <!-- ├── glyso.PI483463.gnm1.ann1.3Q3Q.cds_primaryTranscript.fna -->
+    <!-- ├── glyso.PI483463.gnm1.ann1.3Q3Q.protein_primaryTranscript.faa -->
+    <!-- └── glyso.PI483463.gnm1.ann1.3Q3Q.transcript_primaryTranscript.fna -->
+    <source name="glyso.PI483463.gnm1.ann1-info-annot" type="lis-info-annot" dump="true"> 
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_soja/PI483463.gnm1.ann1.3Q3Q/"/>
+      <property name="dataSetDescription" value="Glycine soja gene, protein and mRNA ontology annotations."/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_soja/PI483463.gnm1.ann1.3Q3Q"/>
+    </source>
+    <source name="glyso.PI483463.gnm1.ann1-gff" type="lis-gff" dump="true">
+      <property name="gff3.dataSourceName" value="LIS Datastore"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/public/"/>
+      <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
+      <property name="gff3.dataSetTitle" value="glyso.PI483463.gnm1.ann1.3Q3Q.gene_models_main.gff3"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_soja/PI483463.gnm1.ann1.3Q3Q/"/>
+      <property name="gff3.dataSetDescription" value="Gene model annotation for the glyso.PI483463.gnm1 genome"/>
+      <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
+      <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="gff3.taxonId" value="3848"/>
+      <property name="gff3.strainIdentifier" value="PI483463"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_soja/PI483463.gnm1.ann1.3Q3Q"/>
+    </source>
+    <source name="glyso.PI483463.gnm1.ann1-cds-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="CDS models for the glyso.PI483463.gnm1 genome"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_soja/PI483463.gnm1.ann1.3Q3Q/"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="PI483463"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.CDS"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.geneAttribute" value="locus"/>
+      <property name="lis-fasta.includes" value="glyso.PI483463.gnm1.ann1.3Q3Q.cds_primaryTranscript.fna"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_soja/PI483463.gnm1.ann1.3Q3Q"/>
+    </source>
+    <source name="glyso.PI483463.gnm1.ann1-protein-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="Protein models for the glyso.PI483463.gnm1 genome"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_soja/PI483463.gnm1.ann1.3Q3Q/"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="PI483463"/>
+      <property name="lis-fasta.sequenceType" value="protein"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Protein"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.geneAttribute" value="locus"/>
+      <property name="lis-fasta.includes" value="glyso.PI483463.gnm1.ann1.3Q3Q.protein_primaryTranscript.faa"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_soja/PI483463.gnm1.ann1.3Q3Q"/>
+    </source>
+    <source name="glyso.PI483463.gnm1.ann1-mrna-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="mRNA models for the glyso.PI483463.gnm1 genome"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_soja/PI483463.gnm1.ann1.3Q3Q/"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="PI483463"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.MRNA"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.geneAttribute" value="locus"/>
+      <property name="lis-fasta.includes" value="glyso.PI483463.gnm1.ann1.3Q3Q.transcript_primaryTranscript.fna"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_soja/PI483463.gnm1.ann1.3Q3Q"/>
     </source>
 
-    <!-- ONTOLOGIES -->
+    <!-- W05.gnm1.SVL1/ -->
+    <!-- ├── glyso.W05.gnm1.SVL1.genome_main.fna -->
+    <source name="glyso.W05.gnm1-chromosome-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Glycine soja W05"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_soja/W05.gnm1.SVL1/"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="W05"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.includes" value="glyso.W05.gnm1.SVL1.genome_main.fna"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_soja/W05.gnm1.SVL1"/>
+    </source>
+
+    <!-- W05.gnm1.ann1.T47J/ -->
+    <!-- ├── glyso.W05.gnm1.ann1.T47J.gene_models_main.gff3 -->
+    <!-- ├── glyso.W05.gnm1.ann1.T47J.cds_primaryTranscript.fna -->
+    <!-- ├── glyso.W05.gnm1.ann1.T47J.protein_primaryTranscript.faa -->
+    <source name="glyso.W05.gnm1.ann1-gff" type="lis-gff" dump="true">
+      <property name="gff3.dataSourceName" value="LIS Datastore"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/public/"/>
+      <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
+      <property name="gff3.dataSetTitle" value="glyso.W05.gnm1.ann1.T47J.gene_models_main.gff3"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_soja/W05.gnm1.ann1.T47J/"/>
+      <property name="gff3.dataSetDescription" value="Gene model annotation for the glyso.W05.gnm1 genome"/>
+      <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
+      <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="gff3.taxonId" value="3848"/>
+      <property name="gff3.strainIdentifier" value="W05"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_soja/W05.gnm1.ann1.T47J"/>
+    </source>
+    <source name="glyso.W05.gnm1.ann1-cds-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="CDS models for the glyso.W05.gnm1 genome"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_soja/W05.gnm1.ann1.T47J/"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="W05"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.CDS"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.geneAttribute" value="locus"/>
+      <property name="lis-fasta.includes" value="glyso.W05.gnm1.ann1.T47J.cds_primaryTranscript.fna"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_soja/W05.gnm1.ann1.T47J"/>
+    </source>
+    <source name="glyso.W05.gnm1.ann1-protein-fasta" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetDescription" value="Protein models for the glyso.W05.gnm1 genome"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_soja/W05.gnm1.ann1.T47J/"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="W05"/>
+      <property name="lis-fasta.sequenceType" value="protein"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Protein"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.geneAttribute" value="locus"/>
+      <property name="lis-fasta.includes" value="glyso.W05.gnm1.ann1.T47J.protein_primaryTranscript.faa"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_soja/W05.gnm1.ann1.T47J"/>
+    </source>
+
+    <!-- ############### -->
+    <!-- ONTOLOGIES ETC. -->
+    <!-- ############### -->
     
+    <!-- INTERPRO -->
+    <source name="interpro" type="interpro">
+      <property name="data.source.name" value="InterPro"/>
+      <property name="data.source.description" value="XML file listing each InterPro entry."/>
+      <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/"/>
+      <property name="src.data.dir" location="/data/InterPro/"/>
+    </source>
+    <source name="interpro-go" type="interpro-go">
+      <property name="data.source.name" value="InterPro2GO"/>
+      <property name="data.source.description" value="Mappings of InterPro entries to Gene Ontology (GO) terms."/>
+      <property name="data.source.url" value="ftp://ftp.ebi.ac.uk/pub/databases/interpro/"/>
+      <property name="src.data.dir" location="/data/InterPro/ontology/"/>
+    </source>
+
     <!-- gene ontology -->
     <source name="go" type="go">
       <property name="src.data.file" location="/data/gene-ontology/go-basic.obo"/>
@@ -161,50 +520,46 @@
       <property name="src.data.file" location="/data/SO-Ontologies/so-simple.obo"/>
     </source>
 
-    <!-- trait ontology -->
-    <source name="to" type="legfed-trait-ontology">
+    <!-- plant ontology -->
+    <source name="plant-ontology" type="plant-ontology">
+      <property name="src.data.file" location="/data/plant-ontology/po.obo"/>
+      <property name="ontology.prefix" value="PO"/>
+    </source>
+
+    <!-- plant trait ontology -->
+    <source name="plant-trait-ontology" type="plant-trait-ontology">
       <property name="src.data.file" location="/data/plant-trait-ontology/to.obo"/>
       <property name="ontology.prefix" value="TO"/>
     </source>
 
-    <!-- plant ontology -->
-    <source name="po" type="legfed-plant-ontology">
-      <property name="src.data.file" location="/data/legfed-intermine-data/plant-ontology/po.obo"/>
-      <property name="ontology.prefix" value="PO"/>
+    <!-- soybean ontology (deprecated) -->
+    <source name="soybean-ontology" type="soybean-ontology">
+      <property name="src.data.file" location="/data/soybean-ontology/IBP-SOY.obo"/>
+      <property name="ontology.prefix" value="SOY"/>
     </source>
-
 
   </sources>
 
+  <!-- ############### -->
+  <!-- post-processing -->
+  <!-- ############### -->
+  
   <post-processing>
-
-    <!-- source-specific post-processing -->
-    <post-process name="do-sources" dump="true"/>
-
-    <!-- add features -->
-    <post-process name="legfed-create-gene-flanking-regions"/>
-    <post-process name="legfed-create-supercontig-flanking-regions"/>
-    <post-process name="legfed-create-intron-features"/>
-    <post-process name="create-intergenic-region-features"/>
-
-    <!-- legfed references and collections -->
-    <post-process name="legfed-create-go-annotations"/>
-    <post-process name="legfed-create-ontology-parent-annotations"/>
-    <post-process name="legfed-create-exon-gene-references"/>
-    <post-process name="legfed-create-protein-gene-references"/>
-    <post-process name="legfed-create-qtl-linkagegroup-references"/>
-
-    <post-process name="legfed-populate-gene-spanning-qtls"/>
-    <post-process name="legfed-populate-interpro-data"/>
-    <post-process name="legfed-populate-linkagegroup-lengths"/>
-
-    <post-process name="legfed-populate-publications"/>
-    
-    <!-- core references and collections -->
-    <post-process name="populate-child-features"/>
+    <!-- IM CORE -->
+    <post-process name="do-sources" />
+    <post-process name="create-utr-references"/>
     <post-process name="create-references" />
+    <post-process name="make-spanning-locations"/>
     <post-process name="create-chromosome-locations-and-lengths"/>
+    <post-process name="create-intergenic-region-features"/>
     <post-process name="transfer-sequences"/>
+    <post-process name="populate-child-features"/>
+    <post-process name="create-gene-flanking-features"/>
+
+    <!-- LIS -->
+    <post-process name="lis-create-protein-gene-references"/>
+    <post-process name="lis-create-cds-references"/>
+    <post-process name="lis-populate-publications"/>
 
     <!-- views and indexes, after all data is set -->
     <post-process name="create-location-overlap-index"/>
@@ -213,7 +568,6 @@
     <post-process name="summarise-objectstore"/>
     <post-process name="create-autocomplete-index"/>
     <post-process name="create-search-index"/>
-
   </post-processing>
 
 </project>
