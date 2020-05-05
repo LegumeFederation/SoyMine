@@ -557,11 +557,11 @@
     <post-process name="create-gene-flanking-features"/>
 
     <!-- LIS -->
-    <post-process name="lis-create-protein-gene-references"/>
+    <post-process name="lis-create-protein-transcript-gene-references"/>
     <post-process name="lis-create-cds-references"/>
     <post-process name="lis-populate-publications"/>
 
-    <!-- views and indexes, after all data is set -->
+    <!-- VIEWS AND INDEXES -->
     <post-process name="create-location-overlap-index"/>
     <post-process name="create-overlap-view" />
     <post-process name="create-attribute-indexes"/>

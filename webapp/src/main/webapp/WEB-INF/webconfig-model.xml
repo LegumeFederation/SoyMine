@@ -110,9 +110,9 @@
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
       <fieldconfig fieldExpr="description" doNotTruncate="true" label="Description" />
     </fields>
-    <!-- <bagdisplayers> -->
-    <!--   <displayer src="heatMap.tile" showOnLeft="true" /> -->
-    <!-- </bagdisplayers> -->
+    <bagdisplayers>
+      <displayer src="heatMap.tile" showOnLeft="true" />
+    </bagdisplayers>
   </class>
 
   <class className="org.intermine.model.bio.GeneFlankingRegion">
@@ -596,7 +596,7 @@
 
     <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneBarchartDisplayer"
                      jspName="model/geneBarchartDisplayer.jsp"
-                     replacesFields="expressionValues"
+                     replacesFields=""
                      placement="Expression"
                      types="Gene"/>
 

@@ -20,7 +20,7 @@ echo "##########################################################################
 ./gradlew postprocess -Pprocess=create-gene-flanking-features
 
 ## LIS
-./gradlew postprocess -Pprocess=lis-create-protein-gene-references
+./gradlew postprocess -Pprocess=lis-create-protein-transcript-gene-references
 ./gradlew postprocess -Pprocess=lis-create-cds-references
 ./gradlew postprocess -Pprocess=lis-populate-publications
 
@@ -29,6 +29,7 @@ echo "##########################################################################
 ./gradlew postprocess -Pprocess=create-overlap-view
 ./gradlew postprocess -Pprocess=create-attribute-indexes
 
+## DO THESE AFTER UPDATES
 ./gradlew postprocess -Pprocess=summarise-objectstore
 ./gradlew postprocess -Pprocess=create-autocomplete-index
 ./gradlew postprocess -Pprocess=create-search-index
