@@ -7,6 +7,12 @@
     </fields>
   </class>
 
+  <class className="org.intermine.model.bio.Annotatable">
+    <fields>
+      <fieldconfig fieldExpr="primaryIdentifier" label="LIS identifier"/>
+    </fields>
+  </class>
+
   <class className="org.intermine.model.bio.BioEntity">
     <headerconfig>
       <titles>
@@ -14,8 +20,11 @@
       </titles>
     </headerconfig>
     <fields>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="Name"/>
       <fieldconfig fieldExpr="primaryIdentifier" label="LIS identifier"/>
+      <fieldconfig fieldExpr="secondaryIdentifier" label="ALT identifier"/>
+      <fieldconfig fieldExpr="name" label="Name"/>
+      <fieldconfig fieldExpr="organism.shortName" label="Organism"/>
+      <fieldconfig fieldExpr="strain.identifier" label="Strain"/>
     </fields>
   </class>
 
@@ -68,6 +77,7 @@
       <fieldconfig fieldExpr="name"/>
       <fieldconfig fieldExpr="url" doNotTruncate="true"/>
       <fieldconfig fieldExpr="description"/>
+      <fieldconfig fieldExpr="licence"/>
       <fieldconfig fieldExpr="dataSource.name" label="DataSource"/>
     </fields>
   </class>
@@ -161,16 +171,22 @@
   </class>
 
   <class className="org.intermine.model.bio.Ontology">
+    <headerconfig>
+      <titles>
+        <title mainTitles="name" />
+      </titles>
+    </headerconfig>
     <fields>
-      <fieldconfig fieldExpr="name"/>
+      <fieldconfig fieldExpr="name" label="Name"/>
+      <fieldconfig fieldExpr="url" label="URL"/>
     </fields>
   </class>
 
   <class className="org.intermine.model.bio.OntologyAnnotation">
     <fields>
       <fieldconfig fieldExpr="subject.primaryIdentifier" label="Subject"/>
-      <fieldconfig fieldExpr="ontologyTerm.identifier" label="Identifier"/>
-      <fieldconfig fieldExpr="ontologyTerm.name" label="Name"/>
+      <fieldconfig fieldExpr="ontologyTerm.name" label="Term"/>
+      <fieldconfig fieldExpr="ontologyTerm.identifier" label="Term Identifier"/>
       <fieldconfig fieldExpr="ontologyTerm.description" label="Description"/>
     </fields>
   </class>
@@ -398,13 +414,13 @@
   <class className="org.intermine.model.bio.ExpressionSource">
     <headerconfig>
       <titles>
-        <title mainTitles="primaryIdentifier" numberofMainTitlesToShow="1" />
+        <title mainTitles="identifier" numberofMainTitlesToShow="1" />
       </titles>
     </headerconfig>
     <fields>
-      <fieldconfig fieldExpr="primaryIdentifier" label="Name"/>
-      <fieldconfig fieldExpr="geo" label="NCBI GEO Accession"/>
-      <fieldconfig fieldExpr="bioProject" label="NCBI BioProject Accession"/>
+      <fieldconfig fieldExpr="identifier" label="Name"/>
+      <fieldconfig fieldExpr="geoSeries" label="NCBI GEO Accession"/>
+      <fieldconfig fieldExpr="bioProject.accession" label="NCBI BioProject Accession"/>
       <fieldconfig fieldExpr="sra" label="NCBI SRA Accession"/>
     </fields>
   </class>
@@ -423,7 +439,7 @@
 
   <class className="org.intermine.model.bio.ExpressionValue">
     <fields>
-      <fieldconfig fieldExpr="expressionSample.source.primaryIdentifier" label="Source"/>
+      <fieldconfig fieldExpr="expressionSample.source.identifier" label="Source"/>
       <fieldconfig fieldExpr="expressionSample.primaryIdentifier" label="Sample"/>
       <fieldconfig fieldExpr="expressionSample.description" label="Description"/>
       <fieldconfig fieldExpr="value" label="Value"/>
@@ -434,11 +450,11 @@
   <class className="org.intermine.model.bio.GWAS">
     <headerconfig>
       <titles>
-        <title mainTitles="primaryIdentifier" numberofMainTitlesToShow="1" />
+        <title mainTitles="name|primaryIdentifier" numberofMainTitlesToShow="2" />
       </titles>
     </headerconfig>
     <fields>
-      <fieldconfig fieldExpr="primaryIdentifier" label="SoyBase ID"/>
+      <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
       <fieldconfig fieldExpr="platformName"/>
       <fieldconfig fieldExpr="platformDetails"/>
     </fields>
@@ -452,7 +468,7 @@
     </headerconfig>
     <fields>
       <fieldconfig fieldExpr="gwas.primaryIdentifier" label="GWAS"/>
-      <fieldconfig fieldExpr="identifier" label="SoyBase ID"/>
+      <fieldconfig fieldExpr="identifier" />
       <fieldconfig fieldExpr="phenotype.primaryIdentifier" label="Phenotype"/>
       <fieldconfig fieldExpr="marker.secondaryIdentifier" label="Marker"/>
       <fieldconfig fieldExpr="pValue" label="p-value"/>
@@ -596,7 +612,7 @@
 
     <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneBarchartDisplayer"
                      jspName="model/geneBarchartDisplayer.jsp"
-                     replacesFields=""
+                     replacesFields="expressionValues"
                      placement="Expression"
                      types="Gene"/>
 
