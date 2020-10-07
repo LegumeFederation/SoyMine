@@ -5,7 +5,7 @@ rm -f *.log
 echo ""
 echo "##################################################################################################"
 echo "##################################################################################################"
-echo "##################################### postprocess ################################################"
+echo "##################################### SOYMINE POSTPROCESS ########################################"
 echo "##################################################################################################"
 echo "##################################################################################################"
 echo ""
@@ -14,11 +14,11 @@ echo ""
 # ./gradlew postprocess -Pprocess=do-sources
 # ./gradlew postprocess -Pprocess=create-utr-references
 # ./gradlew postprocess -Pprocess=create-references
-./gradlew postprocess -Pprocess=make-spanning-locations
-./gradlew postprocess -Pprocess=create-chromosome-locations-and-lengths
+# ./gradlew postprocess -Pprocess=make-spanning-locations
+# ./gradlew postprocess -Pprocess=create-chromosome-locations-and-lengths
 # ./gradlew postprocess -Pprocess=create-intergenic-region-features
-./gradlew postprocess -Pprocess=transfer-sequences
-./gradlew postprocess -Pprocess=populate-child-features
+# ./gradlew postprocess -Pprocess=transfer-sequences
+# ./gradlew postprocess -Pprocess=populate-child-features
 # ./gradlew postprocess -Pprocess=create-gene-flanking-features
 
 # ## LIS
@@ -28,14 +28,15 @@ echo ""
 # ./gradlew postprocess -Pprocess=lis-populate-gene-protein-collections
 # ./gradlew postprocess -Pprocess=lis-populate-transcript-gene-references
 # ./gradlew postprocess -Pprocess=lis-populate-transcript-protein-references
-./gradlew postprocess -Pprocess=lis-populate-publications
+# ./gradlew postprocess -Pprocess=lis-populate-publications
+# ./gradlew postprocess -Pprocess=lis-populate-protein-pathway-collections
 
 # ## VIEWS AND INDEXES
 # ./gradlew postprocess -Pprocess=create-location-overlap-index
 # ./gradlew postprocess -Pprocess=create-overlap-view
-./gradlew postprocess -Pprocess=create-attribute-indexes
+# ./gradlew postprocess -Pprocess=create-attribute-indexes
 
-## DO THESE AFTER UPDATES
+## DO THESE AFTER DATA UPDATES
 ./gradlew postprocess -Pprocess=summarise-objectstore
 ./gradlew postprocess -Pprocess=create-autocomplete-index
 ./gradlew postprocess -Pprocess=create-search-index

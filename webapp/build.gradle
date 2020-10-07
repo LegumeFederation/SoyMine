@@ -22,11 +22,11 @@ def explodedWebAppDir = "$buildDir/explodedWebApp"
 def mergePropsDir = "$buildDir/props"
 
 dependencies {
-    compile (project(":dbmodel")) {transitive = false}
-    compile group: "org.intermine", name: "bio-core", version: System.getProperty("bioVersion"), transitive: false
-    compile group: "org.intermine", name: "intermine-api", version: System.getProperty("imVersion")
-    compile group: "org.intermine", name: "intermine-webapp", version: System.getProperty("imVersion"), classifier: "classes"
-    compile group: "org.intermine", name: "intermine-webtasks", version: System.getProperty("imVersion")
+    implementation (project(":dbmodel")) {transitive = false}
+    implementation group: "org.intermine", name: "bio-core", version: System.getProperty("bioVersion"), transitive: false
+    implementation group: "org.intermine", name: "intermine-api", version: System.getProperty("imVersion")
+    implementation group: "org.intermine", name: "intermine-webapp", version: System.getProperty("imVersion"), classifier: "classes"
+    implementation group: "org.intermine", name: "intermine-webtasks", version: System.getProperty("imVersion")
     onlyRunTime group: 'org.intermine', name: 'bluegenes', version: System.getProperty("blueGenesVersion")
 }
 
