@@ -346,15 +346,6 @@
     </fields>
   </class>
 
-  <class className="org.intermine.model.bio.LinkageGroupRange">
-    <fields>
-      <fieldconfig fieldExpr="begin" label="Begin (cM)"/>
-      <fieldconfig fieldExpr="end" label="End (cM)"/>
-      <fieldconfig fieldExpr="length" label="Length (cM)"/>
-      <fieldconfig fieldExpr="linkageGroup.primaryIdentifier" label="Linkage Group"/>
-    </fields>
-  </class>
-
   <class className="org.intermine.model.bio.MappingPopulation">
     <headerconfig>
       <titles>
@@ -382,11 +373,11 @@
   <class className="org.intermine.model.bio.QTL">
     <headerconfig>
       <titles>
-        <title mainTitles="primaryIdentifier" numberOfMainTitlesToShow="1" subTitles="*organism.shortName*" />
+        <title mainTitles="identifier" numberOfMainTitlesToShow="1" subTitles="*organism.shortName*" />
       </titles>
     </headerconfig>
     <fields>
-      <fieldconfig fieldExpr="primaryIdentifier" label="LIS identifier"/>
+      <fieldconfig fieldExpr="identifier" label="LIS identifier"/>
       <fieldconfig fieldExpr="phenotype.primaryIdentifier" label="Phenotype"/>
     </fields>
   </class>
