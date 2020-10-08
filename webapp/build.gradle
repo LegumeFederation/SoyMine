@@ -1,5 +1,5 @@
 apply plugin: "war"
-apply from: "https://raw.githubusercontent.com/akhikhl/gretty/master/pluginScripts/gretty.plugin"
+apply from: "https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin"
 apply plugin: "webapp"
 apply plugin: "com.bmuschko.cargo"
 
@@ -22,12 +22,38 @@ def explodedWebAppDir = "$buildDir/explodedWebApp"
 def mergePropsDir = "$buildDir/props"
 
 dependencies {
-    implementation (project(":dbmodel")) {transitive = false}
-    implementation group: "org.intermine", name: "bio-core", version: System.getProperty("bioVersion"), transitive: false
-    implementation group: "org.intermine", name: "intermine-api", version: System.getProperty("imVersion")
-    implementation group: "org.intermine", name: "intermine-webapp", version: System.getProperty("imVersion"), classifier: "classes"
-    implementation group: "org.intermine", name: "intermine-webtasks", version: System.getProperty("imVersion")
+    compile (project(":dbmodel")) {transitive = false}
+    compile group: "org.intermine", name: "bio-core", version: System.getProperty("bioVersion"), transitive: false
+    compile group: "org.intermine", name: "intermine-api", version: System.getProperty("imVersion")
+    compile group: "org.intermine", name: "intermine-webapp", version: System.getProperty("imVersion"), classifier: "classes"
+    compile group: "org.intermine", name: "intermine-webtasks", version: System.getProperty("imVersion")
     onlyRunTime group: 'org.intermine', name: 'bluegenes', version: System.getProperty("blueGenesVersion")
+    
+    // ADDED SH
+    compile group: "org.intermine", name: "bio-webapp", version: System.getProperty("bioVersion"), classifier: "classes"
+    compile fileTree(dir: '../libs', include: '*.jar')
+
+  // https://mvnrepository.com/artifact/javax.xml.rpc/javax.xml.rpc-api
+  compile group: 'javax.xml.rpc', name: 'javax.xml.rpc-api', version: '1.1'
+    
+  // https://mvnrepository.com/artifact/org.apache.axis/axis
+  compile group: 'org.apache.axis', name: 'axis', version: '1.4'
+    
+  // https://mvnrepository.com/artifact/org.apache.commons/commons-math3
+  compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
+
+  // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+  compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.5'
+
+  // https://mvnrepository.com/artifact/org.biojava/biojava-alignment
+  compile group: 'org.biojava', name: 'biojava-alignment', version: '5.0.2'
+
+  // https://mvnrepository.com/artifact/org.biojava/biojava-ontology
+  compile group: 'org.biojava', name: 'biojava-ontology', version: '5.0.2'
+
+  // https://mvnrepository.com/artifact/org.jglobus/gram
+  compile group: 'org.jglobus', name: 'gram', version: '2.1.0'
+  
 }
 
 war {
@@ -71,42 +97,44 @@ webappConfig {
 // ---------------------------------------------------------------------------------------------------------------------
 cargo {
 
-    // change this to match your Tomcat major version (keep the x)
-    containerId = 'tomcat8x'
-    int remotePort = 8080
-    if (props.getProperty("webapp.port") != null) {
-        remotePort = props.getProperty("webapp.port").toInteger()
-    }
+  // default port
+  int remotePort = 8080
+  if (props.getProperty("webapp.port") != null) {
+     remotePort = props.getProperty("webapp.port").toInteger()
+  }
 
-    // change this to the Tomcat root of your choice
-    deployable {
-        context = props.getProperty("webapp.path")
-    }
+  // change this to match your Tomcat major version (keep the x)
+  containerId = 'tomcat8x'
+  port = remotePort
 
-    def remoteHostName = "localhost"
+  // change this to the Tomcat root of your choice
+  deployable {
+    context = props.getProperty("webapp.path")
+  }
 
-    // if "hostname" is defined in properties file, use that
-    if (props.getProperty("webapp.hostname") != null) {
-        remoteHostName = props.getProperty("webapp.hostname")
-    } else {
-        remoteHostName = getServerName(props.getProperty("webapp.deploy.url"))
-    }
+  // if "hostname" is defined in properties file, use that
+  // otherwise derive from deployUrl, e.g. http://localhost:8080
+  def remoteHostName = "shokin-webapps"
+  if (props.hasProperty("webapp.hostname")) {
+    remoteHostName = props.getProperty("webapp.hostname")
+  } else {
+    remoteHostName = getServerName(props.getProperty("webapp.deploy.url"))
+  }
 
-    def remoteProtocol = "http"
+  def remoteProtocol = "http"
+  if (props.hasProperty("webapp.protocol")) {
+    remoteProtocol = props.getProperty("webapp.protocol")
+  }
 
-    // if "protocol" is defined in properties file, use that
-    if (props.getProperty("webapp.protocol") != null) {
-        remoteProtocol = props.getProperty("webapp.protocol")
-    }
+  // change these to match your Tomcat host and tomcat-users config
+  remote {
+    hostname = remoteHostName
+    protocol = remoteProtocol
+    port = remotePort
+    username = props.getProperty("webapp.manager")
+    password = props.getProperty("webapp.password")
+  }
 
-    // change these to match your Tomcat host and tomcat-users config
-    remote {
-        hostname = remoteHostName
-        protocol = remoteProtocol
-        username = props.getProperty("webapp.manager")
-        password = props.getProperty("webapp.password")
-        port = remotePort
-    }
 }
 
 cargoStartLocal.dependsOn war
@@ -138,12 +166,9 @@ task blueGenesStart(type: JavaExec) {
     main = "bluegenes.core"
     //println "Loading blue genes for '" + props.getProperty("project.title") + "' at '" + props.getProperty("webapp.baseurl") + "/" + props.getProperty("webapp.path") + "'"
 
-    //:bluegenes-default-service-root "http://beta.flymine.org/beta"
+    //:bluegenes-default-service-root "http://beta.legumemine.org/beta"
     environment("bluegenes-default-service-root", props.getProperty("webapp.baseurl") + "/" + props.getProperty("webapp.path"))
     // FlyMine Beta
     environment("bluegenes-default-mine-name", props.getProperty("project.title"))
     environment("bluegenes-jar-version", System.getProperty("blueGenesVersion"))
-    // absolute path to npm tools, e.g. /intermine/tools/node_modules/
-    environment("bluegenes-tool-path", props.getProperty("bluegenes.toolLocation"))
-    println "Loading tools from " + props.getProperty("bluegenes.toolLocation")
 }
