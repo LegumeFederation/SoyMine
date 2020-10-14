@@ -109,8 +109,9 @@
   <!-- have to have a Gene entry for the list analysis heat map -->
   <class className="org.intermine.model.bio.Gene">
     <fields>
-      <fieldconfig fieldExpr="secondaryIdentifier" label="Name"/>
+      <fieldconfig fieldExpr="secondaryIdentifier" label="ALT identifier" />
       <fieldconfig fieldExpr="primaryIdentifier" label="LIS identifier" />
+      <fieldconfig fieldExpr="name" label="Name" />
       <fieldconfig fieldExpr="organism.name" label="Organism" />
       <fieldconfig fieldExpr="strain.identifier" label="Strain" />
       <fieldconfig fieldExpr="chromosome.secondaryIdentifier" label="Chr"/>
@@ -413,8 +414,10 @@
       </titles>
     </headerconfig>
     <fields>
-      <fieldconfig fieldExpr="primaryIdentifier" label="Name"/>
+      <fieldconfig fieldExpr="name" label="Name"/>
       <fieldconfig fieldExpr="description" label="Description"/>
+      <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
+      <fieldconfig fieldExpr="bioSample" label="BioSample"/>
     </fields>
   </class>
 
