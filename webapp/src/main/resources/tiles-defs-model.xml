@@ -34,7 +34,8 @@
 
 <!-- End of Genomic Region Search configuration -->
 
-<definition name="friendlyMineLinkDisplayer.tile" path="/model/friendlyMineLinkDisplayer.jsp" controllerUrl="/initFriendlyMineLinkDisplayer.do"/>
+<definition name="friendlyMineLinkDisplayer.tile" path="/model/friendlyMineLinkDisplayer.jsp"
+	    controllerUrl="/initFriendlyMineLinkDisplayer.do"/>
 
 <!-- Heat Map -->
 <definition name="heatMap.tile" path="/model/heatMap.jsp"

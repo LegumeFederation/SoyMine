@@ -12,6 +12,25 @@
       <property name="src.data.dir" location="/data/LIS/Gene_families/legume.genefam.fam1.M65K"/>
     </source>
 
+    <!-- Gene_families/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/ -->
+    <source name="lis.fam1-phylotree" type="lis-phylotree" dump="true">
+      <property name="data.set.url" value="https://legumeinfo.org/data/public/Gene_families/legume.genefam.fam1.M65K/"/>
+      <property name="data.set.description" value="LIS gene family phylogenetic trees"/>
+      <property name="src.data.dir" location="/data/LIS/Gene_families/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted"/>
+    </source>
+
+    <!-- ########## -->
+    <!-- Glycine sp -->
+    <!-- ########## -->
+
+    <!-- /data/LIS/Glycine_sp/mixed.pan2.TV81/ -->
+    <!-- └── glysp.mixed.pan2.TV81.hsh.tsv -->
+    <source name="glysp.mixed.pan2-hsh" type="lis-hsh" dump="true">
+      <property name="data.set.url" value="https://legumeinfo.org/data/public/Glycine_sp/mixed.pan2.TV81/"/>
+      <property name="data.set.description" value="Pan-gene sets for various Glycine species and strains."/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_sp/mixed.pan2.TV81"/>
+    </source>
+
     <!-- ########### -->
     <!-- Glycine max -->
     <!-- ########### -->
@@ -26,9 +45,6 @@
     </source>
 
     <!-- mixed.gwas.1W14/ -->
-    <!-- ├── glyma.mixed.gwas.1W14.KGK20170707-1.gwas.tsv -->
-    <!-- ├── glyma.mixed.gwas.1W14.KGK20170711-1.gwas.tsv -->
-    <!-- ├── ... -->
     <source name="glyma.mixed-gwas" type="lis-gwas" dump="true">
       <property name="dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/mixed.gwas.1W14/"/>
       <property name="dataSetDescription" value="Glycine max GWAS imported from SoyBase."/>
@@ -141,6 +157,23 @@
       <property name="data.set.url" value="https://legumeinfo.org/data/public/Glycine_max/Wm82.gnm1.ann1.DvBy/"/>
       <property name="data.set.description" value="Plant Reactome pathway assignments for glyma.Wm82.gnm1 genes."/>
       <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm1.ann1.DvBy"/>
+    </source>
+
+    <!-- Wm82.gnm1.mrk.GHRN/ -->
+    <!-- ├── glyma.Wm82.gnm1.mrk.GHRN.SoySNP50K.gff3 -->
+    <!-- └── glyma.Wm82.gnm1.mrk.GHRN.SoySNP6K.gff3 -->
+    <source name="glyma.Wm82.gnm1.mrk-gff" type="lis-gff" dump="true">
+      <property name="gff3.dataSourceName" value="LIS Datastore"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/public/"/>
+      <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
+      <property name="gff3.dataSetTitle" value="glyma.Wm82.gnm1.mrk.GHRN.gff3"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Wm82.gnm1.mrk.GHRN/"/>
+      <property name="gff3.dataSetDescription" value="Genetic marker positions on the glyma.Wm82.gnm1 genome assembly"/>
+      <property name="gff3.dataSetVersion" value="gnm1"/>
+      <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="gff3.taxonId" value="3847"/>
+      <property name="gff3.strainIdentifier" value="Wm82"/>
+      <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm1.mrk.GHRN"/>
     </source>
 
     <!-- Wm82.gnm2.DTC4/ -->
@@ -284,6 +317,39 @@
       <property name="gff3.strainIdentifier" value="Wm82"/>
       <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.mrk.XJP2"/>
     </source>
+
+    <!-- Wm82.gnm2.div.0SZD -->
+    <!-- ├── glyma.Wm82.gnm2.div.0SZD.SNPData.vcf.gz -->
+    <!-- <source name="glyma.Wm82.gnm2.gt-vcf" type="lis-gt-vcf" dump="true"> -->
+    <!--   <property name="lis-gt-vcf.dataSetDescription" value="LIS datastore VCF file for a genotyping experiment on Glycine max Wm82.gnm2"/> -->
+    <!--   <property name="lis-gt-vcf.dataSetVersion" value="gnm2"/> -->
+    <!--   <property name="lis-gt-vcf.dataSetUrl" value="https://legumeinfo.org/data/public/Glycine_max/Wm82.gnm2.div.0SZD/"/> -->
+    <!--   <property name="lis-gt-vcf.taxonId" value="3847"/> -->
+    <!--   <property name="lis-gt-vcf.strainIdentifier" value="Wm82"/> -->
+    <!--   <property name="lis-gt-vcf.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/> -->
+    <!--   <property name="src.data.dir" location="/data/LIS/Glycine_max/Wm82.gnm2.div.0SZD"/> -->
+    <!--   <property name="lis-gt-vcf.includes" value="README.0SZD.yml, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm01.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm02.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm03.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm04.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm05.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm06.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm07.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm08.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm09.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm10.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm11.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm12.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm13.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm14.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm15.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm16.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm17.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm18.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm19.recode.vcf.gz, -->
+    <!--                                               glyma.Wm82.gnm2.div.0SZD.SNPData.Gm20.recode.vcf.gz" /> -->
+    <!-- </source> -->
 
     <!-- Wm82.gnm4.4PTR -->
     <!-- └── glyma.Wm82.gnm4.4PTR.genome_main.fna -->
