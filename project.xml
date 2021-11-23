@@ -4,10 +4,6 @@
   <property name="intermine.properties.file" value="soymine.properties"/>
   <sources>
 
-    <!-- ########### -->
-    <!-- Glycine max -->
-    <!-- ########### -->
-
     <!-- about_this_collection -->
     <!-- ├── description_Glycine_max.yml -->
     <!-- └── strains_Glycine_max.yml -->
@@ -16,6 +12,16 @@
       <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/about_this_collection/"/>
       <property name="dataSetDescription" value="Glycine max organism and strain information."/>
       <property name="src.data.dir" location="/data/v2/Glycine/max/about_this_collection"/>
+    </source>
+
+    <!-- about_this_collection -->
+    <!-- ├── description_Glycine_soja.yml -->
+    <!-- └── strains_Glycine_soja.yml -->
+    <source name="glyso-about" type="lis-about" dump="true">
+      <property name="dataSetName" value="glyso.about_this_collection"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/about_this_collection/"/>
+      <property name="dataSetDescription" value="Glycine soja organism and strain information."/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/about_this_collection"/>
     </source>
 
     <!-- ######################################################################################################################################## -->
@@ -273,6 +279,62 @@
       <property name="lis-fasta.includes" value="README.Zh35_IGA1004.gnm1.DBYJ.yml,glyma.Zh35_IGA1004.gnm1.DBYJ.genome_main.fna"/>
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Zh35_IGA1004.gnm1.DBYJ"/>
     </source>
+
+
+    <!-- /data/v2/Glycine/soja/genomes/F_IGA1003.gnm1.V9RB -->
+    <!-- ├── glyso.F_IGA1003.gnm1.genome_main.fna -->
+    <!-- └── README.F_IGA1003.gnm1.V9RB.yml -->
+    <source name="F_IGA1003.gnm1.V9RB" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="glyso.F_IGA1003.gnm1.V9RB"/>
+      <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Glycine soja F_IGA1003.gnm1"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/genomes/F_IGA1003.gnm1.V9RB/"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="F_IGA1003"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.includes" value="README.F_IGA1003.gnm1.V9RB.yml,glyso.F_IGA1003.gnm1.V9RB.genome_main.fna"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/genomes/F_IGA1003.gnm1.V9RB"/>
+    </source>
+    
+    <!-- /data/v2/Glycine/soja/genomes/PI483463.gnm1.YJWS -->
+    <!-- ├── glyso.PI483463.gnm1.YJWS.genome_main.fna -->
+    <!-- └── README.PI483463.gnm1.YJWS.yml -->
+    <source name="PI483463.gnm1.YJWS" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="glyso.PI483463.gnm1.YJWS"/>
+      <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Glycine soja PI483463.gnm1"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/genomes/PI483463.gnm1.YJWS/"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="PI483463"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.includes" value="README.PI483463.gnm1.YJWS.yml,glyso.PI483463.gnm1.YJWS.genome_main.fna"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/genomes/PI483463.gnm1.YJWS"/>
+    </source>
+    
+    <!-- /data/v2/Glycine/soja/genomes/W05.gnm1.SVL1 -->
+    <!-- ├── glyso.W05.gnm1.SVL1.genome_main.fna -->
+    <!-- └── README.W05.gnm1.SVL1.yml -->
+    <source name="W05.gnm1.SVL1" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="glyso.W05.gnm1.SVL1"/>
+      <property name="lis-fasta.dataSetDescription" value="LIS datastore genomic FASTA file for Glycine soja W05.gnm1"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/genomes/W05.gnm1.SVL1/"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="W05"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Chromosome"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.includes" value="README.W05.gnm1.SVL1.yml,glyso.W05.gnm1.SVL1.genome_main.fna"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/genomes/W05.gnm1.SVL1"/>
+    </source>
+
     
     <!-- ######################################################################################################################################## -->
     <!-- #################################################### ANNOTATIONS: gene_models_main  #################################################### -->
@@ -285,7 +347,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="FiskebyIII.gnm1.ann1.SS25"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/FiskebyIII.gnm1.ann1.SS25"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations FiskebyIII.gnm1.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -300,7 +361,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="Hefeng25_IGA1002.gnm1.ann1.320V"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Hefeng25_IGA1002.gnm1.ann1.320V"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations Hefeng25_IGA1002.gnm1.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -316,7 +376,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="Huaxia3_IGA1007.gnm1.ann1.LKC7"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Huaxia3_IGA1007.gnm1.ann1.LKC7"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations Huaxia3_IGA1007.gnm1.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -332,7 +391,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="Jinyuan_IGA1006.gnm1.ann1.2NNX"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Jinyuan_IGA1006.gnm1.ann1.2NNX"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations Jinyuan_IGA1006.gnm1.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -348,7 +406,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="Lee.gnm1.ann1.6NZV"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Lee.gnm1.ann1.6NZV"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations Lee.gnm1.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -363,7 +420,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="Wenfeng7_IGA1001.gnm1.ann1.ZK5W"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Wenfeng7_IGA1001.gnm1.ann1.ZK5W"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations Wenfeng7_IGA1001.gnm1.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -378,7 +434,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="Wm82.gnm1.ann1.DvBy"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Wm82.gnm1.ann1.DvBy"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations Wm82.gnm1.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -393,7 +448,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="Wm82.gnm2.ann1.RVB6"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Wm82.gnm2.ann1.RVB6"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations Wm82.gnm2.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm2.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -408,7 +462,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="Wm82.gnm4.ann1.T8TQ"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Wm82.gnm4.ann1.T8TQ"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations Wm82.gnm4.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm4.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -424,7 +477,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="Wm82_IGA1008.gnm1.ann1.FGN6"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Wm82_IGA1008.gnm1.ann1.FGN6"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations Wm82_IGA1008.gnm1.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -439,7 +491,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="Zh13.gnm1.ann1.8VV3"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Zh13.gnm1.ann1.8VV3"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations Zh13.gnm1.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -455,7 +506,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="Zh13.gnm2.ann1.FJ3G"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Zh13.gnm2.ann1.FJ3G"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations Zh13.gnm2.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm2.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -471,7 +521,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="Zh13_IGA1005.gnm1.ann1.87Z5"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Zh13_IGA1005.gnm1.ann1.87Z5"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations Zh13_IGA1005.gnm1.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -479,7 +528,6 @@
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Zh13_IGA1005.gnm1.ann1.87Z5"/>
     </source>
 
-    <!-- GFF INCOMPLETE -->
     <!-- Zh35_IGA1004.gnm1.ann1.RGN6/glyma.Zh35_IGA1004.gnm1.ann1.RGN6.gene_models_main.gff3 -->
     <source name="Zh35_IGA1004.gnm1.ann1.RGN6.gene_models_main" type="lis-gff" dump="true">
       <property name="gff3.dataSourceName" value="LIS Datastore"/>
@@ -487,7 +535,6 @@
       <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
       <property name="gff3.dataSetTitle" value="Zh35_IGA1004.gnm1.ann1.RGN6"/>
       <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Zh35_IGA1004.gnm1.ann1.RGN6"/>
-      <property name="gff3.dataSetDescription" value="Gene model annotations Zh35_IGA1004.gnm1.ann1"/>
       <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
       <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
       <property name="gff3.taxonId" value="3847"/>
@@ -495,6 +542,48 @@
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Zh35_IGA1004.gnm1.ann1.RGN6"/>
     </source>
 
+    <!-- /data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B/glyso.F_IGA1003.gnm1.ann1.G61B.gene_models_main.gff3 -->
+    <source name="F_IGA1003.gnm1.ann1.G61B.gene_models_main" type="lis-gff" dump="true">
+      <property name="gff3.dataSourceName" value="LIS Datastore"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
+      <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
+      <property name="gff3.dataSetTitle" value="F_IGA1003.gnm1.ann1.G61B"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B/"/>
+      <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
+      <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="gff3.taxonId" value="3848"/>
+      <property name="gff3.strainIdentifier" value="F_IGA1003"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B"/>
+    </source>
+
+    <!-- /data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q/glyso.PI483463.gnm1.ann1.3Q3Q.gene_models_main.gff3 -->
+    <source name="PI483463.gnm1.ann1.3Q3Q.gene_models_main" type="lis-gff" dump="true">
+      <property name="gff3.dataSourceName" value="LIS Datastore"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
+      <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
+      <property name="gff3.dataSetTitle" value="PI483463.gnm1.ann1.3Q3Q"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q/"/>
+      <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
+      <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="gff3.taxonId" value="3848"/>
+      <property name="gff3.strainIdentifier" value="PI483463"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q"/>
+    </source>
+    
+    <!-- /data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J/glyso.W05.gnm1.ann1.T47J.gene_models_main.gff3     -->
+    <source name="W05.gnm1.ann1.T47J.gene_models_main" type="lis-gff" dump="true">
+      <property name="gff3.dataSourceName" value="LIS Datastore"/>
+      <property name="gff3.dataSourceUrl" value="https://legumeinfo.org/data/v2/"/>
+      <property name="gff3.dataSourceDescription" value="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species."/>
+      <property name="gff3.dataSetTitle" value="W05.gnm1.ann1.T47J"/>
+      <property name="gff3.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J/"/>
+      <property name="gff3.dataSetVersion" value="gnm1.ann1"/>
+      <property name="gff3.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="gff3.taxonId" value="3848"/>
+      <property name="gff3.strainIdentifier" value="W05"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J"/>
+    </source>
+    
     <!-- ######################################################################################################################################## -->
     <!-- ####################################################### ANNOTATIONS: CDS FASTAs  ####################################################### -->
     <!-- ######################################################################################################################################## -->
@@ -709,6 +798,51 @@
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Zh35_IGA1004.gnm1.ann1.RGN6"/>
     </source>
 
+    <!-- /data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B/glyso.F_IGA1003.gnm1.ann1.G61B.cds.fna -->
+    <source name="F_IGA1003.gnm1.ann1.G61B.cds" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="F_IGA1003.gnm1.ann1.G61B"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B/"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="F_IGA1003"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.CDS"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.includes" value="glyso.F_IGA1003.gnm1.ann1.G61B.cds.fna"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B"/>
+    </source>
+
+    <!-- /data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q/glyso.PI483463.gnm1.ann1.3Q3Q.cds.fna -->
+    <source name="PI483463.gnm1.ann1.3Q3Q.cds" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="PI483463.gnm1.ann1.3Q3Q"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q/"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="PI483463"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.CDS"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.includes" value="glyso.PI483463.gnm1.ann1.3Q3Q.cds.fna"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q"/>
+    </source>
+
+    <!-- /data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J/glyso.W05.gnm1.ann1.T47J.cds.fna -->
+    <source name="W05.gnm1.ann1.T47J.cds" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="W05.gnm1.ann1.T47J"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J/"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="W05"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.CDS"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.includes" value="glyso.W05.gnm1.ann1.T47J.cds.fna"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J"/>
+    </source>
+    
     <!-- ######################################################################################################################################## -->
     <!-- ####################################################### ANNOTATIONS: PROTEIN FASTAs  ####################################################### -->
     <!-- ######################################################################################################################################## -->
@@ -921,6 +1055,51 @@
       <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
       <property name="lis-fasta.includes" value="glyma.Zh35_IGA1004.gnm1.ann1.RGN6.protein.faa"/>
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Zh35_IGA1004.gnm1.ann1.RGN6"/>
+    </source>
+
+    <!-- /data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B/glyso.F_IGA1003.gnm1.ann1.G61B.protein.faa -->
+    <source name="F_IGA1003.gnm1.ann1.G61B.protein" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="F_IGA1003.gnm1.ann1.G61B"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B/"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="F_IGA1003"/>
+      <property name="lis-fasta.sequenceType" value="protein"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Protein"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.includes" value="glyso.F_IGA1003.gnm1.ann1.G61B.protein.faa"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B"/>
+    </source>
+
+    <!-- /data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q/glyso.PI483463.gnm1.ann1.3Q3Q.protein.faa -->
+    <source name="PI483463.gnm1.ann1.3Q3Q.protein" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="PI483463.gnm1.ann1.3Q3Q"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q/"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="PI483463"/>
+      <property name="lis-fasta.sequenceType" value="protein"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Protein"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.includes" value="glyso.PI483463.gnm1.ann1.3Q3Q.protein.faa"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q"/>
+    </source>
+
+    <!-- /data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J/glyso.W05.gnm1.ann1.T47J.protein.faa -->
+    <source name="W05.gnm1.ann1.T47J.protein" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="W05.gnm1.ann1.T47J"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J/"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="W05"/>
+      <property name="lis-fasta.sequenceType" value="protein"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.Protein"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.includes" value="glyso.W05.gnm1.ann1.T47J.protein.faa"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J"/>
     </source>
 
     <!-- ################################################################################################################################### -->
@@ -1137,6 +1316,51 @@
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Zh35_IGA1004.gnm1.ann1.RGN6"/>
     </source>
 
+    <!-- /data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B/glyso.F_IGA1003.gnm1.ann1.G61B.transcript.fna -->
+    <source name="F_IGA1003.gnm1.ann1.G61B.transcript" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="F_IGA1003.gnm1.ann1.G61B"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B/"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="F_IGA1003"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.MRNA"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.includes" value="glyso.F_IGA1003.gnm1.ann1.G61B.transcript.fna"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B"/>
+    </source>
+
+    <!-- /data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q/glyso.PI483463.gnm1.ann1.3Q3Q.transcript.fna -->
+    <source name="PI483463.gnm1.ann1.3Q3Q.transcript" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="PI483463.gnm1.ann1.3Q3Q"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q/"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="PI483463"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.MRNA"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.includes" value="glyso.PI483463.gnm1.ann1.3Q3Q.transcript.fna"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q"/>
+    </source>
+
+    <!-- /data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J/glyso.W05.gnm1.ann1.T47J.transcript.fna -->
+    <source name="W05.gnm1.ann1.T47J.transcript" type="lis-fasta" dump="true">
+      <property name="lis-fasta.dataSetTitle" value="W05.gnm1.ann1.T47J"/>
+      <property name="lis-fasta.dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J/"/>
+      <property name="lis-fasta.dataSetVersion" value="gnm1.ann1"/>
+      <property name="lis-fasta.licence" value="ODC Public Domain Dedication and Licence (PDDL)"/>
+      <property name="lis-fasta.taxonId" value="3848"/>
+      <property name="lis-fasta.strainIdentifier" value="W05"/>
+      <property name="lis-fasta.sequenceType" value="dna"/>
+      <property name="lis-fasta.className" value="org.intermine.model.bio.MRNA"/>
+      <property name="lis-fasta.classAttribute" value="primaryIdentifier"/>
+      <property name="lis-fasta.includes" value="glyso.W05.gnm1.ann1.T47J.transcript.fna"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J"/>
+    </source>
+
     <!-- ######################################################################################################################################## -->
     <!-- ########################################################## ANNOTATIONS: GFAs ########################################################### -->
     <!-- ######################################################################################################################################## -->
@@ -1239,6 +1463,27 @@
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Zh35_IGA1004.gnm1.ann1.RGN6"/>
     </source>
 
+    <!-- F_IGA1003.gnm1.ann1.G61B/glyso.F_IGA1003.gnm1.ann1.G61B.legfed_v1_0.M65K.gfa.tsv -->
+    <source name="F_IGA1003.gnm1.ann1.G61B.legfed_v1_0.M65K.gfa" type="lis-gfa" dump="true"> 
+      <property name="dataSetName" value="F_IGA1003.gnm1.ann1.G61B"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B/"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B"/>
+    </source>
+
+    <!-- PI483463.gnm1.ann1.3Q3Q/glyso.PI483463.gnm1.ann1.3Q3Q.legfed_v1_0.M65K.gfa.tsv -->
+    <source name="PI483463.gnm1.ann1.3Q3Q.legfed_v1_0.M65K.gfa" type="lis-gfa" dump="true"> 
+      <property name="dataSetName" value="PI483463.gnm1.ann1.3Q3Q"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q/"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q"/>
+    </source>
+
+    <!-- W05.gnm1.ann1.T47J/glyso.W05.gnm1.ann1.T47J.legfed_v1_0.M65K.gfa.tsv -->
+    <source name="W05.gnm1.ann1.T47J.legfed_v1_0.M65K.gfa" type="lis-gfa" dump="true"> 
+      <property name="dataSetName" value="W05.gnm1.ann1.T47J"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J/"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J"/>
+    </source>
+
     <!-- ######################################################################################################################################## -->
     <!-- ########################################################## ANNOTATIONS: Pathways ########################################################### -->
     <!-- ######################################################################################################################################## -->
@@ -1292,9 +1537,9 @@
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Wm82.gnm1.ann1.DvBy"/>
     </source>
 
-    <!-- THIS IS THE ORIGINAL PLANT REACTOME PATHWAYS -->
-    <!-- Wm82.gnm2.ann1.RVB6/glyma.Wm82.gnm2.ann1.RVB6.legfed_v1_0.M65K.pathway.tsv -->
-    <source name="Wm82.gnm2.ann1.RVB6.legfed_v1_0.M65K.pathway" type="lis-pathway" dump="true"> 
+    <!-- THIS IS THE ORIGINAL SOYBEAN PLANT REACTOME PATHWAYS -->
+    <!-- Wm82.gnm2.ann1.RVB6/glyma.Wm82.gnm2.ann1.RVB6.pathway.tsv -->
+    <source name="Wm82.gnm2.ann1.RVB6.pathway" type="lis-pathway" dump="true"> 
       <property name="dataSetName" value="Wm82.gnm2.ann1.RVB6"/>
       <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Wm82.gnm2.ann1.RVB6/"/>
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Wm82.gnm2.ann1.RVB6"/>
@@ -1340,6 +1585,27 @@
       <property name="dataSetName" value="Zh35_IGA1004.gnm1.ann1.RGN6"/>
       <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/max/annotations/Zh35_IGA1004.gnm1.ann1.RGN6/"/>
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Zh35_IGA1004.gnm1.ann1.RGN6"/>
+    </source>
+
+    <!-- F_IGA1003.gnm1.ann1.G61B/glyso.F_IGA1003.gnm1.ann1.G61B.legfed_v1_0.M65K.pathway.tsv -->
+    <source name="F_IGA1003.gnm1.ann1.G61B.legfed_v1_0.M65K.pathway" type="lis-pathway" dump="true"> 
+      <property name="dataSetName" value="F_IGA1003.gnm1.ann1.G61B"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B/"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B"/>
+    </source>
+
+    <!-- PI483463.gnm1.ann1.3Q3Q/glyso.PI483463.gnm1.ann1.3Q3Q.legfed_v1_0.M65K.pathway.tsv -->
+    <source name="PI483463.gnm1.ann1.3Q3Q.legfed_v1_0.M65K.pathway" type="lis-pathway" dump="true"> 
+      <property name="dataSetName" value="PI483463.gnm1.ann1.3Q3Q"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q/"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q"/>
+    </source>
+
+    <!-- W05.gnm1.ann1.T47J/glyso.W05.gnm1.ann1.T47J.legfed_v1_0.M65K.pathway.tsv -->
+    <source name="W05.gnm1.ann1.T47J.legfed_v1_0.M65K.pathway" type="lis-pathway" dump="true"> 
+      <property name="dataSetName" value="W05.gnm1.ann1.T47J"/>
+      <property name="dataSetUrl" value="https://legumeinfo.org/data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J/"/>
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/W05.gnm1.ann1.T47J"/>
     </source>
 
     <!-- ################################################################################################################################ -->
@@ -1952,7 +2218,6 @@
       <property name="src.data.dir" location="/data/v2/Glycine/max/markers/Wm82.gnm2.mrk.various"/>
     </source>
 
-
     <!-- synteny/Wm82.gnm2.ann1.syn.HXNY -->
     <!-- ├── glyma.Wm82.gnm2.ann1.x.aradu.V14167.gnm1.ann1.gff -->
     <!-- ├── glyma.Wm82.gnm2.ann1.x.araip.K30076.gnm1.ann1.gff -->
@@ -2095,15 +2360,10 @@
     <post-process name="create-gene-flanking-features"/>
 
     <!-- LIS -->
-    <post-process name="lis-populate-cds-gene-references"/>
-    <post-process name="lis-populate-cds-protein-references"/>
-    <post-process name="lis-populate-cds-transcript-references"/>
-    <post-process name="lis-populate-transcript-gene-references"/>
-    <post-process name="lis-populate-transcript-protein-references"/>
-    <post-process name="lis-populate-gene-protein-collections"/>
-    <post-process name="lis-populate-protein-pathway-collections"/>
-    <post-process name="lis-populate-qtl-gene-collections"/>
-    <post-process name="lis-populate-publications"/>
+    <post-process name="lis-populate-gene-protein-collections" />
+    <post-process name="lis-populate-qtl-gene-collections" />
+    <post-process name="lis-populate-protein-pathway-collections" />
+    <post-process name="lis-populate-publications" />
 
     <!-- VIEWS AND INDEXES -->
     <post-process name="create-location-overlap-index"/>
