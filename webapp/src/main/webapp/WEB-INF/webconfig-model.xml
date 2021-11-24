@@ -285,6 +285,18 @@
     </fields>
   </class>
 
+  <class className="org.intermine.model.bio.Phylotree">
+    <headerconfig>
+      <titles>
+        <title mainTitles="identifier" numberOfMainTitlesToShow="1" />
+      </titles>
+    </headerconfig>
+    <fields>
+      <fieldconfig fieldExpr="identifier" label="Identifier"/>
+      <fieldconfig fieldExpr="numLeaves" label="Number of Leaves"/>
+    </fields>
+  </class>
+
   <class className="org.intermine.model.bio.Pathway">
     <headerconfig>
       <titles>
