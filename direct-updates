@@ -4,8 +4,8 @@ MINENAME="soymine"
 DBNAME="soymine-dev"
 
 ## add triggers
-./gradlew generateUpdateTriggers
-psql -f dbmodel/build/resources/main/add-update-triggers.sql $DBNAME
+#./gradlew generateUpdateTriggers
+#psql -f dbmodel/build/resources/main/add-update-triggers.sql $DBNAME
 
 ## do updates
 cd ~/java/ncgr/intermine

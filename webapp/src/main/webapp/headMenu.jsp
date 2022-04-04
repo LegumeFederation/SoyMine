@@ -35,13 +35,23 @@
     </div>
   </c:if>
   <div id="header">
-    <a href="${WEB_PROPERTIES['project.sitePrefix']}" alt="Home" rel="NOFOLLOW"><img id="logo" src="model/images/soybeans.png" alt="Logo" /></a>
+    <!-- LIS site nav -->
+    <div style="float:left;">
+      <a href="https://legumeinfo.org/"><img src="http://dev.lis.ncgr.org:50030/assets/img/lis-logo-small.png" alt="LIS - Legume Information System"/></a>
+    </div>
+    <div style="float:left;margin-left:5px;margin-right:10px;padding-top:5px;font-family:ProximaNova,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;">
+      <div style="font-size:20px; color:white;">LIS - Legume Information System</div>
+      <div style="font-size:12px; color:white;">Information about legume traits for crop improvement</div>
+    </div>
+    <!-- /LIS site nav -->
+    <!-- IM site header -->
+    <a href="${WEB_PROPERTIES['project.sitePrefix']}" alt="Home" rel="NOFOLLOW"><img id="logo" src="model/images/soybeans.png" alt="SoyMine Logo" /></a>
     <h1><html:link href="${WEB_PROPERTIES['project.sitePrefix']}/"><c:out value="${WEB_PROPERTIES['project.title']}" escapeXml="false"/></html:link></h1>
     <p id="version"><fmt:message key="header.version"/> <c:out value="${WEB_PROPERTIES['project.releaseVersion']}" escapeXml="false"/></p>
     <p><c:out value="${WEB_PROPERTIES['project.subTitle']}" escapeXml="false"/></p>
+    <!-- /IM site header -->
   </div>
-
-    <!-- Tab Menu -->
+  <!-- Tab Menu -->
   <fmt:message key="${pageName}.tab" var="tab" />
   <div id="menucontainer">
     <ul id="nav">
@@ -214,15 +224,6 @@
           <c:set var="count" value="${count+1}"/>
           </c:if>
         </c:forTokens>
-        <!--
-        <c:if test="${pageName == 'begin'}">
-          <li>
-          <div>
-            <a href="${WEB_PROPERTIES['project.sitePrefix']}/what.shtml">What is ${WEB_PROPERTIES['project.title']}?</a>
-          </div>
-          </li>
-        </c:if>
-         -->
         </ul>
     </div>
   </div>

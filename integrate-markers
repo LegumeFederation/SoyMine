@@ -1,0 +1,22 @@
+#!/bin/sh
+NC='\033[0m'
+LP='\033[1;35m'
+
+echo -e "#################################################################"
+echo -e "############################ ${LP}MARKERS${NC} ############################"
+echo -e "#################################################################"
+
+## glyma
+./gradlew integrate --stacktrace -Psource=Wm82.gnm1.mrk.Li_Guo_2016
+./gradlew integrate --stacktrace -Psource=Wm82.gnm1.mrk.SoySNP50K
+./gradlew integrate --stacktrace -Psource=Wm82.gnm1.mrk.SoySNP6K
+./gradlew integrate --stacktrace -Psource=Wm82.gnm2.mrk.1536_USLP1
+./gradlew integrate --stacktrace -Psource=Wm82.gnm2.mrk.Li_Zhao_2019
+./gradlew integrate --stacktrace -Psource=Wm82.gnm2.mrk.Meng_He_2016
+./gradlew integrate --stacktrace -Psource=Wm82.gnm2.mrk.NJAU355K
+./gradlew integrate --stacktrace -Psource=Wm82.gnm2.mrk.Sonah_ODonoughue_2015
+./gradlew integrate --stacktrace -Psource=Wm82.gnm2.mrk.SoyaSNP180K
+./gradlew integrate --stacktrace -Psource=Wm82.gnm2.mrk.SoySNP50K
+./gradlew integrate --stacktrace -Psource=Wm82.gnm2.mrk.SoySNP6K
+./gradlew integrate --stacktrace -Psource=Wm82.gnm2.mrk.Zhao_Teng_2017
+
