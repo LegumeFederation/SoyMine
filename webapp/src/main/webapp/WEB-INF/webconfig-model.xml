@@ -490,6 +490,9 @@
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="LIS Identifier"/>
       <fieldconfig fieldExpr="genotypingPlatform" label="Genotyping Platform"/>
+      <fieldconfig fieldExpr="genotypingMethod" label="Genotyping Method" doNotTruncate="true" />
+      <fieldconfig fieldExpr="synopsis" label="Synopsis" doNotTruncate="true" />
+      <fieldconfig fieldExpr="description" label="Description" doNotTruncate="true" />
     </fields>
   </class>
 
@@ -588,12 +591,6 @@
                      placement="summary"
                      types="SequenceFeature,VCFRecord"/>
 
-    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GenotypeMatrixDisplayer"
-                     jspName="model/genotypeMatrixDisplayer.jsp"
-                     replacesFields="lines,markers"
-                     placement="summary"
-                     types="GenotypingStudy"/>
-
     <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.LinkageGroupDisplayer"
                      jspName="model/linkageGroupDisplayer.jsp"
                      replacesFields="QTLs,markers"
@@ -606,21 +603,11 @@
                      placement="summary"
                      types="QTL"/>
 
-    <!-- ============================================================================================== -->
-
-    <!-- <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.LinkageGroupDisplayer" -->
-    <!--                  jspName="model/linkageGroupDiagram.jsp" -->
-    <!--                  replacesFields="linkageGroups,markers" -->
-    <!--                  placement="summary" -->
-    <!--                  types="GeneticMap"/> -->
-
-    <!-- <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.MarkerDisplayer" -->
-    <!--                  jspName="model/markerAlleleInfo.jsp" -->
-    <!--                  replacesFields="lines" -->
-    <!--                  placement="summary" -->
-    <!--                  types="GeneticMarker"/> -->
-
-
+    <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.LinkageGroupDisplayer"
+                     jspName="model/linkageGroupDiagram.jsp"
+                     replacesFields="linkageGroups"
+                     placement="summary"
+                     types="GeneticMap"/>
 
     <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GeneBarchartDisplayer"
                      jspName="model/geneBarchartDisplayer.jsp"
@@ -633,6 +620,19 @@
                      replacesFields=""
                      placement="summary"
                      types="GWAS"/>
+
+    <!-- <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.GenotypeMatrixDisplayer" -->
+    <!--                  jspName="model/genotypeMatrixDisplayer.jsp" -->
+    <!--                  replacesFields="lines,markers" -->
+    <!--                  placement="summary" -->
+    <!--                  types="GenotypingStudy"/> -->
+
+    <!-- <reportdisplayer javaClass="org.ncgr.intermine.bio.web.displayer.MarkerDisplayer" -->
+    <!--                  jspName="model/markerAlleleInfo.jsp" -->
+    <!--                  replacesFields="lines" -->
+    <!--                  placement="summary" -->
+    <!--                  types="GeneticMarker"/> -->
+
     
   </reportdisplayers>
 
