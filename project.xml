@@ -104,6 +104,7 @@
       <property name="dataSetDescription" value="Glycine max organism and strain information."/>
       <property name="src.data.dir" location="/data/v2/Glycine/max/about_this_collection"/>
     </source>
+
     <!-- ├── annotations -->
     <!-- │   ├── FiskebyIII.gnm1.ann1.SS25 -->
     <source name="FiskebyIII.gnm1.ann1.SS25" type="lis-annotation" dump="true">
@@ -181,12 +182,14 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Zh35_IGA1004.gnm1.ann1.RGN6/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Zh35_IGA1004.gnm1.ann1.RGN6"/>
     </source>
+
     <!-- ├── expression -->
     <!-- │   └── Wm82.gnm2.ann1.expr.G7ZY -->
     <source name="Wm82.gnm2.ann1.expr.G7ZY" type="lis-expression" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/expression/Wm82.gnm2.ann1.expr.G7ZY/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/expression/Wm82.gnm2.ann1.expr.G7ZY"/>
     </source>
+
     <!-- ├── genetic -->
     <!-- │   └── 0518BW-8_x_0734BW-1.gen.Oyoo_Benitez_2011 -->
     <source name="0518BW-8_x_0734BW-1.gen.Oyoo_Benitez_2011" type="lis-genetic" dump="true">
@@ -868,11 +871,6 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/L-10_x_Heinong37.gen.Chang_Dong_2011/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/L-10_x_Heinong37.gen.Chang_Dong_2011"/>
     </source>
-    <!-- │   └── L78-4094_x_Century84.gen.Bachman_Tamulonis_2001 -->
-    <source name="L78-4094_x_Century84.gen.Bachman_Tamulonis_2001" type="lis-genetic" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/L78-4094_x_Century84.gen.Bachman_Tamulonis_2001/" />
-      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/L78-4094_x_Century84.gen.Bachman_Tamulonis_2001"/>
-    </source>
     <!-- │   └── LD00-2817P_x_LDX01-1-65.gen.Valdés-López_Thibivilliers_2011 -->
     <source name="LD00-2817P_x_LDX01-1-65.gen.Valdes-Lopez_Thibivilliers_2011" type="lis-genetic" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/LD00-2817P_x_LDX01-1-65.gen.Valdés-López_Thibivilliers_2011/" />
@@ -1508,6 +1506,11 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/S100_x_Tokyo.gen.Mian_Ashley_1998/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/S100_x_Tokyo.gen.Mian_Ashley_1998"/>
     </source>
+    <!-- │   └── S19-90_x_Williams82.gen.Arahana_Graef_2001 -->
+    <source name="S19-90_x_Williams82.gen.Arahana_Graef_2001" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/S19-90_x_Williams82.gen.Arahana_Graef_2001/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/S19-90_x_Williams82.gen.Arahana_Graef_2001"/>
+    </source>
     <!-- │   └── S19-90_x_Williams82.gen.Kim_Diers_2000 -->
     <source name="S19-90_x_Williams82.gen.Kim_Diers_2000" type="lis-genetic" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/S19-90_x_Williams82.gen.Kim_Diers_2000/" />
@@ -1729,6 +1732,149 @@
       <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Zhongdou27_x_Jiunong20.gen.Zeng_Li_2009"/>
     </source>
 
+
+    <!-- │   └── 93705KS4895_x_Jackson.gen.Hwang_King_2015 -->
+    <source name="93705KS4895_x_Jackson.gen.Hwang_King_2015" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/93705KS4895_x_Jackson.gen.Hwang_King_2015/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/93705KS4895_x_Jackson.gen.Hwang_King_2015"/>
+    </source>
+    <!-- │   └── Charleston_x_DongNong594.gen.Yang_Xin_2013 -->
+    <source name="Charleston_x_DongNong594.gen.Yang_Xin_2013" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Charleston_x_DongNong594.gen.Yang_Xin_2013/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Charleston_x_DongNong594.gen.Yang_Xin_2013"/>
+    </source>
+    <!-- │   └── Essex_x_Forrest.gen.Yesudas_Sharma_2010 -->
+    <source name="Essex_x_Forrest.gen.Yesudas_Sharma_2010" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Essex_x_Forrest.gen.Yesudas_Sharma_2010/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Essex_x_Forrest.gen.Yesudas_Sharma_2010"/>
+    </source>
+    <!-- │   └── Fukuyutaka_x_Himeshirazu.gen.Oki_Komatsu_2012 -->
+    <source name="Fukuyutaka_x_Himeshirazu.gen.Oki_Komatsu_2012" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Fukuyutaka_x_Himeshirazu.gen.Oki_Komatsu_2012/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Fukuyutaka_x_Himeshirazu.gen.Oki_Komatsu_2012"/>
+    </source>
+    <!-- │   └── Hamilton_x_PI90763.gen.Guo_Sleper_2005 -->
+    <source name="Hamilton_x_PI90763.gen.Guo_Sleper_2005" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Hamilton_x_PI90763.gen.Guo_Sleper_2005/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Hamilton_x_PI90763.gen.Guo_Sleper_2005"/>
+    </source>
+    <!-- │   └── Iyodaizu_x_Tachinagaha.gen.Van_Takahashi_2017 -->
+    <source name="Iyodaizu_x_Tachinagaha.gen.Van_Takahashi_2017" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Iyodaizu_x_Tachinagaha.gen.Van_Takahashi_2017/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Iyodaizu_x_Tachinagaha.gen.Van_Takahashi_2017"/>
+    </source>
+    <!-- │   └── Jiyu50_x_Jinong18.gen.Yao_Liu_2015 -->
+    <source name="Jiyu50_x_Jinong18.gen.Yao_Liu_2015" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Jiyu50_x_Jinong18.gen.Yao_Liu_2015/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Jiyu50_x_Jinong18.gen.Yao_Liu_2015"/>
+    </source>
+    <!-- │   └── KefengNo1_x_Nannong1138-2.gen.Yin_Meng_2010 -->
+    <source name="KefengNo1_x_Nannong1138-2.gen.Yin_Meng_2010" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/KefengNo1_x_Nannong1138-2.gen.Yin_Meng_2010/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/KefengNo1_x_Nannong1138-2.gen.Yin_Meng_2010"/>
+    </source>
+    <!-- │   └── PI27890_x_PI290136.gen.Mansur_Lark_1993 -->
+    <source name="PI27890_x_PI290136.gen.Mansur_Lark_1993" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/PI27890_x_PI290136.gen.Mansur_Lark_1993/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/PI27890_x_PI290136.gen.Mansur_Lark_1993"/>
+    </source>
+    <!-- │   └── SD02-4-59_x_A02-381100.gen.Wang_Jiang_2014 -->
+    <source name="SD02-4-59_x_A02-381100.gen.Wang_Jiang_2014" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/SD02-4-59_x_A02-381100.gen.Wang_Jiang_2014/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/SD02-4-59_x_A02-381100.gen.Wang_Jiang_2014"/>
+    </source>
+    <!-- │   └── Williams82_x_PI437655.gen.Jiao_Vuong_2015 -->
+    <source name="Williams82_x_PI437655.gen.Jiao_Vuong_2015" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Williams82_x_PI437655.gen.Jiao_Vuong_2015/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Williams82_x_PI437655.gen.Jiao_Vuong_2015"/>
+    </source>
+
+    <!-- │   └── A95-684043_x_LS98-0582.gen.Swaminathan_Abeysekara_2018 -->
+    <source name="A95-684043_x_LS98-0582.gen.Swaminathan_Abeysekara_2018" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/A95-684043_x_LS98-0582.gen.Swaminathan_Abeysekara_2018/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/A95-684043_x_LS98-0582.gen.Swaminathan_Abeysekara_2018"/>
+    </source>
+    <!-- │   └── Charleston_x_DongNong594.gen.Teng_Han_2009 -->
+    <source name="Charleston_x_DongNong594.gen.Teng_Han_2009" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Charleston_x_DongNong594.gen.Teng_Han_2009/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Charleston_x_DongNong594.gen.Teng_Han_2009"/>
+    </source>
+    <!-- │   └── Charleston_x_Dongnong594.gen.Qi_Hou_2014 -->
+    <source name="Charleston_x_Dongnong594.gen.Qi_Hou_2014" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Charleston_x_Dongnong594.gen.Qi_Hou_2014/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Charleston_x_Dongnong594.gen.Qi_Hou_2014"/>
+    </source>
+    <!-- │   └── Embrapa20_x_BRS133.gen.Nicolás_Hungria_2005 -->
+    <source name="Embrapa20_x_BRS133.gen.Nicolas_Hungria_2005" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Embrapa20_x_BRS133.gen.Nicolás_Hungria_2005/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Embrapa20_x_BRS133.gen.Nicolás_Hungria_2005"/>
+    </source>
+    <!-- │   └── Essex_x_Forrest.gen.Brensha_Kantartzi_2017 -->
+    <source name="Essex_x_Forrest.gen.Brensha_Kantartzi_2017" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Essex_x_Forrest.gen.Brensha_Kantartzi_2017/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Essex_x_Forrest.gen.Brensha_Kantartzi_2017"/>
+    </source>
+    <!-- │   └── Jidou9_x_ZYD2738.gen.Yan_Li_2014 -->
+    <source name="Jidou9_x_ZYD2738.gen.Yan_Li_2014" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Jidou9_x_ZYD2738.gen.Yan_Li_2014/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Jidou9_x_ZYD2738.gen.Yan_Li_2014"/>
+    </source>
+    <!-- │   └── Jiyu69_x_SS0404-T5-76.gen.Shim_Kim_2017 -->
+    <source name="Jiyu69_x_SS0404-T5-76.gen.Shim_Kim_2017" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Jiyu69_x_SS0404-T5-76.gen.Shim_Kim_2017/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Jiyu69_x_SS0404-T5-76.gen.Shim_Kim_2017"/>
+    </source>
+    <!-- │   └── KS4895_x_Jackson.gen.Hwang_Ray_2014 -->
+    <source name="KS4895_x_Jackson.gen.Hwang_Ray_2014" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/KS4895_x_Jackson.gen.Hwang_Ray_2014/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/KS4895_x_Jackson.gen.Hwang_Ray_2014"/>
+    </source>
+    <!-- │   └── Kenwood_x_LG94-1713.gen.Guzman_Diers_2007 -->
+    <source name="Kenwood_x_LG94-1713.gen.Guzman_Diers_2007" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Kenwood_x_LG94-1713.gen.Guzman_Diers_2007/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Kenwood_x_LG94-1713.gen.Guzman_Diers_2007"/>
+    </source>
+    <!-- │   └── OACBayfield_x_OACShire.gen.Shaw_Rajcan_2017 -->
+    <source name="OACBayfield_x_OACShire.gen.Shaw_Rajcan_2017" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/OACBayfield_x_OACShire.gen.Shaw_Rajcan_2017/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/OACBayfield_x_OACShire.gen.Shaw_Rajcan_2017"/>
+    </source>
+    <!-- │   └── PI438489B_x_Hamilton.gen.My-Abdelmajid_Ramos_2017a -->
+    <source name="PI438489B_x_Hamilton.gen.My-Abdelmajid_Ramos_2017a" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/PI438489B_x_Hamilton.gen.My-Abdelmajid_Ramos_2017a/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/PI438489B_x_Hamilton.gen.My-Abdelmajid_Ramos_2017a"/>
+    </source>
+    <!-- │   └── PI438489B_x_Hamilton.gen.My-Abdelmajid_Ramos_2017b -->
+    <source name="PI438489B_x_Hamilton.gen.My-Abdelmajid_Ramos_2017b" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/PI438489B_x_Hamilton.gen.My-Abdelmajid_Ramos_2017b/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/PI438489B_x_Hamilton.gen.My-Abdelmajid_Ramos_2017b"/>
+    </source>
+    <!-- │   └── SD02-4-59_x_A02-381100.gen.Wang_Jiang_2015 -->
+    <source name="SD02-4-59_x_A02-381100.gen.Wang_Jiang_2015" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/SD02-4-59_x_A02-381100.gen.Wang_Jiang_2015/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/SD02-4-59_x_A02-381100.gen.Wang_Jiang_2015"/>
+    </source>
+    <!-- │   └── Williams82_x_PI366121.gen.Kulkarni_Asekova_2017 -->
+    <source name="Williams82_x_PI366121.gen.Kulkarni_Asekova_2017" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Williams82_x_PI366121.gen.Kulkarni_Asekova_2017/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Williams82_x_PI366121.gen.Kulkarni_Asekova_2017"/>
+    </source>
+    <!-- │   └── Zhongdou27_x_Jiunong20.gen.Han_Teng_2015 -->
+    <source name="Zhongdou27_x_Jiunong20.gen.Han_Teng_2015" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Zhongdou27_x_Jiunong20.gen.Han_Teng_2015/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Zhongdou27_x_Jiunong20.gen.Han_Teng_2015"/>
+    </source>
+    <!-- │   └── Zhongdou32_x_Zhongdou29.gen.Chen_Shan_2011 -->
+    <source name="Zhongdou32_x_Zhongdou29.gen.Chen_Shan_2011" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/Zhongdou32_x_Zhongdou29.gen.Chen_Shan_2011/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/Zhongdou32_x_Zhongdou29.gen.Chen_Shan_2011"/>
+    </source>
+    <!-- │   └── mixed.gen.Ramamurthy_Jedlicka_2014 -->
+    <source name="mixed.gen.Ramamurthy_Jedlicka_2014" type="lis-genetic" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genetic/mixed.gen.Ramamurthy_Jedlicka_2014/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genetic/mixed.gen.Ramamurthy_Jedlicka_2014"/>
+    </source>
+    
     <!-- ├── genomes -->
     <!-- │   ├── FiskebyIII.gnm1.F177 -->
     <source name="FiskebyIII.gnm1.F177" type="lis-fasta" dump="true">
@@ -1835,7 +1981,145 @@
       <property name="lis-fasta.includes" value="README.Zh35_IGA1004.gnm1.DBYJ.yml,glyma.Zh35_IGA1004.gnm1.DBYJ.genome_main.fna"/>
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Zh35_IGA1004.gnm1.DBYJ"/>
     </source>
+
+    <!-- ├── maps -->
+    <!-- │   └── mixed.map.GmComposite1999 -->
+    <source name="mixed.map.GmComposite1999" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmComposite1999/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmComposite1999"/>
+    </source>
+    <!-- │   └── mixed.map.GmComposite2003 -->
+    <source name="mixed.map.GmComposite2003" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmComposite2003/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmComposite2003"/>
+    </source>
+    <!-- │   └── mixed.map.GmFeChlorosis -->
+    <source name="mixed.map.GmFeChlorosis" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmFeChlorosis/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmFeChlorosis"/>
+    </source>
+    <!-- │   └── mixed.map.GmFeChlorosis2 -->
+    <source name="mixed.map.GmFeChlorosis2" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmFeChlorosis2/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmFeChlorosis2"/>
+    </source>
+    <!-- │   └── mixed.map.GmRAPD-Sclero -->
+    <source name="mixed.map.GmRAPD-Sclero" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmRAPD-Sclero/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmRAPD-Sclero"/>
+    </source>
+    <!-- │   └── mixed.map.GmRAPD-SIU -->
+    <source name="mixed.map.GmRAPD-SIU" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmRAPD-SIU/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmRAPD-SIU"/>
+    </source>
+    <!-- │   └── mixed.map.GmRFLP-CEW -->
+    <source name="mixed.map.GmRFLP-CEW" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmRFLP-CEW/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmRFLP-CEW"/>
+    </source>
+    <!-- │   └── mixed.map.GmRFLP-CEW2 -->
+    <source name="mixed.map.GmRFLP-CEW2" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmRFLP-CEW2/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmRFLP-CEW2"/>
+    </source>
+    <!-- │   └── mixed.map.GmRFLP-CEW3 -->
+    <source name="mixed.map.GmRFLP-CEW3" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmRFLP-CEW3/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmRFLP-CEW3"/>
+    </source>
+    <!-- │   └── mixed.map.GmRFLP-Chiba -->
+    <source name="mixed.map.GmRFLP-Chiba" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmRFLP-Chiba/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmRFLP-Chiba"/>
+    </source>
+    <!-- │   └── mixed.map.GmRFLP-Chiba2 -->
+    <source name="mixed.map.GmRFLP-Chiba2" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmRFLP-Chiba2/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmRFLP-Chiba2"/>
+    </source>
+    <!-- │   └── mixed.map.GmRFLP-GA1996a -->
+    <source name="mixed.map.GmRFLP-GA1996a" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmRFLP-GA1996a/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmRFLP-GA1996a"/>
+    </source>
+    <!-- │   └── mixed.map.GmRFLP-GA1996b -->
+    <source name="mixed.map.GmRFLP-GA1996b" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmRFLP-GA1996b/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmRFLP-GA1996b"/>
+    </source>
+    <!-- │   └── mixed.map.GmRFLP-GA1998 -->
+    <source name="mixed.map.GmRFLP-GA1998" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmRFLP-GA1998/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmRFLP-GA1998"/>
+    </source>
+    <!-- │   └── mixed.map.GmRFLP-JPT -->
+    <source name="mixed.map.GmRFLP-JPT" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmRFLP-JPT/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmRFLP-JPT"/>
+    </source>
+    <!-- │   └── mixed.map.GmRFLP-KGL -->
+    <source name="mixed.map.GmRFLP-KGL" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmRFLP-KGL/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmRFLP-KGL"/>
+    </source>
+    <!-- │   └── mixed.map.GmRFLP-USDAARS-RCS -->
+    <source name="mixed.map.GmRFLP-USDAARS-RCS" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmRFLP-USDAARS-RCS/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmRFLP-USDAARS-RCS"/>
+    </source>
+    <!-- │   └── mixed.map.GmSCN -->
+    <source name="mixed.map.GmSCN" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmSCN/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmSCN"/>
+    </source>
+    <!-- │   └── mixed.map.GmSSR-MO -->
+    <source name="mixed.map.GmSSR-MO" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmSSR-MO/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmSSR-MO"/>
+    </source>
+    <!-- │   └── mixed.map.GmSSR-Sclero -->
+    <source name="mixed.map.GmSSR-Sclero" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmSSR-Sclero/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmSSR-Sclero"/>
+    </source>
+    <!-- │   └── mixed.map.GmSSR-SIU -->
+    <source name="mixed.map.GmSSR-SIU" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmSSR-SIU/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmSSR-SIU"/>
+    </source>
+    <!-- │   └── mixed.map.GmSSR-Utah -->
+    <source name="mixed.map.GmSSR-Utah" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmSSR-Utah/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmSSR-Utah"/>
+    </source>
+    <!-- │   └── mixed.map.GmSSR-Utah2 -->
+    <source name="mixed.map.GmSSR-Utah2" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmSSR-Utah2/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmSSR-Utah2"/>
+    </source>
+    <!-- │   └── mixed.map.GmSSR-Utah3 -->
+    <source name="mixed.map.GmSSR-Utah3" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmSSR-Utah3/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmSSR-Utah3"/>
+    </source>
+    <!-- │   └── mixed.map.GmUSDA1997 -->
+    <source name="mixed.map.GmUSDA1997" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmUSDA1997/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmUSDA1997"/>
+    </source>
+    <!-- │   └── mixed.map.GmUtah1996 -->
+    <source name="mixed.map.GmUtah1996" type="lis-map" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/maps/mixed.map.GmUtah1996/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/maps/mixed.map.GmUtah1996"/>
+    </source>
+    
     <!-- ├── markers -->
+    <!-- │   ├── Wm82.gnm1.mrk.BARCSOYSSR -->
+    <source name="Wm82.gnm1.mrk.BARCSOYSSR" type="lis-markers" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/markers/Wm82.gnm1.mrk.BARCSOYSSR/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/markers/Wm82.gnm1.mrk.BARCSOYSSR"/>
+    </source>
     <!-- │   ├── Wm82.gnm1.mrk.Li_Guo_2016 -->
     <source name="Wm82.gnm1.mrk.Li_Guo_2016" type="lis-markers" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/markers/Wm82.gnm1.mrk.Li_Guo_2016/" />
@@ -1851,10 +2135,25 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/markers/Wm82.gnm1.mrk.SoySNP6K/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/markers/Wm82.gnm1.mrk.SoySNP6K"/>
     </source>
+    <!-- │   ├── Wm82.gnm1.mrk.SoySSR -->
+    <source name="Wm82.gnm1.mrk.SoySSR" type="lis-markers" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/markers/Wm82.gnm1.mrk.SoySSR/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/markers/Wm82.gnm1.mrk.SoySSR"/>
+    </source>
     <!-- │   ├── Wm82.gnm2.mrk.1536_USLP1 -->
     <source name="Wm82.gnm2.mrk.1536_USLP1" type="lis-markers" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/markers/Wm82.gnm2.mrk.1536_USLP1/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/markers/Wm82.gnm2.mrk.1536_USLP1"/>
+    </source>
+    <!-- │   ├── Wm82.gnm2.mrk.BARCSOYSSR -->
+    <source name="Wm82.gnm2.mrk.BARCSOYSSR" type="lis-markers" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/markers/Wm82.gnm2.mrk.BARCSOYSSR/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/markers/Wm82.gnm2.mrk.BARCSOYSSR"/>
+    </source>
+    <!-- │   ├── Wm82.gnm2.mrk.Fang_Ma_2017 -->
+    <source name="Wm82.gnm2.mrk.Fang_Ma_2017" type="lis-markers" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/markers/Wm82.gnm2.mrk.Fang_Ma_2017/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/markers/Wm82.gnm2.mrk.Fang_Ma_2017"/>
     </source>
     <!-- │   ├── Wm82.gnm2.mrk.Li_Zhao_2019 -->
     <source name="Wm82.gnm2.mrk.Li_Zhao_2019" type="lis-markers" dump="true">
@@ -1891,6 +2190,11 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/markers/Wm82.gnm2.mrk.SoySNP6K/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/markers/Wm82.gnm2.mrk.SoySNP6K"/>
     </source>
+    <!-- │   ├── Wm82.gnm2.mrk.SoySSR -->
+    <source name="Wm82.gnm2.mrk.SoySSR" type="lis-markers" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/markers/Wm82.gnm2.mrk.SoySSR/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/markers/Wm82.gnm2.mrk.SoySSR"/>
+    </source>
     <!-- │   ├── Wm82.gnm2.mrk.Zhao_Teng_2017 -->
     <source name="Wm82.gnm2.mrk.Zhao_Teng_2017" type="lis-markers" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/markers/Wm82.gnm2.mrk.Zhao_Teng_2017/" />
@@ -1903,6 +2207,8 @@
       <property name="src.data.dir" location="/data/v2/Glycine/max/synteny/Wm82.gnm2.syn.HXNY"/>
     </source>
 
+
+    
     <!-- /data/v2/Glycine/soja -->
     <!-- ├── about_this_collection -->
     <source name="glyso-description" type="lis-description" dump="true">
@@ -2163,11 +2469,10 @@
 
     <!-- LIS -->
     <post-process name="lis-populate-publications" />
-    <!-- <post-process name="lis-populate-cdsregion-cds-references" /> -->
-    <post-process name="lis-populate-gwas-marker-collections" />
-    <post-process name="lis-populate-linkagegroup-marker-collections" />
-    <post-process name="lis-populate-qtl-marker-collections" />
-    <post-process name="lis-populate-qtl-gene-collections" />
+    <post-process name="lis-populate-gwasresult-markers" />
+    <post-process name="lis-populate-marker-linkagegrouppositions" />
+    <post-process name="lis-populate-qtl-markers" />
+    <post-process name="lis-populate-qtl-genes" />
     
     <!-- VIEWS AND INDEXES -->
     <post-process name="create-location-overlap-index"/>

@@ -5,3 +5,6 @@ build
 libs
 webapp/src/main/java
 webapp/src/main/webapp
+*.txt
+*.sh
+*.sql

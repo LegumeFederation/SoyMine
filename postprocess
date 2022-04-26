@@ -17,20 +17,20 @@ echo -e "#################################################################"
 # ./gradlew postprocess --stacktrace -Pprocess=populate-child-features
 # ./gradlew postprocess --stacktrace -Pprocess=create-gene-flanking-features
 
-## LIS
-# ./gradlew postprocess --stacktrace -Pprocess=lis-populate-publications
-# ./gradlew postprocess --stacktrace -Pprocess=lis-populate-cdsregion-cds-references
-# ./gradlew postprocess --stacktrace -Pprocess=lis-populate-gwas-marker-collections
-# ./gradlew postprocess --stacktrace -Pprocess=lis-populate-linkagegroup-marker-collections
-# ./gradlew postprocess --stacktrace -Pprocess=lis-populate-qtl-marker-collections
-# ./gradlew postprocess --stacktrace -Pprocess=lis-populate-qtl-gene-collections
-
 ## VIEWS AND INDEXES
 # ./gradlew postprocess --stacktrace -Pprocess=create-location-overlap-index
 # ./gradlew postprocess --stacktrace -Pprocess=create-overlap-view
 # ./gradlew postprocess --stacktrace -Pprocess=create-attribute-indexes
 
+## LIS
+# ./gradlew postprocess --stacktrace -Pprocess=lis-populate-publications
+# ./gradlew postprocess --stacktrace -Pprocess=lis-populate-gwasresult-markers
+# ./gradlew postprocess --stacktrace -Pprocess=lis-populate-marker-linkagegrouppositions
+# ./gradlew postprocess --stacktrace -Pprocess=lis-populate-qtl-markers
+# ./gradlew postprocess --stacktrace -Pprocess=lis-populate-qtl-genes
+
 ## DO THESE AFTER UPDATES
 ./gradlew postprocess --stacktrace -Pprocess=summarise-objectstore
 ./gradlew postprocess --stacktrace -Pprocess=create-autocomplete-index
 ./gradlew postprocess --stacktrace -Pprocess=create-search-index
+

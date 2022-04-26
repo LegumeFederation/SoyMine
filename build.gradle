@@ -67,6 +67,7 @@ subprojects {
         rename { fileName -> fileName.replace("$minePropertyFileName", "intermine.properties") }
         // inputs.sourceFiles.stopExecutionIfEmpty()
     }
+
 }
 
 task clean(type: Delete) {
@@ -83,4 +84,8 @@ task clean(type: Delete) {
         include '*.log'
     }
     println "deleted log files"
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs += ['-Xlint:deprecation']
 }

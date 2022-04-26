@@ -7,14 +7,14 @@ echo -e "########################## ${LP}DESCRIPTIONS${NC} #####################
 echo -e "#################################################################"
 
 ## Glycine
-# ./gradlew integrate --stacktrace -Psource=glycy-description
-# ./gradlew integrate --stacktrace -Psource=glyd3-description
-# ./gradlew integrate --stacktrace -Psource=glydo-description
-# ./gradlew integrate --stacktrace -Psource=glyfa-description
-# ./gradlew integrate --stacktrace -Psource=glyma-description
-# ./gradlew integrate --stacktrace -Psource=glyso-description
-# ./gradlew integrate --stacktrace -Psource=glyst-description
-# ./gradlew integrate --stacktrace -Psource=glysy-description
+./gradlew integrate --stacktrace -Psource=glycy-description
+./gradlew integrate --stacktrace -Psource=glyd3-description
+./gradlew integrate --stacktrace -Psource=glydo-description
+./gradlew integrate --stacktrace -Psource=glyfa-description
+./gradlew integrate --stacktrace -Psource=glyma-description
+./gradlew integrate --stacktrace -Psource=glyso-description
+./gradlew integrate --stacktrace -Psource=glyst-description
+./gradlew integrate --stacktrace -Psource=glysy-description
 
 
 ## others from synteny
