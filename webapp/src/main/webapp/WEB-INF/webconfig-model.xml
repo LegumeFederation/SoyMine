@@ -631,7 +631,7 @@
                                startClassDisplay="primaryIdentifier"
                                enrich="ontologyAnnotations.ontologyTerm.name"
                                enrichIdentifier="ontologyAnnotations.ontologyTerm.identifier"
-                               constraints="ontologyAnnotations.ontologyTerm.ontology.name=GO,
+                               constraints="ontologyAnnotations.ontologyTerm.ontology.name=Gene Ontology,
                                             ontologyAnnotations.ontologyTerm.namespace=[Namespace],
                                             organism.name=[list]"
                                views="secondaryIdentifier,primaryIdentifier,organism.name,
