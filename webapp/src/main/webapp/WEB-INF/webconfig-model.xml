@@ -21,7 +21,7 @@
       <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
       <fieldconfig fieldExpr="name" label="Name"/>
       <fieldconfig fieldExpr="organism.name" label="Organism" />
-      <fieldconfig fieldExpr="strain.identifier" label="Strain" />
+      <fieldconfig fieldExpr="strain.name" label="Strain" />
     </fields>
   </class>
 
@@ -30,7 +30,7 @@
       <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
       <fieldconfig fieldExpr="name" label="Name"/>
       <fieldconfig fieldExpr="organism.name" label="Organism" />
-      <fieldconfig fieldExpr="strain.identifier" label="Strain" />
+      <fieldconfig fieldExpr="strain.name" label="Strain" />
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly" />
       <fieldconfig fieldExpr="annotationVersion" label="Annotation" />
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
@@ -42,7 +42,7 @@
       <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
       <fieldconfig fieldExpr="name" label="Name"/>
       <fieldconfig fieldExpr="organism.name" label="Organism" />
-      <fieldconfig fieldExpr="strain.identifier" label="Strain" />
+      <fieldconfig fieldExpr="strain.name" label="Strain" />
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly" />
       <fieldconfig fieldExpr="annotationVersion" label="Annotation" />
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
@@ -57,7 +57,7 @@
       <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
       <fieldconfig fieldExpr="name" label="Name"/>
       <fieldconfig fieldExpr="organism.name" label="Organism" />
-      <fieldconfig fieldExpr="strain.identifier" label="Strain" />
+      <fieldconfig fieldExpr="strain.name" label="Strain" />
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly" />
       <fieldconfig fieldExpr="annotationVersion" label="Annotation" />
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
@@ -71,7 +71,7 @@
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
       <fieldconfig fieldExpr="organism.name" label="Organism"/>
-      <fieldconfig fieldExpr="strain.identifier" label="Strain"/>
+      <fieldconfig fieldExpr="strain.name" label="Strain"/>
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly"/>
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" />
     </fields>
@@ -80,7 +80,7 @@
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
       <fieldconfig fieldExpr="organism.name" label="Organism"/>
-      <fieldconfig fieldExpr="strain.identifier" label="Strain"/>
+      <fieldconfig fieldExpr="strain.name" label="Strain"/>
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly"/>
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" />
     </fields>
@@ -137,7 +137,7 @@
       <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
       <fieldconfig fieldExpr="name" label="Name"/>
       <fieldconfig fieldExpr="organism.name" label="Organism" />
-      <fieldconfig fieldExpr="strain.identifier" label="Strain" />
+      <fieldconfig fieldExpr="strain.name" label="Strain" />
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly" />
       <fieldconfig fieldExpr="annotationVersion" label="Annotation" />
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
@@ -156,7 +156,7 @@
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
       <fieldconfig fieldExpr="organism.name" label="Organism" />
-      <fieldconfig fieldExpr="strain.identifier" label="Strain" />
+      <fieldconfig fieldExpr="strain.name" label="Strain" />
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" showInInlineCollection="true" showInSummary="true" />
       <fieldconfig fieldExpr="direction" label="Direction" />
       <fieldconfig fieldExpr="distance" label="Distance" />
@@ -171,7 +171,7 @@
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
       <fieldconfig fieldExpr="organism.name" label="Organism" />
-      <fieldconfig fieldExpr="strain.identifier" label="Strain" />
+      <fieldconfig fieldExpr="strain.name" label="Strain" />
       <fieldconfig fieldExpr="length" displayer="/model/sequenceShortDisplayerWithField.jsp" />
       <fieldconfig fieldExpr="assemblyVersion" label="Assembly" />
       <fieldconfig fieldExpr="annotationVersion" label="Annotation" />
@@ -611,13 +611,13 @@
                     rangeLabel="Count"
                     domainLabel="Chromosome"
                     filterLabel="Strain"
-                    filters="strain.identifier=[list]"
+                    filters="strain.name=[list]"
                     startClass="SequenceFeature"
                     typeClass="SequenceFeature"
                     categoryPath="chromosome.primaryIdentifier"
                     seriesLabels="Actual,Expected"
                     seriesPath="ActualExpectedCriteria"
-                    constraints="strain.identifier=[Strain]"
+                    constraints="strain.name=[Strain]"
                     views="primaryIdentifier, secondaryIdentifier, name, organism.name, chromosome.secondaryIdentifier, chromosomeLocation.start, chromosomeLocation.end, chromosomeLocation.strand" />
 
     <enrichmentwidgetdisplayer id="go_enrichment_for_gene"
