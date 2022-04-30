@@ -508,6 +508,7 @@
     </headerconfig>
     <fields>
       <fieldconfig fieldExpr="primaryIdentifier" label="Identifier"/>
+      <fieldconfig fieldExpr="genotypes" label="Genotypes"/>
       <fieldconfig fieldExpr="genotypingPlatform" label="Genotyping Platform"/>
       <fieldconfig fieldExpr="genotypingMethod" label="Genotyping Method" doNotTruncate="true" />
       <fieldconfig fieldExpr="synopsis" label="Synopsis" doNotTruncate="true" />
