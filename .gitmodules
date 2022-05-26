@@ -1,6 +1,6 @@
 [submodule "webapp/src/main/java"]
 	path = webapp/src/main/java
-	url = https://github.com/leguminfo/mine-java
+	url = https://github.com/legumeinfo/mine-java
 [submodule "libs"]
 	path = libs
 	url = https://github.com/legumeinfo/mine-libs
