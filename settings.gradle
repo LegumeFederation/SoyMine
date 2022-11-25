@@ -1,4 +1,4 @@
-rootProject.name = 'soymine'
+rootProject.name = 'glycinemine'
 
 include ':dbmodel',':webapp'
 

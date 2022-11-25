@@ -1,2 +1,2 @@
-# soymine
-An InterMine for soybean
+# glycinemine
+An InterMine for Glycine species
