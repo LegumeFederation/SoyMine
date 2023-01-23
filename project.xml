@@ -6,56 +6,56 @@
 
     <!-- Glycine/cyrtoloba/about_this_collection -->
     <source name="Glycine-cyrtoloba-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Glycine/cyrtoloba/about_this_collection" />
+      <property name="dataSetName" value="Glycine-cyrtoloba-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/cyrtoloba/about_this_collection/" />
       <property name="dataSetDescription" value="Glycine cyrtoloba organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Glycine/cyrtoloba/about_this_collection" />
     </source>
     <!-- Glycine/D3-tomentella/about_this_collection -->
     <source name="Glycine-D3-tomentella-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Glycine/D3-tomentella/about_this_collection" />
+      <property name="dataSetName" value="Glycine-D3-tomentella-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/D3-tomentella/about_this_collection/" />
       <property name="dataSetDescription" value="Glycine D3-tomentella organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Glycine/D3-tomentella/about_this_collection" />
     </source>
     <!-- Glycine/dolichocarpa/about_this_collection -->
     <source name="Glycine-dolichocarpa-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Glycine/dolichocarpa/about_this_collection" />
+      <property name="dataSetName" value="Glycine-dolichocarpa-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/dolichocarpa/about_this_collection/" />
       <property name="dataSetDescription" value="Glycine dolichocarpa organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Glycine/dolichocarpa/about_this_collection" />
     </source>
     <!-- Glycine/falcata/about_this_collection -->
     <source name="Glycine-falcata-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Glycine/falcata/about_this_collection" />
+      <property name="dataSetName" value="Glycine-falcata-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/falcata/about_this_collection/" />
       <property name="dataSetDescription" value="Glycine falcata organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Glycine/falcata/about_this_collection" />
     </source>
     <!-- Glycine/max/about_this_collection -->
     <source name="Glycine-max-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Glycine/max/about_this_collection" />
+      <property name="dataSetName" value="Glycine-max-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/about_this_collection/" />
       <property name="dataSetDescription" value="Glycine max organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Glycine/max/about_this_collection" />
     </source>
     <!-- Glycine/soja/about_this_collection -->
     <source name="Glycine-soja-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Glycine/soja/about_this_collection" />
+      <property name="dataSetName" value="Glycine-soja-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/about_this_collection/" />
       <property name="dataSetDescription" value="Glycine soja organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Glycine/soja/about_this_collection" />
     </source>
     <!-- Glycine/stenophita/about_this_collection -->
     <source name="Glycine-stenophita-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Glycine/stenophita/about_this_collection" />
+      <property name="dataSetName" value="Glycine-stenophita-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/stenophita/about_this_collection/" />
       <property name="dataSetDescription" value="Glycine stenophita organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Glycine/stenophita/about_this_collection" />
     </source>
     <!-- Glycine/syndetika/about_this_collection -->
     <source name="Glycine-syndetika-description" type="lis-description" dump="true" >
-      <property name="dataSetName" value="Glycine/syndetika/about_this_collection" />
+      <property name="dataSetName" value="Glycine-syndetika-description" />
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/syndetika/about_this_collection/" />
       <property name="dataSetDescription" value="Glycine syndetika organism and strain information." />
       <property name="src.data.dir" location="/data/v2/Glycine/syndetika/about_this_collection" />
@@ -64,182 +64,312 @@
     <!-- Glycine/cyrtoloba/genomes/G1267.gnm1.YWW6 -->
     <source name="G1267.gnm1.YWW6" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/cyrtoloba/genomes/G1267.gnm1.YWW6/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.G1267.gnm1.YWW6.yml,glycy.G1267.gnm1.YWW6.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/cyrtoloba/genomes/G1267.gnm1.YWW6"/>
     </source>
     <!-- Glycine/D3-tomentella/genomes/G1403.gnm1.CL6K -->
     <source name="G1403.gnm1.CL6K" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/D3-tomentella/genomes/G1403.gnm1.CL6K/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.G1403.gnm1.CL6K.yml,glyd3.G1403.gnm1.CL6K.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/D3-tomentella/genomes/G1403.gnm1.CL6K"/>
     </source>
     <!-- Glycine/dolichocarpa/genomes/G1134.gnm1.PP7B -->
     <source name="G1134.gnm1.PP7B" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/dolichocarpa/genomes/G1134.gnm1.PP7B/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.G1134.gnm1.PP7B.yml,glydo.G1134.gnm1.PP7B.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/dolichocarpa/genomes/G1134.gnm1.PP7B"/>
     </source>
     <!-- Glycine/falcata/genomes/G1718.gnm1.B1PY -->
     <source name="G1718.gnm1.B1PY" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/falcata/genomes/G1718.gnm1.B1PY/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.G1718.gnm1.B1PY.yml,glyfa.G1718.gnm1.B1PY.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/falcata/genomes/G1718.gnm1.B1PY"/>
+    </source>
+    <!-- Glycine/max/genomes/58-161.gnm1.BW8J -->
+    <source name="58-161.gnm1.BW8J" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/58-161.gnm1.BW8J/" />
+      <property name="lis-genome.includes" value="README.58-161.gnm1.BW8J.yml,glyma.58-161.gnm1.BW8J.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/58-161.gnm1.BW8J"/>
+    </source>
+    <!-- Glycine/max/genomes/Amsoy.gnm1.TYYG -->
+    <source name="Amsoy.gnm1.TYYG" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Amsoy.gnm1.TYYG/" />
+      <property name="lis-genome.includes" value="README.Amsoy.gnm1.TYYG.yml,glyma.Amsoy.gnm1.TYYG.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Amsoy.gnm1.TYYG"/>
+    </source>
+    <!-- Glycine/max/genomes/DongNongNo_50.gnm1.XRTN -->
+    <source name="DongNongNo_50.gnm1.XRTN" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/DongNongNo_50.gnm1.XRTN/" />
+      <property name="lis-genome.includes" value="README.DongNongNo_50.gnm1.XRTN.yml,glyma.DongNongNo_50.gnm1.XRTN.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/DongNongNo_50.gnm1.XRTN"/>
+    </source>
+    <!-- Glycine/max/genomes/FengDiHuang.gnm1.YYLM -->
+    <source name="FengDiHuang.gnm1.YYLM" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/FengDiHuang.gnm1.YYLM/" />
+      <property name="lis-genome.includes" value="README.FengDiHuang.gnm1.YYLM.yml,glyma.FengDiHuang.gnm1.YYLM.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/FengDiHuang.gnm1.YYLM"/>
     </source>
     <!-- Glycine/max/genomes/FiskebyIII.gnm1.F177 -->
     <source name="FiskebyIII.gnm1.F177" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/FiskebyIII.gnm1.F177/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.FiskebyIII.gnm1.F177.yml,glyma.FiskebyIII.gnm1.F177.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/FiskebyIII.gnm1.F177"/>
+    </source>
+    <!-- Glycine/max/genomes/HanDouNo_5.gnm1.11MF -->
+    <source name="HanDouNo_5.gnm1.11MF" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/HanDouNo_5.gnm1.11MF/" />
+      <property name="lis-genome.includes" value="README.HanDouNo_5.gnm1.11MF.yml,glyma.HanDouNo_5.gnm1.11MF.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/HanDouNo_5.gnm1.11MF"/>
     </source>
     <!-- Glycine/max/genomes/Hefeng25_IGA1002.gnm1.L69T -->
     <source name="Hefeng25_IGA1002.gnm1.L69T" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Hefeng25_IGA1002.gnm1.L69T/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Hefeng25_IGA1002.gnm1.L69T.yml,glyma.Hefeng25_IGA1002.gnm1.L69T.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Hefeng25_IGA1002.gnm1.L69T"/>
+    </source>
+    <!-- Glycine/max/genomes/HeiHeNo_43.gnm1.FV4H -->
+    <source name="HeiHeNo_43.gnm1.FV4H" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/HeiHeNo_43.gnm1.FV4H/" />
+      <property name="lis-genome.includes" value="README.HeiHeNo_43.gnm1.FV4H.yml,glyma.HeiHeNo_43.gnm1.FV4H.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/HeiHeNo_43.gnm1.FV4H"/>
     </source>
     <!-- Glycine/max/genomes/Huaxia3_IGA1007.gnm1.RGGN -->
     <source name="Huaxia3_IGA1007.gnm1.RGGN" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Huaxia3_IGA1007.gnm1.RGGN/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Huaxia3_IGA1007.gnm1.RGGN.yml,glyma.Huaxia3_IGA1007.gnm1.RGGN.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Huaxia3_IGA1007.gnm1.RGGN"/>
     </source>
     <!-- Glycine/max/genomes/Hwangkeum.gnm1.4S83 -->
     <source name="Hwangkeum.gnm1.4S83" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Hwangkeum.gnm1.4S83/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Hwangkeum.gnm1.4S83.yml,glyma.Hwangkeum.gnm1.4S83.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Hwangkeum.gnm1.4S83"/>
+    </source>
+    <!-- Glycine/max/genomes/JiDouNo_17.gnm1.MRYM -->
+    <source name="JiDouNo_17.gnm1.MRYM" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/JiDouNo_17.gnm1.MRYM/" />
+      <property name="lis-genome.includes" value="README.JiDouNo_17.gnm1.MRYM.yml,glyma.JiDouNo_17.gnm1.MRYM.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/JiDouNo_17.gnm1.MRYM"/>
+    </source>
+    <!-- Glycine/max/genomes/JinDouNo_23.gnm1.GBYD -->
+    <source name="JinDouNo_23.gnm1.GBYD" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/JinDouNo_23.gnm1.GBYD/" />
+      <property name="lis-genome.includes" value="README.JinDouNo_23.gnm1.GBYD.yml,glyma.JinDouNo_23.gnm1.GBYD.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/JinDouNo_23.gnm1.GBYD"/>
     </source>
     <!-- Glycine/max/genomes/Jinyuan_IGA1006.gnm1.LXM0 -->
     <source name="Jinyuan_IGA1006.gnm1.LXM0" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Jinyuan_IGA1006.gnm1.LXM0/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Jinyuan_IGA1006.gnm1.LXM0.yml,glyma.Jinyuan_IGA1006.gnm1.LXM0.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Jinyuan_IGA1006.gnm1.LXM0"/>
+    </source>
+    <!-- Glycine/max/genomes/JuXuanNo_23.gnm1.WC57 -->
+    <source name="JuXuanNo_23.gnm1.WC57" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/JuXuanNo_23.gnm1.WC57/" />
+      <property name="lis-genome.includes" value="README.JuXuanNo_23.gnm1.WC57.yml,glyma.JuXuanNo_23.gnm1.WC57.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/JuXuanNo_23.gnm1.WC57"/>
+    </source>
+    <!-- Glycine/max/genomes/KeShanNo_1.gnm1.3TDD -->
+    <source name="KeShanNo_1.gnm1.3TDD" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/KeShanNo_1.gnm1.3TDD/" />
+      <property name="lis-genome.includes" value="README.KeShanNo_1.gnm1.3TDD.yml,glyma.KeShanNo_1.gnm1.3TDD.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/KeShanNo_1.gnm1.3TDD"/>
     </source>
     <!-- Glycine/max/genomes/Lee.gnm1.BXNC -->
     <source name="Lee.gnm1.BXNC" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Lee.gnm1.BXNC/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Lee.gnm1.BXNC.yml,glyma.Lee.gnm1.BXNC.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Lee.gnm1.BXNC"/>
     </source>
     <!-- Glycine/max/genomes/Lee.gnm2.K7BV -->
     <source name="Lee.gnm2.K7BV" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Lee.gnm2.K7BV/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Lee.gnm2.K7BV.yml,glyma.Lee.gnm2.K7BV.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Lee.gnm2.K7BV"/>
+    </source>
+    <!-- Glycine/max/genomes/PI_398296.gnm1.D07C -->
+    <source name="PI_398296.gnm1.D07C" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/PI_398296.gnm1.D07C/" />
+      <property name="lis-genome.includes" value="README.PI_398296.gnm1.D07C.yml,glyma.PI_398296.gnm1.D07C.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/PI_398296.gnm1.D07C"/>
+    </source>
+    <!-- Glycine/max/genomes/PI_548362.gnm1.V9S7 -->
+    <source name="PI_548362.gnm1.V9S7" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/PI_548362.gnm1.V9S7/" />
+      <property name="lis-genome.includes" value="README.PI_548362.gnm1.V9S7.yml,glyma.PI_548362.gnm1.V9S7.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/PI_548362.gnm1.V9S7"/>
+    </source>
+    <!-- Glycine/max/genomes/QiHuangNo_34.gnm1.MB9G -->
+    <source name="QiHuangNo_34.gnm1.MB9G" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/QiHuangNo_34.gnm1.MB9G/" />
+      <property name="lis-genome.includes" value="README.QiHuangNo_34.gnm1.MB9G.yml,glyma.QiHuangNo_34.gnm1.MB9G.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/QiHuangNo_34.gnm1.MB9G"/>
+    </source>
+    <!-- Glycine/max/genomes/ShiShengChangYe.gnm1.MC01 -->
+    <source name="ShiShengChangYe.gnm1.MC01" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/ShiShengChangYe.gnm1.MC01/" />
+      <property name="lis-genome.includes" value="README.ShiShengChangYe.gnm1.MC01.yml,glyma.ShiShengChangYe.gnm1.MC01.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/ShiShengChangYe.gnm1.MC01"/>
+    </source>
+    <!-- Glycine/max/genomes/TieFengNo_18.gnm1.BW65 -->
+    <source name="TieFengNo_18.gnm1.BW65" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/TieFengNo_18.gnm1.BW65/" />
+      <property name="lis-genome.includes" value="README.TieFengNo_18.gnm1.BW65.yml,glyma.TieFengNo_18.gnm1.BW65.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/TieFengNo_18.gnm1.BW65"/>
+    </source>
+    <!-- Glycine/max/genomes/TieJiaSiLiHuang.gnm1.W9PV -->
+    <source name="TieJiaSiLiHuang.gnm1.W9PV" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/TieJiaSiLiHuang.gnm1.W9PV/" />
+      <property name="lis-genome.includes" value="README.TieJiaSiLiHuang.gnm1.W9PV.yml,glyma.TieJiaSiLiHuang.gnm1.W9PV.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/TieJiaSiLiHuang.gnm1.W9PV"/>
+    </source>
+    <!-- Glycine/max/genomes/TongShanTianEDan.gnm1.B4R6 -->
+    <source name="TongShanTianEDan.gnm1.B4R6" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/TongShanTianEDan.gnm1.B4R6/" />
+      <property name="lis-genome.includes" value="README.TongShanTianEDan.gnm1.B4R6.yml,glyma.TongShanTianEDan.gnm1.B4R6.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/TongShanTianEDan.gnm1.B4R6"/>
+    </source>
+    <!-- Glycine/max/genomes/WanDouNo_28.gnm1.ZRP2 -->
+    <source name="WanDouNo_28.gnm1.ZRP2" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/WanDouNo_28.gnm1.ZRP2/" />
+      <property name="lis-genome.includes" value="README.WanDouNo_28.gnm1.ZRP2.yml,glyma.WanDouNo_28.gnm1.ZRP2.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/WanDouNo_28.gnm1.ZRP2"/>
     </source>
     <!-- Glycine/max/genomes/Wenfeng7_IGA1001.gnm1.L0QH -->
     <source name="Wenfeng7_IGA1001.gnm1.L0QH" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Wenfeng7_IGA1001.gnm1.L0QH/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Wenfeng7_IGA1001.gnm1.L0QH.yml,glyma.Wenfeng7_IGA1001.gnm1.L0QH.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Wenfeng7_IGA1001.gnm1.L0QH"/>
     </source>
     <!-- Glycine/max/genomes/Wm82.gnm1.FCtY -->
     <source name="Wm82.gnm1.FCtY" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Wm82.gnm1.FCtY/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Wm82.gnm1.FCtY.yml,glyma.Wm82.gnm1.FCtY.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Wm82.gnm1.FCtY"/>
     </source>
     <!-- Glycine/max/genomes/Wm82.gnm2.DTC4 -->
     <source name="Wm82.gnm2.DTC4" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Wm82.gnm2.DTC4/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Wm82.gnm2.DTC4.yml,glyma.Wm82.gnm2.DTC4.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Wm82.gnm2.DTC4"/>
     </source>
     <!-- Glycine/max/genomes/Wm82.gnm4.4PTR -->
     <source name="Wm82.gnm4.4PTR" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Wm82.gnm4.4PTR/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Wm82.gnm4.4PTR.yml,glyma.Wm82.gnm4.4PTR.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Wm82.gnm4.4PTR"/>
     </source>
     <!-- Glycine/max/genomes/Wm82_IGA1008.gnm1.5CQQ -->
     <source name="Wm82_IGA1008.gnm1.5CQQ" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Wm82_IGA1008.gnm1.5CQQ/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Wm82_IGA1008.gnm1.5CQQ.yml,glyma.Wm82_IGA1008.gnm1.5CQQ.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Wm82_IGA1008.gnm1.5CQQ"/>
     </source>
     <!-- Glycine/max/genomes/Wm82_ISU01.gnm2.JFPQ -->
     <source name="Wm82_ISU01.gnm2.JFPQ" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Wm82_ISU01.gnm2.JFPQ/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Wm82_ISU01.gnm2.JFPQ.yml,glyma.Wm82_ISU01.gnm2.JFPQ.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Wm82_ISU01.gnm2.JFPQ"/>
+    </source>
+    <!-- Glycine/max/genomes/XuDouNo_1.gnm1.0GWH -->
+    <source name="XuDouNo_1.gnm1.0GWH" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/XuDouNo_1.gnm1.0GWH/" />
+      <property name="lis-genome.includes" value="README.XuDouNo_1.gnm1.0GWH.yml,glyma.XuDouNo_1.gnm1.0GWH.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/XuDouNo_1.gnm1.0GWH"/>
+    </source>
+    <!-- Glycine/max/genomes/YuDouNo_22.gnm1.T2VD -->
+    <source name="YuDouNo_22.gnm1.T2VD" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/YuDouNo_22.gnm1.T2VD/" />
+      <property name="lis-genome.includes" value="README.YuDouNo_22.gnm1.T2VD.yml,glyma.YuDouNo_22.gnm1.T2VD.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/YuDouNo_22.gnm1.T2VD"/>
     </source>
     <!-- Glycine/max/genomes/Zh13.gnm1.N6C8 -->
     <source name="Zh13.gnm1.N6C8" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Zh13.gnm1.N6C8/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Zh13.gnm1.N6C8.yml,glyma.Zh13.gnm1.N6C8.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Zh13.gnm1.N6C8"/>
     </source>
     <!-- Glycine/max/genomes/Zh13.gnm2.LV9P -->
     <source name="Zh13.gnm2.LV9P" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Zh13.gnm2.LV9P/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Zh13.gnm2.LV9P.yml,glyma.Zh13.gnm2.LV9P.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Zh13.gnm2.LV9P"/>
     </source>
     <!-- Glycine/max/genomes/Zh13_IGA1005.gnm1.FRXQ -->
     <source name="Zh13_IGA1005.gnm1.FRXQ" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Zh13_IGA1005.gnm1.FRXQ/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Zh13_IGA1005.gnm1.FRXQ.yml,glyma.Zh13_IGA1005.gnm1.FRXQ.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Zh13_IGA1005.gnm1.FRXQ"/>
     </source>
     <!-- Glycine/max/genomes/Zh35_IGA1004.gnm1.DBYJ -->
     <source name="Zh35_IGA1004.gnm1.DBYJ" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Zh35_IGA1004.gnm1.DBYJ/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.Zh35_IGA1004.gnm1.DBYJ.yml,glyma.Zh35_IGA1004.gnm1.DBYJ.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Zh35_IGA1004.gnm1.DBYJ"/>
+    </source>
+    <!-- Glycine/max/genomes/ZhangChunManCangJin.gnm1.FC4Q -->
+    <source name="ZhangChunManCangJin.gnm1.FC4Q" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/ZhangChunManCangJin.gnm1.FC4Q/" />
+      <property name="lis-genome.includes" value="README.ZhangChunManCangJin.gnm1.FC4Q.yml,glyma.ZhangChunManCangJin.gnm1.FC4Q.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/ZhangChunManCangJin.gnm1.FC4Q"/>
+    </source>
+    <!-- Glycine/max/genomes/Zhutwinning2.gnm1.GR6N -->
+    <source name="Zhutwinning2.gnm1.GR6N" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/Zhutwinning2.gnm1.GR6N/" />
+      <property name="lis-genome.includes" value="README.Zhutwinning2.gnm1.GR6N.yml,glyma.Zhutwinning2.gnm1.GR6N.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/Zhutwinning2.gnm1.GR6N"/>
+    </source>
+    <!-- Glycine/max/genomes/ZiHuaNo_4.gnm1.HN60 -->
+    <source name="ZiHuaNo_4.gnm1.HN60" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/genomes/ZiHuaNo_4.gnm1.HN60/" />
+      <property name="lis-genome.includes" value="README.ZiHuaNo_4.gnm1.HN60.yml,glyma.ZiHuaNo_4.gnm1.HN60.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/genomes/ZiHuaNo_4.gnm1.HN60"/>
     </source>
     <!-- Glycine/soja/genomes/F_IGA1003.gnm1.V9RB -->
     <source name="F_IGA1003.gnm1.V9RB" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/genomes/F_IGA1003.gnm1.V9RB/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.F_IGA1003.gnm1.V9RB.yml,glyso.F_IGA1003.gnm1.V9RB.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/soja/genomes/F_IGA1003.gnm1.V9RB"/>
     </source>
     <!-- Glycine/soja/genomes/PI483463.gnm1.YJWS -->
     <source name="PI483463.gnm1.YJWS" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/genomes/PI483463.gnm1.YJWS/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.PI483463.gnm1.YJWS.yml,glyso.PI483463.gnm1.YJWS.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/soja/genomes/PI483463.gnm1.YJWS"/>
+    </source>
+    <!-- Glycine/soja/genomes/PI_549046.gnm1.TSLF -->
+    <source name="PI_549046.gnm1.TSLF" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/genomes/PI_549046.gnm1.TSLF/" />
+      <property name="lis-genome.includes" value="README.PI_549046.gnm1.TSLF.yml,glyso.PI_549046.gnm1.TSLF.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/genomes/PI_549046.gnm1.TSLF"/>
+    </source>
+    <!-- Glycine/soja/genomes/PI_562565.gnm1.Z2VG -->
+    <source name="PI_562565.gnm1.Z2VG" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/genomes/PI_562565.gnm1.Z2VG/" />
+      <property name="lis-genome.includes" value="README.PI_562565.gnm1.Z2VG.yml,glyso.PI_562565.gnm1.Z2VG.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/genomes/PI_562565.gnm1.Z2VG"/>
+    </source>
+    <!-- Glycine/soja/genomes/PI_578357.gnm1.1XT1 -->
+    <source name="PI_578357.gnm1.1XT1" type="lis-genome" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/genomes/PI_578357.gnm1.1XT1/" />
+      <property name="lis-genome.includes" value="README.PI_578357.gnm1.1XT1.yml,glyso.PI_578357.gnm1.1XT1.genome_main.fna.gz" />
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/genomes/PI_578357.gnm1.1XT1"/>
     </source>
     <!-- Glycine/soja/genomes/W05.gnm1.SVL1 -->
     <source name="W05.gnm1.SVL1" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/genomes/W05.gnm1.SVL1/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.W05.gnm1.SVL1.yml,glyso.W05.gnm1.SVL1.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/soja/genomes/W05.gnm1.SVL1"/>
     </source>
     <!-- Glycine/stenophita/genomes/G1974.gnm1.7MZB -->
     <source name="G1974.gnm1.7MZB" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/stenophita/genomes/G1974.gnm1.7MZB/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.G1974.gnm1.7MZB.yml,glyst.G1974.gnm1.7MZB.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/stenophita/genomes/G1974.gnm1.7MZB"/>
     </source>
     <!-- Glycine/syndetika/genomes/G1300.gnm1.C11H -->
     <source name="G1300.gnm1.C11H" type="lis-genome" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/syndetika/genomes/G1300.gnm1.C11H/" />
-      <property name="lis-genome.className" value="org.intermine.model.bio.Chromosome" />
       <property name="lis-genome.includes" value="README.G1300.gnm1.C11H.yml,glysy.G1300.gnm1.C11H.genome_main.fna.gz" />
       <property name="src.data.dir" location="/data/v2/Glycine/syndetika/genomes/G1300.gnm1.C11H"/>
     </source>
@@ -264,15 +394,45 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/falcata/annotations/G1718.gnm1.ann1.2KSV/" />
       <property name="src.data.dir" location="/data/v2/Glycine/falcata/annotations/G1718.gnm1.ann1.2KSV"/>
     </source>
+    <!-- Glycine/max/annotations/58-161.gnm1.ann1.HJ1K -->
+    <source name="58-161.gnm1.ann1.HJ1K" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/58-161.gnm1.ann1.HJ1K/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/58-161.gnm1.ann1.HJ1K"/>
+    </source>
+    <!-- Glycine/max/annotations/Amsoy.gnm1.ann1.6S5P -->
+    <source name="Amsoy.gnm1.ann1.6S5P" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Amsoy.gnm1.ann1.6S5P/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Amsoy.gnm1.ann1.6S5P"/>
+    </source>
+    <!-- Glycine/max/annotations/DongNongNo_50.gnm1.ann1.QSDB -->
+    <source name="DongNongNo_50.gnm1.ann1.QSDB" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/DongNongNo_50.gnm1.ann1.QSDB/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/DongNongNo_50.gnm1.ann1.QSDB"/>
+    </source>
+    <!-- Glycine/max/annotations/FengDiHuang.gnm1.ann1.P6HL -->
+    <source name="FengDiHuang.gnm1.ann1.P6HL" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/FengDiHuang.gnm1.ann1.P6HL/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/FengDiHuang.gnm1.ann1.P6HL"/>
+    </source>
     <!-- Glycine/max/annotations/FiskebyIII.gnm1.ann1.SS25 -->
     <source name="FiskebyIII.gnm1.ann1.SS25" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/FiskebyIII.gnm1.ann1.SS25/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/FiskebyIII.gnm1.ann1.SS25"/>
     </source>
+    <!-- Glycine/max/annotations/HanDouNo_5.gnm1.ann1.ZS7M -->
+    <source name="HanDouNo_5.gnm1.ann1.ZS7M" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/HanDouNo_5.gnm1.ann1.ZS7M/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/HanDouNo_5.gnm1.ann1.ZS7M"/>
+    </source>
     <!-- Glycine/max/annotations/Hefeng25_IGA1002.gnm1.ann1.320V -->
     <source name="Hefeng25_IGA1002.gnm1.ann1.320V" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Hefeng25_IGA1002.gnm1.ann1.320V/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Hefeng25_IGA1002.gnm1.ann1.320V"/>
+    </source>
+    <!-- Glycine/max/annotations/HeiHeNo_43.gnm1.ann1.PDXG -->
+    <source name="HeiHeNo_43.gnm1.ann1.PDXG" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/HeiHeNo_43.gnm1.ann1.PDXG/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/HeiHeNo_43.gnm1.ann1.PDXG"/>
     </source>
     <!-- Glycine/max/annotations/Huaxia3_IGA1007.gnm1.ann1.LKC7 -->
     <source name="Huaxia3_IGA1007.gnm1.ann1.LKC7" type="lis-annotation" dump="true">
@@ -284,10 +444,30 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Hwangkeum.gnm1.ann1.1G4F/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Hwangkeum.gnm1.ann1.1G4F"/>
     </source>
+    <!-- Glycine/max/annotations/JiDouNo_17.gnm1.ann1.X5PX -->
+    <source name="JiDouNo_17.gnm1.ann1.X5PX" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/JiDouNo_17.gnm1.ann1.X5PX/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/JiDouNo_17.gnm1.ann1.X5PX"/>
+    </source>
+    <!-- Glycine/max/annotations/JinDouNo_23.gnm1.ann1.SGJW -->
+    <source name="JinDouNo_23.gnm1.ann1.SGJW" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/JinDouNo_23.gnm1.ann1.SGJW/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/JinDouNo_23.gnm1.ann1.SGJW"/>
+    </source>
     <!-- Glycine/max/annotations/Jinyuan_IGA1006.gnm1.ann1.2NNX -->
     <source name="Jinyuan_IGA1006.gnm1.ann1.2NNX" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Jinyuan_IGA1006.gnm1.ann1.2NNX/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Jinyuan_IGA1006.gnm1.ann1.2NNX"/>
+    </source>
+    <!-- Glycine/max/annotations/JuXuanNo_23.gnm1.ann1.H8PW -->
+    <source name="JuXuanNo_23.gnm1.ann1.H8PW" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/JuXuanNo_23.gnm1.ann1.H8PW/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/JuXuanNo_23.gnm1.ann1.H8PW"/>
+    </source>
+    <!-- Glycine/max/annotations/KeShanNo_1.gnm1.ann1.2YX4 -->
+    <source name="KeShanNo_1.gnm1.ann1.2YX4" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/KeShanNo_1.gnm1.ann1.2YX4/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/KeShanNo_1.gnm1.ann1.2YX4"/>
     </source>
     <!-- Glycine/max/annotations/Lee.gnm1.ann1.6NZV -->
     <source name="Lee.gnm1.ann1.6NZV" type="lis-annotation" dump="true">
@@ -298,6 +478,46 @@
     <source name="Lee.gnm2.ann1.1FNT" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Lee.gnm2.ann1.1FNT/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Lee.gnm2.ann1.1FNT"/>
+    </source>
+    <!-- Glycine/max/annotations/PI_398296.gnm1.ann1.B0XR -->
+    <source name="PI_398296.gnm1.ann1.B0XR" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/PI_398296.gnm1.ann1.B0XR/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/PI_398296.gnm1.ann1.B0XR"/>
+    </source>
+    <!-- Glycine/max/annotations/PI_548362.gnm1.ann1.LL84 -->
+    <source name="PI_548362.gnm1.ann1.LL84" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/PI_548362.gnm1.ann1.LL84/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/PI_548362.gnm1.ann1.LL84"/>
+    </source>
+    <!-- Glycine/max/annotations/QiHuangNo_34.gnm1.ann1.WHRV -->
+    <source name="QiHuangNo_34.gnm1.ann1.WHRV" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/QiHuangNo_34.gnm1.ann1.WHRV/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/QiHuangNo_34.gnm1.ann1.WHRV"/>
+    </source>
+    <!-- Glycine/max/annotations/ShiShengChangYe.gnm1.ann1.VLGS -->
+    <source name="ShiShengChangYe.gnm1.ann1.VLGS" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/ShiShengChangYe.gnm1.ann1.VLGS/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/ShiShengChangYe.gnm1.ann1.VLGS"/>
+    </source>
+    <!-- Glycine/max/annotations/TieFengNo_18.gnm1.ann1.7GR4 -->
+    <source name="TieFengNo_18.gnm1.ann1.7GR4" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/TieFengNo_18.gnm1.ann1.7GR4/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/TieFengNo_18.gnm1.ann1.7GR4"/>
+    </source>
+    <!-- Glycine/max/annotations/TieJiaSiLiHuang.gnm1.ann1.W70Z -->
+    <source name="TieJiaSiLiHuang.gnm1.ann1.W70Z" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/TieJiaSiLiHuang.gnm1.ann1.W70Z/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/TieJiaSiLiHuang.gnm1.ann1.W70Z"/>
+    </source>
+    <!-- Glycine/max/annotations/TongShanTianEDan.gnm1.ann1.56XW -->
+    <source name="TongShanTianEDan.gnm1.ann1.56XW" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/TongShanTianEDan.gnm1.ann1.56XW/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/TongShanTianEDan.gnm1.ann1.56XW"/>
+    </source>
+    <!-- Glycine/max/annotations/WanDouNo_28.gnm1.ann1.NLYP -->
+    <source name="WanDouNo_28.gnm1.ann1.NLYP" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/WanDouNo_28.gnm1.ann1.NLYP/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/WanDouNo_28.gnm1.ann1.NLYP"/>
     </source>
     <!-- Glycine/max/annotations/Wenfeng7_IGA1001.gnm1.ann1.ZK5W -->
     <source name="Wenfeng7_IGA1001.gnm1.ann1.ZK5W" type="lis-annotation" dump="true">
@@ -314,6 +534,11 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Wm82.gnm2.ann1.RVB6/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Wm82.gnm2.ann1.RVB6"/>
     </source>
+    <!-- Glycine/max/annotations/Wm82.gnm2.ann2.BG1Q -->
+    <source name="Wm82.gnm2.ann2.BG1Q" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Wm82.gnm2.ann2.BG1Q/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Wm82.gnm2.ann2.BG1Q"/>
+    </source>
     <!-- Glycine/max/annotations/Wm82.gnm4.ann1.T8TQ -->
     <source name="Wm82.gnm4.ann1.T8TQ" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Wm82.gnm4.ann1.T8TQ/" />
@@ -328,6 +553,16 @@
     <source name="Wm82_ISU01.gnm2.ann1.FGFB" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Wm82_ISU01.gnm2.ann1.FGFB/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Wm82_ISU01.gnm2.ann1.FGFB"/>
+    </source>
+    <!-- Glycine/max/annotations/XuDouNo_1.gnm1.ann1.G2T7 -->
+    <source name="XuDouNo_1.gnm1.ann1.G2T7" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/XuDouNo_1.gnm1.ann1.G2T7/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/XuDouNo_1.gnm1.ann1.G2T7"/>
+    </source>
+    <!-- Glycine/max/annotations/YuDouNo_22.gnm1.ann1.HCQ1 -->
+    <source name="YuDouNo_22.gnm1.ann1.HCQ1" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/YuDouNo_22.gnm1.ann1.HCQ1/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/YuDouNo_22.gnm1.ann1.HCQ1"/>
     </source>
     <!-- Glycine/max/annotations/Zh13.gnm1.ann1.8VV3 -->
     <source name="Zh13.gnm1.ann1.8VV3" type="lis-annotation" dump="true">
@@ -349,6 +584,21 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Zh35_IGA1004.gnm1.ann1.RGN6/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Zh35_IGA1004.gnm1.ann1.RGN6"/>
     </source>
+    <!-- Glycine/max/annotations/ZhangChunManCangJin.gnm1.ann1.7HPB -->
+    <source name="ZhangChunManCangJin.gnm1.ann1.7HPB" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/ZhangChunManCangJin.gnm1.ann1.7HPB/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/ZhangChunManCangJin.gnm1.ann1.7HPB"/>
+    </source>
+    <!-- Glycine/max/annotations/Zhutwinning2.gnm1.ann1.ZTTQ -->
+    <source name="Zhutwinning2.gnm1.ann1.ZTTQ" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Zhutwinning2.gnm1.ann1.ZTTQ/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Zhutwinning2.gnm1.ann1.ZTTQ"/>
+    </source>
+    <!-- Glycine/max/annotations/ZiHuaNo_4.gnm1.ann1.FCFQ -->
+    <source name="ZiHuaNo_4.gnm1.ann1.FCFQ" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/ZiHuaNo_4.gnm1.ann1.FCFQ/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/ZiHuaNo_4.gnm1.ann1.FCFQ"/>
+    </source>
     <!-- Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B -->
     <source name="F_IGA1003.gnm1.ann1.G61B" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/annotations/F_IGA1003.gnm1.ann1.G61B/" />
@@ -358,6 +608,21 @@
     <source name="PI483463.gnm1.ann1.3Q3Q" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q/" />
       <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/PI483463.gnm1.ann1.3Q3Q"/>
+    </source>
+    <!-- Glycine/soja/annotations/PI_549046.gnm1.ann1.65KD -->
+    <source name="PI_549046.gnm1.ann1.65KD" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/annotations/PI_549046.gnm1.ann1.65KD/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/PI_549046.gnm1.ann1.65KD"/>
+    </source>
+    <!-- Glycine/soja/annotations/PI_562565.gnm1.ann1.1JD2 -->
+    <source name="PI_562565.gnm1.ann1.1JD2" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/annotations/PI_562565.gnm1.ann1.1JD2/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/PI_562565.gnm1.ann1.1JD2"/>
+    </source>
+    <!-- Glycine/soja/annotations/PI_578357.gnm1.ann1.0ZKP -->
+    <source name="PI_578357.gnm1.ann1.0ZKP" type="lis-annotation" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/soja/annotations/PI_578357.gnm1.ann1.0ZKP/" />
+      <property name="src.data.dir" location="/data/v2/Glycine/soja/annotations/PI_578357.gnm1.ann1.0ZKP"/>
     </source>
     <!-- Glycine/soja/annotations/W05.gnm1.ann1.T47J -->
     <source name="W05.gnm1.ann1.T47J" type="lis-annotation" dump="true">
@@ -2397,18 +2662,14 @@
 
     <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/ -->
     <source name="legume.genefam.fam1.M65K" type="lis-genefamily" dump="true">
-      <property name="dataSetName" value="legume.genefam.fam1.M65K"/>
       <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/" />
-      <property name="dataSetDescription" value="LIS gene families"/>
       <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
     </source>
 
     <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/ -->
     <source name="legume.genefam.fam1.M65K.trees_ML_rooted" type="lis-phylotree" dump="true">
-      <property name="dataSetName" value="legume.genefam.fam1.M65K.trees_ML_rooted"/>
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted/" />
-      <property name="dataSetDescription" value="LIS gene family phylogenetic trees"/>
-      <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/legume.genefam.fam1.M65K.trees_ML_rooted"/>
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/" />
+      <property name="src.data.dir" location="/data/v2/LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K"/>
     </source>
 
   </sources>
