@@ -534,11 +534,6 @@
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Wm82.gnm2.ann1.RVB6/" />
       <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Wm82.gnm2.ann1.RVB6"/>
     </source>
-    <!-- Glycine/max/annotations/Wm82.gnm2.ann2.BG1Q -->
-    <source name="Wm82.gnm2.ann2.BG1Q" type="lis-annotation" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Wm82.gnm2.ann2.BG1Q/" />
-      <property name="src.data.dir" location="/data/v2/Glycine/max/annotations/Wm82.gnm2.ann2.BG1Q"/>
-    </source>
     <!-- Glycine/max/annotations/Wm82.gnm4.ann1.T8TQ -->
     <source name="Wm82.gnm4.ann1.T8TQ" type="lis-annotation" dump="true">
       <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/max/annotations/Wm82.gnm4.ann1.T8TQ/" />
