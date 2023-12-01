@@ -2592,10 +2592,10 @@
       <property name="src.data.dir" location="/home/shokin/v2/Glycine/max/qtl/Zhongdou32_x_Zhongdou29.qtl.Chen_Shan_2011" />
     </source>
 
-    <!-- Glycine/GENUS/pangenes/Glycine.pan3.YWTW -->
-    <source name="Glycine.pan3.YWTW" type="lis-pangene" dump="true">
-      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/GENUS/pangenes/Glycine.pan3.YWTW/"/>
-      <property name="src.data.dir" location="/home/shokin/v2/Glycine/GENUS/pangenes/Glycine.pan3.YWTW"/>
+    <!-- Glycine/GENUS/pangenes/Glycine.pan4.RK4P -->
+    <source name="Glycine.pan4.RK4P" type="lis-pangene" dump="true">
+      <property name="dataSetUrl" value="https://data.legumeinfo.org/Glycine/GENUS/pangenes/Glycine.pan4.RK4P/"/>
+      <property name="src.data.dir" location="/home/shokin/v2/Glycine/GENUS/pangenes/Glycine.pan4.RK4P"/>
     </source>
 
     <!-- LEGUMES/Fabaceae/genefamilies/legume.genefam.fam1.M65K/ -->
@@ -2688,9 +2688,9 @@
     <post-process name="make-spanning-locations"/>
     <post-process name="create-chromosome-locations-and-lengths"/>
     <post-process name="create-intergenic-region-features"/>
-    <post-process name="transfer-sequences"/>
     <post-process name="populate-child-features"/>
     <post-process name="create-gene-flanking-features"/>
+    <post-process name="transfer-sequences"/>
 
     <!-- LIS -->
     <post-process name="lis-create-genefamilytally" />
