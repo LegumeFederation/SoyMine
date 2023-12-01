@@ -2693,6 +2693,7 @@
     <post-process name="transfer-sequences"/>
 
     <!-- LIS -->
+    <post-process name="lis-remove-orphans"/>
     <post-process name="lis-create-genefamilytally" />
     <post-process name="lis-populate-gwasresult-markers" />
     <post-process name="lis-populate-marker-linkagegrouppositions" />
